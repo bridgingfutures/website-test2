@@ -1,0 +1,23 @@
+<style>
+  /* Скрыть якорь-ссылку "#" у заголовков, как бы он ни назывался */
+
+  /* вариант 1 — класс anchorjs-link (Chirpy по умолчанию) */
+  .anchorjs-link {
+    display: none !important;
+  }
+
+  /* вариант 2 — любые ссылки внутри заголовков, ведущие на #id */
+  h1 a[href^="#"],
+  h2 a[href^="#"],
+  h3 a[href^="#"],
+  h4 a[href^="#"],
+  h5 a[href^="#"],
+  h6 a[href^="#"] {
+    display: none !important;
+  }
+
+  /* Скрыть текстовую подпись "Share:" перед иконками, сами иконки оставить */
+  .share-label {
+    display: none !important;
+  }
+</style>
