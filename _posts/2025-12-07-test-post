@@ -1,22 +1,14 @@
 ---
-title: "How “temporary protection” for Ukrainians has turned into permanent temporariness in the UK"
-date: 2025-12-07 00:00:00 +0000
-categories: [overview]
-tags:
-  - ukraine-schemes
-  - temporary-protection
-  - long-residence
-  - settlement-route
-  - safe-and-legal-routes
-  - legal-status
-  - homes-for-ukraine
-  - ukraine-extension-scheme
-  - limbo
+layout: post
+title: "Test post – formatting & embeds"
+date: 2025-12-07
+categories: [Sandbox]
+tags: [Formatting, Embeds, Video, Tables, Links, Markdown]
 description: >-
   A test post demonstrating how headings, links, lists, tables, images and video
   embeds look and behave on the Bridging Futures website.
 image:
-  path: assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png
+  path: /assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png
   alt: "Preview image used for the Bridging Futures formatting test post"
 toc: true
 published: true
@@ -143,13 +135,13 @@ For reference, the front-matter block looks like this:
 
 ```yaml
 image:
-  path: assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png
+  path: /assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png
   alt: "Preview image used for the Bridging Futures formatting test post"
 ```
 
 And here is the **same image** inserted directly into the post content:
 
-![Preview image used for the Bridging Futures formatting test post](assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png)
+![Preview image used for the Bridging Futures formatting test post](/assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png)
 
 ### 7.2. Inline image with caption text
 
