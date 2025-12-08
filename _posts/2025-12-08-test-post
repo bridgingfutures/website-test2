@@ -1,0 +1,174 @@
+---
+layout: post
+title: "Test post – formatting & embeds"
+date: 2025-12-07
+categories: [Sandbox]
+tags: [Formatting, Embeds, Video, Tables, Links, Markdown]
+description: >-
+  A test post demonstrating how headings, links, lists, tables, images and video
+  embeds look and behave on the Bridging Futures website.
+image:
+  path: /assets/img/2025-12-07-temporary-protection-permanent-temporariness.png
+  alt: "Preview image used for the Bridging Futures formatting test post"
+toc: true
+published: true
+lang: en
+---
+
+## 1. Introduction
+
+This is a **test post** for the Bridging Futures website.  
+It exists purely to show how different types of content will look in the theme:
+
+- Headings and paragraphs  
+- Emphasis and inline formatting  
+- Lists (ordered and unordered)  
+- Code blocks  
+- Tables  
+- Images (including the preview image from front matter)  
+- Embedded YouTube video
+
+You can safely edit, break, or delete this post without affecting anything else.
+
+---
+
+## 2. Headings & paragraphs
+
+### 2.1. Second-level heading
+
+This is a regular paragraph of body text. It should be easy to read and have
+comfortable line spacing.
+
+#### 2.1.1. Third-level heading
+
+Another paragraph follows here, just to check spacing between paragraphs and
+headings. Temporary protection is often described as *“short-term”*, even when
+it risks becoming **permanent temporariness**.[^1]
+
+##### 2.1.1.1. Fourth-level heading
+
+Fourth-level headings are useful for very detailed documents or appendices.
+
+---
+
+## 3. Inline emphasis & quotes
+
+You can use different inline styles:
+
+- **Bold** text for key points  
+- _Italic_ text for light emphasis  
+- `inline code` for short snippets  
+- ~~Strikethrough~~ when something is no longer valid
+
+> This is a short blockquote.
+>
+> It can span multiple lines and will usually be styled differently to stand
+> out from the main text.
+
+> “This is a slightly longer quote that spans more than one line in order to
+> test how wider quotes behave in the layout.”
+
+---
+
+## 4. Lists
+
+### 4.1. Unordered list
+
+- First point
+- Second point
+  - Nested point A
+  - Nested point B
+- Third point
+
+### 4.2. Ordered list
+
+1. First step
+2. Second step
+3. Third step
+
+---
+
+## 5. Code blocks
+
+### 5.1. Generic fenced code
+
+```bash
+# Example: build the site locally
+bundle exec jekyll serve --livereload
+```
+
+```json
+{
+  "example": true,
+  "note": "This is a JSON code block."
+}
+```
+
+---
+
+## 6. Tables
+
+### 6.1. Simple comparison table
+
+| Year | Scheme / route                         | Type of status            | Counts towards ILR? |
+|------|----------------------------------------|---------------------------|---------------------|
+| 2022 | Ukraine Family Scheme                  | Temporary protection      | No                  |
+| 2022 | Homes for Ukraine                      | Temporary protection      | No                  |
+| 2023 | Typical Skilled Worker                 | Work route                | Yes                 |
+| 2025 | Hypothetical “earned settlement” route | Transitional / potential  | Maybe (TBC)         |
+
+Tables are useful for showing timelines, comparisons, or scenarios.
+
+---
+
+## 7. Images
+
+### 7.1. Preview image via `image:` in front matter
+
+The preview / OG image for the post is defined at the top of this file in the
+front matter. That image is used:
+
+- As the Open Graph / social preview image  
+- On the blog index / card preview (depending on the theme configuration)
+
+For reference, the front-matter block looks like this:
+
+```yaml
+image:
+  path: /assets/img/2025-12-07-temporary-protection-permanent-temporariness.png
+  alt: "Preview image used for the Bridging Futures formatting test post"
+```
+
+And here is the **same image** inserted directly into the post content:
+
+![Preview image used for the Bridging Futures formatting test post](/assets/img/2025-12-07-temporary-protection-permanent-temporariness.png)
+
+### 7.2. Inline image with caption text
+
+You can also add a short caption right under the image as plain text:
+
+*Figure 1: Example preview image used in Bridging Futures test post.*
+
+---
+
+## 8. Embedding video
+
+### 8.1. YouTube
+
+Below is an embedded YouTube video using the Chirpy include.  
+You only need to specify the video ID (the part after `watch?v=` in the URL).
+
+Original URL:
+
+`https://youtu.be/oXPqkP0Mz58`
+
+Embedded via Jekyll include:
+
+{% include embed/youtube.html id="oXPqkP0Mz58" %}
+
+The player above should appear directly inside the post.
+
+---
+
+[^1]: Footnote example: many “temporary” protection schemes in practice last
+for many years without a clear path to settlement.
