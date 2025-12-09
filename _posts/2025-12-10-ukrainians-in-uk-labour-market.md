@@ -1,19 +1,33 @@
 ---
 layout: post
-title: "Labour-market outcomes: ONS follow-up on visa holders under Ukraine humanitarian schemes"
-date: 2025-12-07
-categories: [Research, Labour]
-tags: [ONS, Ukraine-schemes, Employment, Integration]
+title: "Ukrainians in the UK: Working, Settling, and Seeking Security"
+date: 2025-12-10
+categories: [Data]
+tags: [ONS, Labour Market, Integration, Ukraine Schemes]
 description: >-
-  Short summary of ONS follow-up survey showing high employment and intention to remain, with OECD context on labour-market inclusion.
-image:
-  path: /assets/img/posts/2025-12-10-ukrainians-labour-market.png
-  alt: "ONS survey and OECD labour inclusion"
+  Latest ONS data shows high employment and long-term settlement intentions among
+  Ukrainians in the UK, with the country ranking in the top 3 globally for refugee
+  labour market integration.
 toc: false
 published: true
 lang: en
+image:
+  path: /assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png
+  alt: "Chart showing high employment rates of Ukrainians in the UK labour market"
 ---
 
-New analysis of the Office for National Statistics follow-up survey for visa holders entering the UK under the Ukraine Humanitarian Schemes shows a relatively high share of respondents who were in work and a strong intention to remain and settle long-term in the UK. The survey finds that many visa holders are working or actively looking for jobs and report plans to stay in the country, which points to a rapid labour-market attachment among this group. :contentReference[oaicite:0]{index=0}
+New data from the UK's Office for National Statistics (ONS) paints a clear picture: Ukrainians who arrived under humanitarian schemes are not just passing through—they are actively building their lives here.
 
-This positive labour-market picture aligns with broader OECD analysis that highlights recent developments in immigrant labour-market inclusion in the United Kingdom, where labour-market outcomes for many recent arrivals place the UK among the better performing OECD countries for integration into work (UK is cited among the top performers in several OECD comparisons). These findings suggest that policies and local labour demand have enabled relatively fast entry into employment for many of the humanitarian visa holders. :contentReference[oaicite:1]{index=1}
+A striking **69% of adults** on the Ukraine schemes are now in work, according to the latest ONS survey. More tellingly, when asked about their future, **68%** said they intend to live in the UK long-term, even if it becomes safe to return to Ukraine. Only 15% plan to return permanently.
+
+This isn't just a UK phenomenon. The UK ranks in the **top 3 countries** globally for the speed at which Ukrainian refugees find employment, as highlighted in the OECD's *International Migration Outlook 2025*.
+
+The narrative is shifting from short-term refuge to long-term integration. People are working, paying taxes, and putting down roots. The question is no longer whether Ukrainians are settling in, but how the system will recognise this reality.
+
+<br>
+
+<small>
+Sources:<br>
+• <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/visaholdersenteringtheukundertheukrainehumanitarianschemes/15aprilto22april2024">ONS: Visa holders entering the UK under the Ukraine Humanitarian Schemes</a><br>
+• <a href="https://www.oecd.org/en/publications/international-migration-outlook-2025_ae26c893-en/full-report/recent-developments-in-international-migration-movements-and-labour-market-inclusion-of-immigrants_203de29e.html#title-eb9cbd6842">OECD International Migration Outlook 2025</a>
+</small>
