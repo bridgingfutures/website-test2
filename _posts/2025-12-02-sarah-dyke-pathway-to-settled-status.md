@@ -5,7 +5,7 @@ date: 2025-12-02
 categories: [Parliament]
 tags: [Parliament, Settlement, Ukraine Schemes]
 description: >-
-  A short note marking a clear question in Parliament about a pathway to
+  A short note on a clear question in Parliament about a pathway to
   settled status for Ukrainians on the UK’s Ukraine visa schemes.
 toc: false
 published: true
@@ -26,7 +26,7 @@ lang: en
 > Since 2022, 1,600 Ukrainians have sought refuge in Somerset away from Putin’s war machine, many making Glastonbury and Somerton their home. The US-led peace negotiations, dictated by Russia, risk excluding US security guarantees, leaving many Ukrainians in fear of returning to Ukraine. What discussions has the Secretary of State had with Cabinet colleagues on implementing a pathway to settled status, so that Ukrainians may have a permanent future in the UK?
 
 
-Thank you to **Sarah Dyke MP** for using Foreign Office questions on 2 December 2025 to ask directly about **a pathway to settled status** for Ukrainians on the UK’s Ukraine schemes.
+We are grateful to **Sarah Dyke MP** for using Foreign Office questions on 2 December 2025 to ask directly about **a pathway to settled status** for Ukrainians on the UK’s Ukraine schemes.
 
 <br>
 
