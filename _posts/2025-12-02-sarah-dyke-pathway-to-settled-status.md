@@ -11,7 +11,7 @@ toc: false
 published: true
 lang: en
 image:
-  path: https://img.youtube.com/vi/oXPqkP0Mz58/hqdefault.jpg
+  path: https://img.youtube.com/vi/oXPqkP0Mz58/maxresdefault.jpg
   alt: "Sarah Dyke MP asking about a pathway to settled status for Ukrainians"
 ---
 
