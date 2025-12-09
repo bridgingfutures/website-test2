@@ -10,7 +10,7 @@ toc: false
 published: true
 lang: en
 image:
-  path: /assets/img/posts/2025-12-10-ukrainians-labour-market.png
+  path: assets/img/posts/2025-12-10-ukrainians-labour-market.png
   alt: "Description of image"
 
 ---
