@@ -2,16 +2,8 @@
 layout: post
 title: "Beyond Temporary Shelter: Ukrainians Settling into UK Life & Labour"
 date: 2025-12-10 00:00:00 +0000
-categories: [overview]
-tags:
-  - ukraine-schemes
-  - labour-market
-  - integration
-  - temporary-protection
-  - data
-image:
-  path: /assets/img/posts/2025-12-10-ukrainians-labour-market.png
-  alt: "Chart showing high employment rates of Ukrainians in the UK labour market"
+categories: overview
+tags: [ukraine-schemes, labour-market, integration, temporary-protection, data]
 published: true
 lang: en
 ---
