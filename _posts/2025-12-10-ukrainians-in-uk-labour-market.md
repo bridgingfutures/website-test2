@@ -2,12 +2,11 @@
 layout: post
 title: "Ukrainians in the UK: Working, Settling, and Seeking Security"
 date: 2025-12-10
-categories: [Data]
+categories: [Overview]
 tags: [ONS, Labour Market, Integration, Ukraine Schemes]
 description: >-
   Latest ONS data shows high employment and long-term settlement intentions among
-  Ukrainians in the UK, with the country ranking in the top 3 globally for refugee
-  labour market integration.
+  Ukrainians in the UK.
 toc: false
 published: true
 lang: en
