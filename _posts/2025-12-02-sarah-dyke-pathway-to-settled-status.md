@@ -12,11 +12,9 @@ published: true
 lang: en
 ---
 
-On 2 December 2025, during Foreign Office questions, Sarah Dyke MP asked clear question about the future of Ukrainians on the UK’s Ukraine schemes: what discussions have taken place on **a pathway to settled status**, so that people who have rebuilt their lives here can have a permanent future in the UK. For Ukrainians who work, study, pay taxes and integrate while remaining legally “temporary”, simply hearing that phrase on the floor of the House of Commons matters.
+Thank you to **Sarah Dyke MP** for using Foreign Office questions on 2 December 2025 to ask directly about **a pathway to settled status** for Ukrainians on the UK’s Ukraine schemes.
 
-Thank you, Sarah, for using limited question time to put this on the record and to connect it to the wider discussion about a just and lasting peace for Ukraine. Every time an MP frames this not as a technical visa detail but as a question of long-term security — for both the UK and Ukrainians who have found safety here — it becomes harder to ignore the need for an earned, transparent route to settlement.
-
-You can read the full exchange in Hansard here: <https://hansard.parliament.uk/Commons/2025-12-02/debates/49C308CB-257D-46C5-B6AC-95A541323496/Ukraine>.
+> Since 2022, 1,600 Ukrainians have sought refuge in Somerset away from Putin’s war machine, many making Glastonbury and Somerton their home. The US-led peace negotiations, dictated by Russia, risk excluding US security guarantees, leaving many Ukrainians in fear of returning to Ukraine. What discussions has the Secretary of State had with Cabinet colleagues on implementing a pathway to settled status, so that Ukrainians may have a permanent future in the UK?
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-top: 1.5rem;">
   <iframe
@@ -28,3 +26,9 @@ You can read the full exchange in Hansard here: <https://hansard.parliament.uk/C
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
   </iframe>
 </div>
+
+<br>
+
+<small>
+Source: <a href="https://hansard.parliament.uk/Commons/2025-12-02/debates/49C308CB-257D-46C5-B6AC-95A541323496/Ukraine">Hansard, 2 December 2025 – Ukraine</a>
+</small>
