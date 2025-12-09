@@ -11,9 +11,6 @@ description: >-
 toc: false
 published: true
 lang: en
-image:
-  path: /assets/img/posts/2025-12-07-temporary-protection-permanent-temporariness.png
-  alt: "Chart showing high employment rates of Ukrainians in the UK labour market"
 ---
 
 New data from the UK's Office for National Statistics (ONS) paints a clear picture: Ukrainians who arrived under humanitarian schemes are not just passing through—they are actively building their lives here.
