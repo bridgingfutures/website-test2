@@ -1,5 +1,6 @@
 # The Site Configuration
-
+url: "https://bridgingfutures.github.io"
+baseurl: "/website-test2"
 # Import the theme
 theme: jekyll-theme-chirpy
 
