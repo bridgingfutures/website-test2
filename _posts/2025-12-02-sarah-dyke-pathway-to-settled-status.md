@@ -23,9 +23,10 @@ lang: en
   </iframe>
 </div>
 
-Thank you to **Sarah Dyke MP** for using Foreign Office questions on 2 December 2025 to ask directly about **a pathway to settled status** for Ukrainians on the UK’s Ukraine schemes.
-
 > Since 2022, 1,600 Ukrainians have sought refuge in Somerset away from Putin’s war machine, many making Glastonbury and Somerton their home. The US-led peace negotiations, dictated by Russia, risk excluding US security guarantees, leaving many Ukrainians in fear of returning to Ukraine. What discussions has the Secretary of State had with Cabinet colleagues on implementing a pathway to settled status, so that Ukrainians may have a permanent future in the UK?
+
+
+Thank you to **Sarah Dyke MP** for using Foreign Office questions on 2 December 2025 to ask directly about **a pathway to settled status** for Ukrainians on the UK’s Ukraine schemes.
 
 <br>
 
