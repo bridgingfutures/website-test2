@@ -11,7 +11,7 @@ published: true
 lang: en
 image:
   path: assets/img/posts/2025-12-10-ukrainians-labour-market.png
-  alt: "Description of image"
+  alt: "Union Jack and Ukrainian flag at a gathering in support of Ukraine in Parliament Square, London. Photo: Watcharisma / Shutterstock"
 
 ---
 
