@@ -20,7 +20,7 @@ description: >- # used by seo meta and the atom feed
   UK-based, Ukrainian-led not-for-profit company working to help build a pathway to long-term settlement in the United Kingdom for Ukrainians who arrived under the UK’s Ukraine visa schemes.
 
 # Fill in the protocol & hostname for your site.
-url: "https://bridgingfutures.uk"
+url: "https://bridgingfutures.github.io"
 
 github:
   username: bridgingfutures
@@ -119,7 +119,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "/website-test2"
 
 # ------------ The following options are not recommended to be modified ------------------
 
