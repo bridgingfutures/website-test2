@@ -78,10 +78,10 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 # e.g. "/assets/img/avatar/bridging-futures.png"
-avatar: /assets/img/avatar/bridging-futures.png
+avatar: website-test2/assets/img/avatar/bridging-futures.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-social_preview_image: /assets/img/social-card.png
+social_preview_image: website-test2/assets/img/social-card.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
