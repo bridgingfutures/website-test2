@@ -5,13 +5,14 @@ date: 2025-12-11
 categories: [Parliament]
 tags: [Parliament, EDM, Visa Extension, Hosts, Ukraine]
 description: >-
-  Two key Early Day Motions (EDMs #1000 & #2191) are calling for better support for Ukrainian refugees and a clear visa extension scheme. Their success depends on public support.
+  Two key Early Day Motions (EDMs #1000 & #2191) call for better support for Ukrainian refugees and a clear visa extension scheme. Public backing is crucial for their success.
 toc: false
 published: true
 lang: en
+![UK Parliament building in London]({{ '/assets/img/posts/2025-12-11-ukrainian-edms-parliament.png' | relative_url }})
 ---
 
-The UK Parliament continues its efforts to support Ukrainian refugees. MPs from various parties are tabling **Early Day Motions (EDMs)**. These are formal proposals that draw attention to specific issues and demonstrate the level of parliamentary support for a particular cause.
+The UK Parliament continues its efforts to support Ukrainian refugees. MPs from various parties are tabling **Early Day Mototions (EDMs)**. These are formal proposals that draw attention to specific issues and demonstrate the level of parliamentary support for a particular cause.
 
 While EDMs are rarely debated directly, they are a crucial tool for shaping public and political discourse, putting pressure on the government, and showing solidarity.
 
@@ -23,7 +24,7 @@ Tabled on **24 March 2025**, this motion calls on the government to extend and i
 
 *   **Primary Sponsor:** **Pippa Heylings MP**
 *   **Key Themes:** Support for the "Homes for Ukraine" scheme, financial aid for hosts, long-term solutions for refugees.
-*   **Current Number of Signatures (as of 11.12.2025):** **121** MPs.
+*   **Current Number of Signatures (as of 13.12.2025):** **121** MPs.
 
 **We thank the sponsors of this motion** for recognising the importance of both humanitarian assistance for Ukrainians and sustained support for the generous British hosts who welcomed them.
 
@@ -35,7 +36,7 @@ This more recent and critically important motion was tabled on **3 November 2025
 
 *   **Primary Sponsor:** **Wendy Chamberlain MP**
 *   **Key Themes:** Visa extensions for Ukrainians, an automatic and free mechanism, ensuring stability.
-*   **Current Number of Signatures (as of 11.12.2025):** **36** MPs.
+*   **Current Number of Signatures (as of 13.12.2025):** **36** MPs.
 
 **We express our gratitude to the authors of this proposal** for raising this most pressing issue for the Ukrainian community in a timely manner and for seeking a practical solution to the upcoming administrative challenge.
 
@@ -53,7 +54,7 @@ The more MPs who sign these EDMs, the stronger the signal to the government abou
 
 ---
 
-*If you require assistance or further information, you can always contact our team via the **[Contact](https://bridgingfutures.github.io/website-test2/contact)** page.*
+*If you require assistance or further information, you can always contact our team via the **[Contact](https://bridgingfutures.github.io/website-test2/about/)** page.*
 
 <br>
 <small>
