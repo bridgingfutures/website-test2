@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Two Vital Parliamentary Motions (EDMs) in Support of Ukrainians in the UK"
-date: 2025-12-13
+date: 2025-12-11
 categories: [Parliament]
 tags: [Parliament, EDM, Visa Extension, Hosts, Ukraine]
 description: >-
@@ -23,7 +23,7 @@ Tabled on **24 March 2025**, this motion calls on the government to extend and i
 
 *   **Primary Sponsor:** **Pippa Heylings MP**
 *   **Key Themes:** Support for the "Homes for Ukraine" scheme, financial aid for hosts, long-term solutions for refugees.
-*   **Current Number of Signatures (as of 13.12.2025):** **121** MPs.
+*   **Current Number of Signatures (as of 11.12.2025):** **121** MPs.
 
 **We thank the sponsors of this motion** for recognising the importance of both humanitarian assistance for Ukrainians and sustained support for the generous British hosts who welcomed them.
 
@@ -35,7 +35,7 @@ This more recent and critically important motion was tabled on **3 November 2025
 
 *   **Primary Sponsor:** **Wendy Chamberlain MP**
 *   **Key Themes:** Visa extensions for Ukrainians, an automatic and free mechanism, ensuring stability.
-*   **Current Number of Signatures (as of 13.12.2025):** **36** MPs.
+*   **Current Number of Signatures (as of 11.12.2025):** **36** MPs.
 
 **We express our gratitude to the authors of this proposal** for raising this most pressing issue for the Ukrainian community in a timely manner and for seeking a practical solution to the upcoming administrative challenge.
 
