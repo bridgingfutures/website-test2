@@ -9,6 +9,7 @@ description: >-
 toc: false
 published: true
 lang: en
+image: /assets/img/posts/2025-12-11-ukrainian-edms-parliament.png
 ---
 
 ![UK Parliament building in London](/assets/img/posts/2025-12-11-ukrainian-edms-parliament.png)
