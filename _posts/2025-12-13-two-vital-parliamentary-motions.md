@@ -3,16 +3,12 @@ layout: post
 title: "Two Vital Parliamentary Motions (EDMs) in Support of Ukrainians in the UK"
 date: 2025-12-13
 categories: [Parliament]
-tags: [Parliament, EDM, Visa Extension, Hosts, Advocacy]
+tags: [Parliament, EDM, Visa Extension, Hosts, Ukraine]
 description: >-
   Two key Early Day Motions (EDMs #1000 & #2191) are calling for better support for Ukrainian refugees and a clear visa extension scheme. Their success depends on public support.
 toc: false
 published: true
 lang: en
-image:
-  path: assets/img/posts/2025-12-11-ukrainian-edms-parliament.png
-  alt: "UK Parliament building in London. Photo: Shutterstock"
-
 ---
 
 The UK Parliament continues its efforts to support Ukrainian refugees. MPs from various parties are tabling **Early Day Motions (EDMs)**. These are formal proposals that draw attention to specific issues and demonstrate the level of parliamentary support for a particular cause.
