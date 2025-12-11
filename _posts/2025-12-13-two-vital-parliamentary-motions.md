@@ -9,10 +9,11 @@ description: >-
 toc: false
 published: true
 lang: en
-![UK Parliament building in London]({{ '/assets/img/posts/2025-12-11-ukrainian-edms-parliament.png' | relative_url }})
 ---
 
-The UK Parliament continues its efforts to support Ukrainian refugees. MPs from various parties are tabling **Early Day Mototions (EDMs)**. These are formal proposals that draw attention to specific issues and demonstrate the level of parliamentary support for a particular cause.
+![UK Parliament building in London]({{ '/assets/img/posts/2025-12-11-ukrainian-edms-parliament.png' | relative_url }})
+
+The UK Parliament continues its efforts to support Ukrainian refugees. MPs from various parties are tabling **Early Day Motions (EDMs)**. These are formal proposals that draw attention to specific issues and demonstrate the level of parliamentary support for a particular cause.
 
 While EDMs are rarely debated directly, they are a crucial tool for shaping public and political discourse, putting pressure on the government, and showing solidarity.
 
