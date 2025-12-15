@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New survey: displaced Ukrainians in the UK are stuck in long-term ‘temporary’ status"
+title: "University of Birmingham survey on displaced Ukrainians in the UK"
 date: 2025-11-18
 categories: [Research]
 tags: [Research, Ukraine Schemes, UPE, Settlement]
@@ -9,7 +9,7 @@ description: >-
   and future plans for displaced Ukrainians in the UK.
 image:
   path: /assets/img/posts/2025-11-18-uob-survey-displaced-ukrainians-temporary-status.png
-  alt: "University of Birmingham survey: displaced Ukrainians in the UK and long-term temporary status"
+  alt: "University of Birmingham survey on displaced Ukrainians in the UK"
 toc: false
 published: true
 lang: en
