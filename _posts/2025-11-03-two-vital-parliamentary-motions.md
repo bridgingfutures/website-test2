@@ -27,7 +27,7 @@ Tabled on **24 March 2025**, this motion highlights the real-life impact of unce
 * **Current Number of Signatures (as of 16 December 2025):** **121** MPs. 
 
 This is currently the most-signed EDM tabled since December 2022 ([Parliament EDM search](https://edm.parliament.uk/?Term=&TabledFrom=16%2F12%2F2022&TabledTo=16%2F12%2F2025&IncludeSponsoredByMember=false&IsPrayer=false&IncludeWithdrawn=false&OrderBy=SignatureCountDesc&ShowAdvanced=true)).
-We thank the sponsors and signatories of this motion for putting long-term stability and a route to settlement clearly on the parliamentary record.
+
 
 ➡️ **Link to EDM #1000 text:** <https://edm.parliament.uk/early-day-motion/63371/>
 
@@ -41,12 +41,9 @@ The EDM calls on the Government to take decisive action by **extending visas aut
 * **Key Themes:** Automatic visa extensions; route to settlement (ILR); recognising integration and contribution; addressing uncertainty; noting limits of the 18-month UPE scheme.
 * **Current Number of Signatures (as of 16 December 2025):** **40** MPs.
 
-We express our gratitude to the authors and supporters of this motion for raising the need for certainty — and a route to settlement — in a clear, practical way.
-
 ➡️ **Link to EDM #2191 text:** <https://edm.parliament.uk/early-day-motion/64614/>
 
-**EDMs rarely lead to immediate policy change on their own — but every signature is a public signal that stability for Ukrainians matters.**
-The more MPs who sign these EDMs, the stronger the signal to the Government that **certainty of status** and a **route to settlement** matter.  
+We express our gratitude to the authors and supporters of this motions for raising the need for certainty — and a route to settlement — in a clear, practical way.
 
 ---
 
