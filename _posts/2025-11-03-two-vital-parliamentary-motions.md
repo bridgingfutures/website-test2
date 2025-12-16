@@ -28,7 +28,7 @@ Tabled on **24 March 2025**, this motion highlights the real-life impact of unce
 
 We thank the sponsors and signatories of this motion for putting long-term stability and a route to settlement clearly on the parliamentary record.
 
-➡️ **Link to EDM #1000 text:** <https://edm.parliament.uk/early-day-motion/63371/ensuring-stability-for-ukrainian-refugees-in-the-uk>
+➡️ **Link to EDM #1000 text:** <https://edm.parliament.uk/early-day-motion/63371/>
 
 ## 2) EDM #2191: Ukrainian Permission Extension Scheme
 
@@ -42,10 +42,10 @@ The EDM calls on the Government to take decisive action by **extending visas aut
 
 We express our gratitude to the authors and supporters of this motion for raising the need for certainty — and a route to settlement — in a clear, practical way.
 
-➡️ **Link to EDM #2191 text:** <https://edm.parliament.uk/early-day-motion/64614/ukrainian-permission-extension-scheme>
+➡️ **Link to EDM #2191 text:** <https://edm.parliament.uk/early-day-motion/64614/>
 
-The more MPs who sign these EDMs, the stronger the signal to the Government that **certainty of status** and a **route to settlement** matter.  
 **EDMs rarely lead to immediate policy change on their own — but every signature is a public signal that stability for Ukrainians matters.**
+The more MPs who sign these EDMs, the stronger the signal to the Government that **certainty of status** and a **route to settlement** matter.  
 
 ---
 
