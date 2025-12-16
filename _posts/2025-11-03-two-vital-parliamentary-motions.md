@@ -1,0 +1,59 @@
+---
+layout: post
+title: "Two Vital Parliamentary Motions (EDMs) in Support of Ukrainians in the UK"
+date: 2025-11-03
+categories: [Parliament]
+tags: [Parliament, EDM, Visa Extension, ILR, Ukraine]
+description: >-
+  Two key Early Day Motions (EDMs #1000 & #2191) call for automatic visa extensions and a clear pathway to Indefinite Leave to Remain (ILR) for Ukrainians in the UK.
+toc: false
+published: true
+lang: en
+image: /assets/img/posts/2025-11-03-two-vital-parliamentary-motions.png
+---
+
+The UK Parliament continues its efforts to support Ukrainian refugees. MPs from various parties are tabling **Early Day Motions (EDMs)** — motions submitted for debate in the House of Commons **for which no day has been fixed**.
+
+As there is no specific time allocated to EDMs, **very few are debated**. However, they are widely used to put views on the record, draw attention to an issue, and demonstrate the level of parliamentary support.
+
+Today, we highlight **two key EDMs** focused on the most urgent need for Ukrainians in the UK: **certainty of status**, including **automatic visa extensions** and a **clear route to settlement**.
+
+## 1) EDM #1000: Ensuring stability for Ukrainian refugees in the UK
+
+Tabled on **24 March 2025**, this motion highlights the real-life impact of uncertainty around visa extensions — including risks of losing **homes and jobs** — and calls on the Government to provide certainty by **automatically extending visas** and setting out a **pathway to Indefinite Leave to Remain (ILR)**. It also notes how certainty would help young people **complete their education in the UK**.
+
+* **Primary Sponsor:** **Pippa Heylings MP**
+* **Key Themes:** Automatic visa extensions; ILR pathway; stability for housing and employment; enabling young Ukrainians to complete education.
+* **Current Number of Signatures (as of 16 December 2025):** **121** MPs.
+
+We thank the sponsors and signatories of this motion for putting long-term stability and a route to settlement clearly on the parliamentary record.
+
+➡️ **Link to EDM #1000 text:** <https://edm.parliament.uk/early-day-motion/63371/ensuring-stability-for-ukrainian-refugees-in-the-uk>
+
+## 2) EDM #2191: Ukrainian Permission Extension Scheme
+
+This motion was tabled on **3 November 2025**. It expresses concern about the continuing uncertainty faced by Ukrainians under the Ukraine Schemes and notes that, while the **Ukrainian Permission Extension Scheme** introduced in **February 2025** provided an additional **18 months’ leave to remain**, it does not offer the long-term stability families need.
+
+The EDM calls on the Government to take decisive action by **extending visas automatically** and creating a **route to settlement** for Ukrainians who have made the UK their home.
+
+* **Primary Sponsor:** **Wendy Chamberlain MP**
+* **Key Themes:** Automatic visa extensions; route to settlement (ILR); recognising integration and contribution; addressing uncertainty; noting limits of the 18-month UPE scheme.
+* **Current Number of Signatures (as of 16 December 2025):** **40** MPs.
+
+We express our gratitude to the authors and supporters of this motion for raising the need for certainty — and a route to settlement — in a clear, practical way.
+
+➡️ **Link to EDM #2191 text:** <https://edm.parliament.uk/early-day-motion/64614/ukrainian-permission-extension-scheme>
+
+The more MPs who sign these EDMs, the stronger the signal to the Government that **certainty of status** and a **route to settlement** matter.  
+**EDMs rarely lead to immediate policy change on their own — but every signature is a public signal that stability for Ukrainians matters.**
+
+---
+
+*If you require assistance or further information, you can always contact our team via the **[Contact](https://bridgingfutures.github.io/website-test2/about/)** page.*
+<br>
+<small>
+Sources:
+<a href="https://edm.parliament.uk/early-day-motion/63371/ensuring-stability-for-ukrainian-refugees-in-the-uk">UK Parliament – Early Day Motion 1000</a> |
+<a href="https://edm.parliament.uk/early-day-motion/64614/ukrainian-permission-extension-scheme">UK Parliament – Early Day Motion 2191</a> |
+<a href="https://www.parliament.uk/about/how/business/edms/">UK Parliament – What are Early Day Motions?</a>
+</small>
