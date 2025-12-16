@@ -24,9 +24,9 @@ Tabled on **24 March 2025**, this motion highlights the real-life impact of unce
 
 * **Primary Sponsor:** **Pippa Heylings MP**
 * **Key Themes:** Automatic visa extensions; ILR pathway; stability for housing and employment; enabling young Ukrainians to complete education.
-* **Current Number of Signatures (as of 16 December 2025):** **121** MPs. This is currently the most-signed EDM tabled since December 2022 ([Parliament EDM search](https://edm.parliament.uk/?Term=&TabledFrom=16%2F12%2F2022&TabledTo=16%2F12%2F2025&IncludeSponsoredByMember=false&IsPrayer=false&IncludeWithdrawn=false&OrderBy=SignatureCountDesc&ShowAdvanced=true)).
+* **Current Number of Signatures (as of 16 December 2025):** **121** MPs. 
 
-
+This is currently the most-signed EDM tabled since December 2022 ([Parliament EDM search](https://edm.parliament.uk/?Term=&TabledFrom=16%2F12%2F2022&TabledTo=16%2F12%2F2025&IncludeSponsoredByMember=false&IsPrayer=false&IncludeWithdrawn=false&OrderBy=SignatureCountDesc&ShowAdvanced=true)).
 We thank the sponsors and signatories of this motion for putting long-term stability and a route to settlement clearly on the parliamentary record.
 
 ➡️ **Link to EDM #1000 text:** <https://edm.parliament.uk/early-day-motion/63371/>
