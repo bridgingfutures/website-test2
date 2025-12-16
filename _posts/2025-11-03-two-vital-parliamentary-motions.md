@@ -9,7 +9,7 @@ description: >-
 toc: false
 published: true
 lang: en
-image: /assets/img/posts/2025-11-03-two-vital-parliamentary-motions.png
+image: assets/img/posts/2025-11-03-two-vital-parliamentary-motions.png
 ---
 
 The UK Parliament continues its efforts to support Ukrainian refugees. MPs from various parties are tabling **Early Day Motions (EDMs)** — motions submitted for debate in the House of Commons **for which no day has been fixed**.
