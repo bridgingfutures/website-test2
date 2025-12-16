@@ -5,7 +5,7 @@ date: 2025-11-03
 categories: [Parliament]
 tags: [Parliament, EDM, Visa Extension, ILR, Ukraine]
 description: >-
-  Two key Early Day Motions (EDMs #1000 & #2191) call for automatic visa extensions and a clear pathway to Indefinite Leave to Remain (ILR) for Ukrainians in the UK.
+  Two key EDMs (#1000 & #2191) call on the Government to extend visas automatically and establish a clear pathway to indefinite leave to remain (a route to settlement) for Ukrainians in the UK.
 toc: false
 published: true
 lang: en
@@ -49,7 +49,6 @@ The more MPs who sign these EDMs, the stronger the signal to the Government that
 
 ---
 
-*If you require assistance or further information, you can always contact our team via the **[Contact](https://bridgingfutures.github.io/website-test2/about/)** page.*
 <br>
 <small>
 Sources:
