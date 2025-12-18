@@ -22,5 +22,7 @@ The report also sets out four priorities for policy change: a future-ready **Dis
 <br>
 
 <small>
-Source: <a href="https://www.redcross.org.uk/about-us/what-we-do/we-speak-up-for-change/ukraine-lessons-learned-report">British Red Cross – Planning for tomorrow. Lessons learned from the UK’s response to displacement from Ukraine.</a>
+Sources:
+<a href="https://www.redcross.org.uk/about-us/what-we-do/we-speak-up-for-change/ukraine-lessons-learned-report#our-recommendations">British Red Cross – Ukraine: lessons learned (report + recommendations)</a> ·
+<a href="https://assets.redcross.org.uk/82b1e254-5524-0172-0612-9ce813c7824c/3abcaac1-d79a-4eef-9dd9-13e8078c2104/BRC-Lessons-Learned-report.pdf">Planning for tomorrow: lessons learned from the UK’s response to displacement from Ukraine (PDF)</a>
 </small>
