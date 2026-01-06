@@ -23,9 +23,11 @@ lang: en
   </iframe>
 </div>
 
+During the **Venezuela** statement and questions on **5 January 2026**, **Martin Wrigley MP** asked:
+
 > “Will the Foreign Secretary confer with her Ukrainian counterparts about giving our Ukrainian guests the option of a right to settle in the UK?”
 
-In a separate exchange on **Ukrainian Refugees**, **Catherine Fookes MP** raised the practical harm caused by ongoing insecurity for families building lives in the UK:
+In a separate exchange on **Ukrainian Refugees** the same day, **Catherine Fookes MP** raised the practical harm caused by ongoing insecurity for families building lives in the UK:
 
 > “their temporary status can create practical hurdles, such as in housing or university grant applications, because they may suddenly be uprooted… [and need] support and stability to thrive here in the UK in the long term”
 
