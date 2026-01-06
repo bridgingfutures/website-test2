@@ -25,21 +25,20 @@ lang: en
 
 > “Will the Foreign Secretary confer with her Ukrainian counterparts about giving our Ukrainian guests the option of a right to settle in the UK?”
 
-We are grateful to **Martin Wrigley MP** for raising a direct question about a **right to settle** for Ukrainians in the UK.
-
-Earlier the same day, in **Ukrainian Refugees**, **Catherine Fookes MP** highlighted the real-life impact of insecurity for families who are working, contributing, and building lives here:
+In a separate exchange on **Ukrainian Refugees**, **Catherine Fookes MP** raised the practical harm caused by ongoing insecurity for families building lives in the UK:
 
 > “their temporary status can create practical hurdles, such as in housing or university grant applications, because they may suddenly be uprooted… [and need] support and stability to thrive here in the UK in the long term”
 
-In response, the Minister reiterated the Government’s framing of the Ukraine schemes:
+The Minister reiterated the Government’s framing of the Ukraine schemes:
 
 > “We have to be clear that this bespoke route offers temporary sanctuary”
+
+We are grateful to **Martin Wrigley MP** and **Catherine Fookes MP** for raising these two clear points in Parliament.
 
 <br>
 
 <small>
 Sources:
 <a href="https://hansard.parliament.uk/Commons/2026-01-05/debates/453C7107-419B-4AF7-8602-352E03B903AF/Venezuela">Hansard, 5 January 2026 – Venezuela</a> ·
-<a href="https://hansard.parliament.uk/Commons/2026-01-05/debates/ED127085-5489-4900-8740-DB5D20DD532C/UkrainianRefugees">Hansard, 5 January 2026 – Ukrainian Refugees</a> ·
-<a href="https://youtu.be/9fLXG7jTURw?t=7323">YouTube (timestamped clip)</a>
+<a href="https://hansard.parliament.uk/Commons/2026-01-05/debates/ED127085-5489-4900-8740-DB5D20DD532C/UkrainianRefugees">Hansard, 5 January 2026 – Ukrainian Refugees</a>
 </small>
