@@ -12,8 +12,6 @@ UNHCR has published detailed observations on the UK Government’s *Restoring Or
 Read the full observations:
 <a href="https://www.unhcr.org/uk/media/unhcr-observations-restoring-order-and-control-statement-uk-governments-asylum-and-returns-0">UNHCR – Observations on “Restoring Order and Control” (UK asylum and returns)</a>
 
-## What UNHCR is warning against (in plain terms)
-
 UNHCR’s core message is that a protection system built on repeated review and long waits for settlement can:
 - create prolonged uncertainty (with serious mental health and social costs),
 - weaken incentives and capacity to integrate (work, training, stable housing),
