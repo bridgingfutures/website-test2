@@ -14,9 +14,7 @@ Other countries have already started building **“earned stability”** mechani
 
 Below are a few clear, well-documented examples.
 
-## Selected international precedents (with primary sources)
-
-### Austria (Vienna): a work-based route and time that can count
+### Austria: a work-based route and time that can count
 Vienna’s guidance explains a **Red-White-Red Card plus for displaced persons from Ukraine**, with eligibility linked to holding a displaced-person ID and **having been gainfully employed / insured** (a work-and-contributions framing). It also states that after **five years**, the calculation for **“Permanent Residence – EU”** can **include time spent with the displaced-person ID card**.  
 Read: <a href="https://www.wien.gv.at/english/e-government/documents/residence/thirdcountries/rwr-card-plus-ukraine.html">Stadt Wien – RWR Card Plus for displaced persons from Ukraine</a>
 
@@ -26,8 +24,8 @@ Read: <a href="https://mv.gov.cz/clanek/vlada-schvalila-lex-ukrajina-7-ekonomick
 <a href="https://ipc.gov.cz/zvlastni-dlouhodoby-pobyt/">IPC – Zvláštní dlouhodobý pobyt</a> |
 <a href="https://www.psp.cz/sqw/text/orig2.sqw?idd=243031">Czech Parliament – legal text (t0727a0)</a>
 
-### Poland: a longer (3-year) residence horizon
-Poland’s 2025 legal changes introduce a **temporary residence permission valid for 3 years** for eligible Ukrainians under the special act framework, reducing the churn of short renewals.  
+### Poland: a longer (3-year) residence horizon — and time that counts toward long-term residence
+Poland’s legal changes introduce a **temporary residence card valid for 3 years (CUKR)** for eligible Ukrainians under the special act framework, reducing the churn of short renewals. Importantly, Poland’s official guidance explicitly states that **time spent in Poland on the basis of the CUKR residence card will be counted** toward the period required to obtain an **EU long-term resident permit**.
 Read: <a href="https://dziennikustaw.gov.pl/DU/2025/337">Poland – Dziennik Ustaw (2025 poz. 337)</a> |
 <a href="https://www.senat.gov.pl/download/gfx/senat/pl/senatposiedzeniatematy/5700/drukisejmowe/342.pdf">Poland – Senat/Sejm print (342)</a>
 
@@ -44,18 +42,17 @@ Read: <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20S
 In Canada, Ukrainian community organisations and policymakers have publicly called for a **pathway to permanent residency** for displaced Ukrainians.  
 Read: <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">UCC – Dec 17, 2025 statement</a>
 
-## Employment: the UK is top-3 for jobs — but still “temporary”
+## Employment: the UK is in the top three for Ukrainian employment rates
 OECD data shows high labour-market participation by displaced Ukrainians across multiple host countries. On **page 64** of the OECD *International Migration Outlook 2025*, the report notes that in 2024 **Poland (78%)**, **Lithuania (72%)** and the **United Kingdom (69%)** recorded the highest employment rates, while **Czechia, Denmark, Estonia and the Netherlands** also reported rates close to or exceeding **60%**.  
 Read: <a href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/international-migration-outlook-2025_355ae9fd/ae26c893-en.pdf">OECD – International Migration Outlook 2025 (PDF)</a>
 
-By contrast, even where employment rates are below the UK’s 69% (or around 60%+), governments have still put clearer “earned stability” bridges on the table — linking longer status to work/self-sufficiency, allowing time under temporary protection to count (fully or partially), extending residence horizons to multiple years, or openly debating a PR pathway; this reinforces a simple point: high employment and integration can coexist with legal temporariness, but they do not have to.
+By contrast, even where employment rates are below the UK’s 69%, governments have still put clearer “earned stability” bridges on the table — linking longer status to work/self-sufficiency, allowing time under temporary protection to count (fully or partially), extending residence horizons to multiple years, or openly debating a PR pathway.
 
-For UK-specific context on “employment vs under-employment”, and why “switching to a work visa” is not scalable, see: <a href="https://bridgingfutures.uk/posts/uob-survey-displaced-ukrainians/">UoB survey – displaced Ukrainians</a> (our analysis includes an estimate that only ~8% of respondents who shared wages would meet the Skilled Worker salary requirement).
+## Why this matters for the UK
+Looking across international approaches, the practical question is consistent: what happens when “temporary” protection lasts for years and people build lives in the host country? In the UK context, this is especially visible because time on Ukraine schemes is currently treated for long-residence purposes alongside short-term routes like **Visitor, Short-term Student (English language) and Seasonal Worker** — even though, in everyday reality, Ukraine permission enables the kinds of work-and-life participation more commonly associated with **longer-term routes** that do lead somewhere. Many systems respond to this “long temporary” reality with some form of earned stability — clear criteria, a predictable timeline, and a durable endpoint (long-term residence or permanent status). In that spirit, it would be logical for the UK to consider counting time spent on Ukraine schemes toward long residence, or/and offering a dedicated, contribution-based ILR route for those who meet transparent requirements.
 
 Note: any “earned” route should be complemented by separate provisions for disabled people, carers, older people and other vulnerable groups, for whom labour-market thresholds are not an appropriate test of integration.
 
-## Why this matters for the UK
-Looking across international approaches, the practical question is consistent: what happens when “temporary” protection lasts for years and people build lives in the host country? In the UK context, this is especially visible because time on Ukraine schemes is currently treated for long-residence purposes alongside short-term routes like Visitor, Short-term Student (English language) and Seasonal Worker — even though, in everyday reality, Ukraine permission enables the kinds of work-and-life participation more commonly associated with longer-term routes that do lead somewhere. Many systems respond to this “long temporary” reality with some form of earned stability — clear criteria, a predictable timeline, and a durable endpoint (long-term residence or permanent status). In that spirit, it would be logical for the UK to consider counting time spent on Ukraine schemes toward long residence, or offering a dedicated, contribution-based ILR route for those who meet transparent requirements.
 
 ---
 
@@ -72,6 +69,7 @@ Sources:
 <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf">Australia – RAILS Subclass 851 briefing (PDF)</a> |
 <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">Canada – UCC statement (Dec 17, 2025)</a>
 </small>
+
 
 
 
