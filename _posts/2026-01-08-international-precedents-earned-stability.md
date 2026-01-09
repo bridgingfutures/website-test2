@@ -56,39 +56,56 @@ Briefing: [Refugee Advice & Casework Service (RAILS) – Subclass 851 (PDF)](htt
 In Canada, Ukrainian community organisations and policymakers are openly calling for a **pathway to permanent residency** for displaced Ukrainians (e.g., for CUAET holders and families).  
 Read: [UCC – Dec 17, 2025 statement](https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/)
 
-## Employment: a quick comparison to the UK (why “earned stability” is coherent)
+## Employment: the UK is top-3 for jobs — but still “temporary”
 
-In the UK, available survey evidence suggests Ukrainians are already contributing economically — but **legal temporariness remains unchanged**.
-For example, the University of Birmingham survey snapshot we previously covered found a high share of respondents economically active — with many working below their qualification level.  
-(Our summary post: [UoB survey – displaced Ukrainians](./2025-11-18-uob-survey-displaced-ukrainians.html))
+OECD data shows that Ukrainians’ labour market participation is already high in multiple countries.  
+On **page 64** of the OECD *International Migration Outlook 2025*, the report notes:
 
-By contrast, the examples above explicitly connect **work/integration** with **longer status**:
-- **Austria** ties eligibility to **insured employment / gainful activity**, and explicitly includes time with the displaced-person ID when assessing the 5-year residence period for Permanent Residence – EU.
-- **Czechia** builds a “special long-term residence” specifically for the **economically self-sufficient** and even treats temporary protection holders as permanent residents **for employment law purposes** — while also letting temporary-protection time count (partially) toward permanent residence.
-- **Poland** creates a longer (3-year) residence horizon for eligible people, easing repeat renewals.
-- **Australia** demonstrates that a permanent status option can exist for eligible cohorts.
-- **Canada** shows active mainstream policy debate about a PR pathway (even when not yet enacted).
+> “Several countries now report high levels of labour market participation. In 2024, **Poland (78%)**, **Lithuania (72%)** and the **United Kingdom (69%)** recorded the highest employment rates, while **Czechia, Denmark, Estonia and the Netherlands** also reported rates close to or exceeding **60%**.”
 
-## Why this matters for the UK
-These precedents show a practical policy idea that keeps coming up across countries:
+Read: <a href="https://www.oecd.org/en/publications/2025/11/international-migration-outlook-2025_355ae9fd/full-report/recent-developments-in-international-migration-movements-and-labour-market-inclusion-of-immigrants_203de29e.html">OECD – International Migration Outlook 2025 (employment rates)</a>  
+(PDF edition: <a href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/international-migration-outlook-2025_355ae9fd/ae26c893-en.pdf">download</a>)
 
-> If people are working, paying taxes, and integrating, **temporary protection should not trap them in permanent temporariness**.
+This is the key point for the UK debate: **the UK is already in the top three by Ukrainian employment rate** — i.e., integration through work is happening — yet the legal status remains **time-limited** under the Ukraine schemes.
 
-A UK approach could mirror the most “administratively realistic” parts of these models:
-- a defined **earned route** for economically self-sufficient Ukrainians, and/or
-- a rule that **time already spent** on Ukraine schemes **counts** (fully or partially) toward settlement.
+By contrast, several countries **with employment rates below the UK’s 69%** (or around 60%+) still provide clearer “earned stability” bridges:
+
+- **Austria** links the **RWR Card Plus** route to work/self-sufficiency, and explicitly includes time spent with the displaced-person ID when assessing the 5-year residence period for **Permanent Residence – EU**.  
+  <a href="https://www.wien.gv.at/english/e-government/documents/residence/thirdcountries/rwr-card-plus-ukraine.html">Stadt Wien – RWR Card Plus (Ukraine)</a>
+
+- **Czechia** created a **special long-term residence** option for the economically self-sufficient and also lets time on temporary protection count **partially (50%)** toward permanent residence.  
+  <a href="https://mv.gov.cz/clanek/vlada-schvalila-lex-ukrajina-7-ekonomicky-sobestacni-uprchlici-z-ukrajiny-budou-moci-ziskat-dlouhodoby-pobyt.aspx">MOI – Lex Ukrajina 7</a> |
+  <a href="https://ipc.gov.cz/zvlastni-dlouhodoby-pobyt/">IPC – Zvláštní dlouhodobý pobyt</a> |
+  <a href="https://www.psp.cz/sqw/text/orig2.sqw?idd=243031">Parliament text (t0727a0)</a>
+
+- **Poland** introduced a longer (3-year) residence horizon for eligible Ukrainians, reducing the churn of short renewals.  
+  <a href="https://dziennikustaw.gov.pl/DU/2025/337">Dziennik Ustaw (2025 poz. 337)</a> |
+  <a href="https://www.senat.gov.pl/download/gfx/senat/pl/senatposiedzeniatematy/5700/drukisejmowe/342.pdf">Senat/Sejm print (342)</a>
+
+- **Australia** shows that a permanent status option can exist for eligible cohorts (Subclass 851).  
+  <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf">RAILS – Subclass 851 (PDF)</a>
+
+- **Canada** demonstrates mainstream policy debate about a PR pathway (even if not yet enacted).  
+  <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">UCC – Dec 17, 2025 statement</a>
+
+For UK-specific context on “employment vs under-employment”, see our earlier survey summary:  
+<a href="./2025-11-18-uob-survey-displaced-ukrainians.html">UoB survey – displaced Ukrainians</a>
+
+**Why this matters:** these examples show a consistent policy logic across countries:  
+if people are working, paying taxes and integrating, temporary protection should not become **permanent temporariness**.
 
 ---
 
-## Sources
-- Austria (Vienna): https://www.wien.gv.at/english/e-government/documents/residence/thirdcountries/rwr-card-plus-ukraine.html
-- Austria (labour access note): https://www.sozialministerium.gv.at/en/Topics/Labour/Labour-Market/Work-and-migration.html
-- Czech Republic (Lex Ukrajina 7): https://mv.gov.cz/clanek/vlada-schvalila-lex-ukrajina-7-ekonomicky-sobestacni-uprchlici-z-ukrajiny-budou-moci-ziskat-dlouhodoby-pobyt.aspx
-- Czech Republic (IPC portal): https://ipc.gov.cz/zvlastni-dlouhodoby-pobyt/
-- Czech legal text (Parliament): https://www.psp.cz/sqw/text/orig2.sqw?idd=243031
-- Poland legal publication: https://dziennikustaw.gov.pl/DU/2025/337
-- Poland legislative materials (342): https://www.senat.gov.pl/download/gfx/senat/pl/senatposiedzeniatematy/5700/drukisejmowe/342.pdf
-- Germany (counting §24 time for citizenship – guidance): https://moenchengladbach.refugeesconnect.de/de/nachrichten/anrechnung-der-aufenthaltszeiten-nach-24-aufenthg-bei-erwerb-der-deutschen-staatsangehorigkeit
-- Germany (§24 switching guidance): https://moenchengladbach.refugeesconnect.de/de/nachrichten/offizielle-erlaeuterung-zum-wechsel-vom-24-aufenthg-in-andere-aufenthaltstitel
-- Australia (RAILS, Subclass 851 PDF): https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf
-- Canada (UCC statement, Dec 17 2025): https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/
+<br>
+<small>
+Sources:
+<a href="https://www.oecd.org/en/publications/2025/11/international-migration-outlook-2025_355ae9fd/full-report/recent-developments-in-international-migration-movements-and-labour-market-inclusion-of-immigrants_203de29e.html">OECD – International Migration Outlook 2025 (employment rates quote; PDF p.64)</a> |
+<a href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/international-migration-outlook-2025_355ae9fd/ae26c893-en.pdf">OECD – PDF download</a> |
+<a href="https://www.wien.gv.at/english/e-government/documents/residence/thirdcountries/rwr-card-plus-ukraine.html">Stadt Wien – RWR Card Plus for displaced persons from Ukraine</a> |
+<a href="https://mv.gov.cz/clanek/vlada-schvalila-lex-ukrajina-7-ekonomicky-sobestacni-uprchlici-z-ukrajiny-budou-moci-ziskat-dlouhodoby-pobyt.aspx">Czech MOI – Lex Ukrajina 7</a> |
+<a href="https://www.psp.cz/sqw/text/orig2.sqw?idd=243031">Czech Parliament – legal text (t0727a0)</a> |
+<a href="https://dziennikustaw.gov.pl/DU/2025/337">Poland – Dziennik Ustaw (2025 poz. 337)</a> |
+<a href="https://www.senat.gov.pl/download/gfx/senat/pl/senatposiedzeniatematy/5700/drukisejmowe/342.pdf">Poland – Senat/Sejm print (342)</a> |
+<a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf">Australia – RAILS Subclass 851 briefing (PDF)</a> |
+<a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">Canada – UCC statement (Dec 17, 2025)</a>
+</small>
