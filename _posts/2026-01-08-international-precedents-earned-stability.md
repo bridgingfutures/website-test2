@@ -4,7 +4,7 @@ title: "International precedents: when ‘temporary’ protection can start coun
 date: 2026-01-08
 categories: [Research]
 tags: [Ukraine, Temporary Protection, Settlement, ILR, Precedents]
-image: assets/img/posts/2026-01-08-international-precedents.jpg
+image: assets/img/posts/2026-01-08-international-precedents.png
 ---
 
 Many Ukrainians in the UK are working, paying taxes, and building lives — yet remain on time-limited leave with no dedicated route to settlement.
@@ -109,3 +109,4 @@ Sources:
 <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf">Australia – RAILS Subclass 851 briefing (PDF)</a> |
 <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">Canada – UCC statement (Dec 17, 2025)</a>
 </small>
+
