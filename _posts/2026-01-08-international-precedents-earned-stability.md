@@ -15,7 +15,7 @@ Below are a few clear, well-documented examples.
 
 ## Selected international precedents (with primary sources)
 
-### Austria (Vienna): a work-based route and time that can count
+### Austria: a work-based route and time that can count
 Vienna’s guidance explains a **Red-White-Red Card plus for displaced persons from Ukraine**, with eligibility linked to having an ID card for displaced persons and **having been gainfully employed / insured** (a work-and-contributions framing).  
 If the holder has lived in Austria for **at least five years**, they can apply for **Permanent Residence – EU**, and the page explicitly says that the **time with the displaced-person ID card is included**.  
 Read: [Stadt Wien – RWR Card plus for displaced persons from Ukraine](https://www.wien.gv.at/english/e-government/documents/residence/thirdcountries/rwr-card-plus-ukraine.html)
@@ -109,4 +109,5 @@ Sources:
 <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf">Australia – RAILS Subclass 851 briefing (PDF)</a> |
 <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">Canada – UCC statement (Dec 17, 2025)</a>
 </small>
+
 
