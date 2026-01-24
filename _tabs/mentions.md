@@ -60,7 +60,18 @@ Here we collect parliamentary mentions and actions related to the UK Ukraine sch
 
 <!-- Tabulator themes: light + dark -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator_simple.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator_midnight.min.css">
+<!-- Tabulator: two themes (light + dark). JS will toggle them -->
+<link id="tabulator-css-light"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator.min.css">
 
+<link id="tabulator-css-dark"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator_midnight.min.css"
+      disabled>
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
-<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=10"></script>
+
+<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=14"></script>
+
