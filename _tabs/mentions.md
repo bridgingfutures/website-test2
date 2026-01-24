@@ -7,3 +7,5 @@ layout: page
 ---
 
 Here we collect parliamentary mentions and actions related to the UK Ukraine schemes.
+
+{% include mentions-table.html %}
