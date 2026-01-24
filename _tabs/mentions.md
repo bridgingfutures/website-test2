@@ -7,37 +7,17 @@ layout: page
 render_with_liquid: true
 ---
 
-<!-- Tabulator: midnight theme (better for dark sites) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator_midnight.min.css">
 
 <style>
-  /* Make it blend with Chirpy typography a bit better */
-  #mentions-table .tabulator { font-size: 0.95rem; }
+  /* чуть ближе к Chirpy */
+  #mentions-table .tabulator { font-size: 0.95rem; border-radius: 10px; overflow: hidden; }
   #mentions-table a { text-decoration: underline; }
 </style>
-
-<div class="d-flex flex-wrap gap-2 mb-3">
-  <input id="mentions-search" class="form-control" style="max-width:420px"
-         placeholder="Search (name, summary, tags)…">
-  <select id="mentions-house" class="form-select" style="max-width:220px">
-    <option value="">House: All</option>
-    <option value="Commons">Commons</option>
-    <option value="Lords">Lords</option>
-  </select>
-  <select id="mentions-party" class="form-select" style="max-width:240px">
-    <option value="">Party: All</option>
-    <option value="Labour">Labour</option>
-    <option value="Conservative">Conservative</option>
-    <option value="Liberal Democrat">Liberal Democrat</option>
-    <option value="SNP">SNP</option>
-    <option value="Crossbench">Crossbench</option>
-  </select>
-</div>
 
 <div id="mentions-table"></div>
 
 <script>
-  // If this prints "null" — Jekyll не видит файл _data/mentions_table.yml
   window.MENTIONS_DATA = {{ site.data.mentions_table | jsonify }};
   console.log("Mentions rows:", Array.isArray(window.MENTIONS_DATA) ? window.MENTIONS_DATA.length : window.MENTIONS_DATA);
 </script>
@@ -45,69 +25,58 @@ render_with_liquid: true
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
 
 <script>
-  const table = new Tabulator("#mentions-table", {
-  data: window.MENTIONS_DATA || [],
-  layout: "fitColumns",
+  function initMentionsTable() {
+    // на случай повторного вызова (Chirpy иногда делает soft-nav)
+    if (window.__mentionsTableInited) return;
+    window.__mentionsTableInited = true;
 
-  // важно: убираем фиксированную высоту, чтобы страница была "одна" и список шел вниз
-  // height: "70vh",  // УДАЛИТЬ
+    const data = Array.isArray(window.MENTIONS_DATA) ? window.MENTIONS_DATA : [];
 
-  columns: [
-    { title: "Name", field: "name", widthGrow: 2 },
-    { title: "House", field: "house", width: 120 },
-    { title: "Party", field: "party", widthGrow: 1 },
-    { title: "Action", field: "action_type", widthGrow: 1 },
-    { title: "Date", field: "date", sorter: "date", width: 120 },
-    {
-      title: "Tags",
-      field: "tags",
-      widthGrow: 2,
-      formatter: (cell) => (cell.getValue() || []).join(", "),
-    },
-    { title: "Summary", field: "summary", widthGrow: 4 },
-    {
-      title: "Link",
-      field: "link",
-      width: 90,
-      hozAlign: "center",
-      formatter: (cell) => {
-        const url = cell.getValue();
-        return url ? `<a href="${url}" target="_blank" rel="noopener">open</a>` : "";
-      },
-    },
-  ],
+    const table = new Tabulator("#mentions-table", {
+      data,
+      layout: "fitColumns",
 
-  // сортировка по умолчанию (остается)
-  initialSort: [{ column: "date", dir: "desc" }],
-});
+      // ВАЖНО: без height и без pagination → таблица растёт вниз и показывает всё
+      // height: "70vh",      // НЕ НУЖНО
+      // pagination: true,    // НЕ НУЖНО
 
-  const elSearch = document.getElementById("mentions-search");
-  const elHouse  = document.getElementById("mentions-house");
-  const elParty  = document.getElementById("mentions-party");
+      initialSort: [{ column: "date", dir: "desc" }],
 
-  function applyFilters() {
-    table.clearFilter(true);
+      columns: [
+        { title: "Name", field: "name", widthGrow: 2, sorter: "string" },
+        { title: "House", field: "house", width: 120, sorter: "string" },
+        { title: "Party", field: "party", widthGrow: 1, sorter: "string" },
+        { title: "Action", field: "action_type", widthGrow: 1, sorter: "string" },
+        { title: "Date", field: "date", width: 120, sorter: "date" },
+        {
+          title: "Tags",
+          field: "tags",
+          widthGrow: 2,
+          sorter: (a, b) => (a || []).join(", ").localeCompare((b || []).join(", ")),
+          formatter: (cell) => (cell.getValue() || []).join(", "),
+        },
+        { title: "Summary", field: "summary", widthGrow: 4, sorter: "string" },
+        {
+          title: "Link",
+          field: "link",
+          width: 90,
+          hozAlign: "center",
+          sorter: false, // сортировка по ссылке обычно не нужна
+          formatter: (cell) => {
+            const url = cell.getValue();
+            return url ? `<a href="${url}" target="_blank" rel="noopener">open</a>` : "";
+          },
+        },
+      ],
+    });
 
-    const house = elHouse.value;
-    const party = elParty.value;
-    const q = (elSearch.value || "").toLowerCase().trim();
-
-    if (house) table.addFilter("house", "=", house);
-    if (party) table.addFilter("party", "=", party);
-
-    if (q) {
-      table.addFilter((row) => {
-        const hay = [
-          row.name, row.house, row.party, row.action_type,
-          row.summary, (row.tags || []).join(" ")
-        ].join(" ").toLowerCase();
-        return hay.includes(q);
-      });
-    }
+    console.log("Tabulator rendered rows:", table.getDataCount());
   }
 
-  elHouse.addEventListener("change", applyFilters);
-  elParty.addEventListener("change", applyFilters);
-  elSearch.addEventListener("input", applyFilters);
+  // Инициализация после полной загрузки страницы
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initMentionsTable);
+  } else {
+    initMentionsTable();
+  }
 </script>
-
