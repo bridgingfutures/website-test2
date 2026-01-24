@@ -1,7 +1,10 @@
 (function () {
-  function init() {
+  function build() {
     const tableEl = document.getElementById("mentions-table");
     const dataEl = document.getElementById("mentions-data");
+
+    console.log("[Mentions] tableEl:", !!tableEl, "dataEl:", !!dataEl);
+
     if (!tableEl || !dataEl) return;
 
     if (typeof Tabulator !== "function") {
@@ -9,10 +12,28 @@
       return;
     }
 
-    const data = JSON.parse((dataEl.textContent || "[]").trim());
+    const raw = (dataEl.textContent || "").trim();
+    console.log("[Mentions] raw length:", raw.length);
 
-    new Tabulator(tableEl, {
-      data,
+    let data = [];
+    try {
+      data = JSON.parse(raw || "[]");
+    } catch (e) {
+      console.error("[Mentions] JSON parse failed", e);
+      console.log("[Mentions] raw preview:", raw.slice(0, 200));
+      return;
+    }
+
+    console.log("[Mentions] rows:", Array.isArray(data) ? data.length : data);
+
+    // на случай повторной инициализации
+    if (tableEl._tab) {
+      tableEl._tab.destroy();
+      tableEl._tab = null;
+    }
+
+    tableEl._tab = new Tabulator(tableEl, {
+      data: Array.isArray(data) ? data : [],
       layout: "fitColumns",
       initialSort: [{ column: "date", dir: "desc" }],
       columns: [
@@ -42,6 +63,12 @@
         },
       ],
     });
+  }
+
+  function init() {
+    // Chirpy/Turbo иногда дорисовывает контент после события
+    setTimeout(build, 0);
+    setTimeout(build, 150);
   }
 
   document.addEventListener("DOMContentLoaded", init);
