@@ -20,7 +20,8 @@ Here we collect parliamentary mentions and actions related to the UK Ukraine sch
 <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
 
-<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=4"></script>
+<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=5"></script>
+
 
 
 
