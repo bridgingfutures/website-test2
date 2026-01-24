@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "International precedents: when ‘temporary’ protection can start counting toward permanence"
+title: "International precedents: when ‘temporary’ protection can start counting toward permanence. Regularly updated."
 date: 2026-01-08
 categories: [Research]
 tags: [Ukraine, Temporary Protection, Settlement, ILR, Precedents]
@@ -76,6 +76,7 @@ Sources:
 <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf">Australia – RAILS Subclass 851 briefing (PDF)</a> |
 <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">Canada – UCC statement (Dec 17, 2025)</a>
 </small>
+
 
 
 
