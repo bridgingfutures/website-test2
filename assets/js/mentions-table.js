@@ -1,115 +1,105 @@
 (function () {
-  const TABLE_ID = "mentions-table";
-  const DATA_ID = "mentions-data";
-
-  // Tabulator themes we include via <link> tags in the page:
-  const THEME_DARK = "tabulator_midnight";
-  const THEME_LIGHT = "tabulator_simple"; // you will include simple theme css too
-
+  // -----------------------------
+  // Theme sync (Chirpy <-> Tabulator)
+  // -----------------------------
   function getChirpyMode() {
-    // Chirpy stores mode in localStorage("mode") = "dark" | "light"
-    // Also sets <html data-mode="dark|light">
-    const htmlMode = document.documentElement.getAttribute("data-mode");
-    const lsMode = window.localStorage ? localStorage.getItem("mode") : null;
-    return (htmlMode || lsMode || "dark").toLowerCase();
+    const html = document.documentElement;
+
+    // Chirpy обычно ставит data-mode="dark|light"
+    const attr = html.getAttribute("data-mode");
+    if (attr === "dark" || attr === "light") return attr;
+
+    // запасные варианты (на случай кастомов/будущих версий)
+    if (html.classList.contains("dark")) return "dark";
+    if (html.classList.contains("light")) return "light";
+
+    // последний fallback
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
   }
 
-  function applyThemeClass(tableEl) {
+  function applyTabulatorTheme() {
+    const lightCss = document.getElementById("tabulator-css-light");
+    const darkCss = document.getElementById("tabulator-css-dark");
+    if (!lightCss || !darkCss) return;
+
     const mode = getChirpyMode();
-    tableEl.classList.remove(THEME_DARK, THEME_LIGHT);
-    tableEl.classList.add(mode === "light" ? THEME_LIGHT : THEME_DARK);
+    const isDark = mode === "dark";
+
+    // Включаем ровно один файл, второй отключаем
+    lightCss.disabled = isDark;
+    darkCss.disabled = !isDark;
   }
 
-  function parseData() {
-    const dataEl = document.getElementById(DATA_ID);
-    if (!dataEl) return [];
-    const raw = (dataEl.textContent || "").trim();
-    if (!raw) return [];
-    try {
-      const parsed = JSON.parse(raw);
-      return Array.isArray(parsed) ? parsed : [];
-    } catch (e) {
-      console.error("[Mentions] JSON parse failed", e);
-      return [];
-    }
-  }
-
-  function buildTable() {
-    const tableEl = document.getElementById(TABLE_ID);
-    const dataEl = document.getElementById(DATA_ID);
+  // -----------------------------
+  // Table build
+  // -----------------------------
+  function build() {
+    const tableEl = document.getElementById("mentions-table");
+    const dataEl = document.getElementById("mentions-data");
 
     if (!tableEl || !dataEl) return;
+
     if (typeof Tabulator !== "function") {
       console.error("[Mentions] Tabulator not loaded");
       return;
     }
 
-    // Ensure correct theme class BEFORE init
-    applyThemeClass(tableEl);
+    // применим тему ДО построения таблицы (важно для первого рендера)
+    applyTabulatorTheme();
 
-    const data = parseData();
+    const raw = (dataEl.textContent || "").trim();
+    let data = [];
+    try {
+      data = JSON.parse(raw || "[]");
+    } catch (e) {
+      console.error("[Mentions] JSON parse failed", e);
+      return;
+    }
 
-    // Destroy previous instance (turbo/theme changes)
+    // на случай повторной инициализации
     if (tableEl._tab) {
-      try {
-        tableEl._tab.destroy();
-      } catch (_) {}
+      tableEl._tab.destroy();
       tableEl._tab = null;
-      tableEl.innerHTML = "";
     }
 
     tableEl._tab = new Tabulator(tableEl, {
-      data,
+      data: Array.isArray(data) ? data : [],
       layout: "fitColumns",
-      responsiveLayout: false,
-      height: "auto",
-      // Default: newest -> oldest
+      // по умолчанию: новые сверху
       initialSort: [{ column: "date", dir: "desc" }],
 
       columns: [
-        { title: "Name", field: "name", sorter: "string", widthGrow: 2, minWidth: 140 },
-        { title: "House", field: "house", sorter: "string", width: 90, minWidth: 70 },
-        { title: "Party", field: "party", sorter: "string", width: 90, minWidth: 70 },
+        { title: "Name", field: "name", sorter: "string", width: 160, minWidth: 140 },
+        { title: "House", field: "house", sorter: "string", width: 90, minWidth: 80 },
+        { title: "Party", field: "party", sorter: "string", width: 90, minWidth: 80 },
+        { title: "Action", field: "action_type", sorter: "string", width: 160, minWidth: 120 },
 
-        // Make Action narrower and allow it to shrink:
-        {
-          title: "Action",
-          field: "action_type",
-          sorter: "string",
-          width: 140,
-          minWidth: 110,
-          widthShrink: 2,
-        },
-
-        // ISO date sorts correctly as string; also show as-is
-        { title: "Date", field: "date", sorter: "string", width: 110, minWidth: 95 },
+        // сортировка по ISO-дате будет работать корректно
+        { title: "Date", field: "date", sorter: "string", width: 110, minWidth: 105 },
 
         {
           title: "Quote",
           field: "quote",
           sorter: "string",
-          widthGrow: 6,
-          minWidth: 320,
+          widthGrow: 5,
           formatter: (cell) => {
             const row = cell.getRow().getData();
-            const text = row.quote || "";
+            const text = cell.getValue() || "";
             const url = row.link || "";
 
-            // Icon: "Open source" using FontAwesome external-link icon
+            // "Open source" иконка вместо ↗ (FontAwesome уже есть)
             const icon = url
-              ? `<a class="mentions-open" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="Open source">
-                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              ? `<a class="ms-2 text-decoration-none" href="${url}" target="_blank" rel="noopener" aria-label="Open source">
+                   <i class="fas fa-up-right-from-square"></i>
                  </a>`
               : "";
 
-            // No truncation here – let the cell wrap
-            const safeText = String(text)
-              .replace(/&/g, "&amp;")
-              .replace(/</g, "&lt;")
-              .replace(/>/g, "&gt;");
-
-            return `<div class="mentions-quote">
-                      <div class="mentions-quote-text">${safeText}</div>
+            // Не обрезаем текст многоточиями: пусть переносится
+            // (Tabulator сам держит высоту строки; переносы разрешим CSS ниже)
+            return `<div class="mentions-quote-cell d-flex align-items-start justify-content-between gap-2">
+                      <span class="mentions-quote-text">${escapeHtml(text)}</span>
                       ${icon}
                     </div>`;
           },
@@ -117,65 +107,106 @@
       ],
     });
 
-    // Force layout recalculation after fonts/theme applied
-    requestAnimationFrame(() => {
-      try {
-        tableEl._tab.redraw(true);
-      } catch (_) {}
-    });
-  }
-
-  function safeRebuildSequence() {
-    // Chirpy/Turbo + theme mode can settle after DOMContentLoaded
-    // Do several attempts — cheap and reliable.
-    buildTable();
-    setTimeout(buildTable, 80);
-    setTimeout(buildTable, 220);
-    setTimeout(buildTable, 600);
-  }
-
-  function onThemeToggle() {
-    const tableEl = document.getElementById(TABLE_ID);
-    if (!tableEl || !tableEl._tab) {
-      safeRebuildSequence();
-      return;
-    }
-
-    applyThemeClass(tableEl);
-
-    // Redraw after mode switch (CSS changes)
+    // после построения — ещё раз применим тему и принудительно перерисуем
+    // (иначе при первой загрузке Chirpy может позже поменять data-mode)
     setTimeout(() => {
-      try {
-        tableEl._tab.redraw(true);
-      } catch (_) {
-        safeRebuildSequence();
-      }
-    }, 50);
+      applyTabulatorTheme();
+      tableEl._tab && tableEl._tab.redraw(true);
+    }, 0);
+    setTimeout(() => {
+      applyTabulatorTheme();
+      tableEl._tab && tableEl._tab.redraw(true);
+    }, 150);
   }
 
-  function init() {
-    safeRebuildSequence();
+  // -----------------------------
+  // Helpers
+  // -----------------------------
+  function escapeHtml(str) {
+    return String(str)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
 
-    // Chirpy mode toggle button
-    const toggle = document.getElementById("mode-toggle");
-    if (toggle && !toggle._mentionsBound) {
-      toggle._mentionsBound = true;
-      toggle.addEventListener("click", () => {
-        // Chirpy applies mode asynchronously, so wait a bit
-        setTimeout(onThemeToggle, 60);
-        setTimeout(onThemeToggle, 180);
+  function ensureQuoteField() {
+    // если в YAML ещё осталось summary — пусть не ломается
+    const dataEl = document.getElementById("mentions-data");
+    if (!dataEl) return;
+    try {
+      const arr = JSON.parse((dataEl.textContent || "").trim() || "[]");
+      if (!Array.isArray(arr)) return;
+      let changed = false;
+      for (const r of arr) {
+        if (r && typeof r === "object") {
+          if (!("quote" in r) && "summary" in r) {
+            r.quote = r.summary;
+            changed = true;
+          }
+        }
+      }
+      if (changed) dataEl.textContent = JSON.stringify(arr);
+    } catch (_) {}
+  }
+
+  // -----------------------------
+  // Init + react to theme toggles
+  // -----------------------------
+  function init() {
+    ensureQuoteField();
+    build();
+
+    // Следим за сменой темы (Chirpy меняет data-mode/class на <html>)
+    const mo = new MutationObserver(() => {
+      applyTabulatorTheme();
+      const tableEl = document.getElementById("mentions-table");
+      if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
+    });
+
+    mo.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-mode", "class"],
+    });
+
+    // Подстрахуем переключение кнопкой режима
+    const modeBtn = document.getElementById("mode-toggle");
+    if (modeBtn) {
+      modeBtn.addEventListener("click", () => {
+        setTimeout(() => {
+          applyTabulatorTheme();
+          const tableEl = document.getElementById("mentions-table");
+          if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
+        }, 50);
       });
     }
 
-    // Also observe html[data-mode] changes (covers other ways of switching)
-    const mo = new MutationObserver((muts) => {
-      for (const m of muts) {
-        if (m.type === "attributes" && m.attributeName === "data-mode") {
-          onThemeToggle();
-        }
+    // CSS фикс: разрешаем перенос текста в Quote, чтобы не было "двух слов"
+    injectQuoteWrapCss();
+  }
+
+  function injectQuoteWrapCss() {
+    if (document.getElementById("mentions-quote-wrap-css")) return;
+    const s = document.createElement("style");
+    s.id = "mentions-quote-wrap-css";
+    s.textContent = `
+      #mentions-table .tabulator-cell {
+        white-space: normal !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
+        line-height: 1.35;
       }
-    });
-    mo.observe(document.documentElement, { attributes: true });
+      #mentions-table .tabulator-row {
+        height: auto !important;
+      }
+      #mentions-table .mentions-quote-text {
+        display: inline-block;
+        white-space: normal !important;
+        overflow-wrap: anywhere;
+      }
+    `;
+    document.head.appendChild(s);
   }
 
   document.addEventListener("DOMContentLoaded", init);
