@@ -41,13 +41,23 @@
         { title: "House", field: "house", sorter: "string", width: 120 },
         { title: "Party", field: "party", sorter: "string", widthGrow: 1 },
         { title: "Action", field: "action_type", sorter: "string", widthGrow: 1 },
-        { title: "Date", field: "date", sorter: "date", width: 120 },
+
+        // ✅ ISO YYYY-MM-DD отлично сортируется как строка
+        {
+          title: "Date",
+          field: "date",
+          sorter: "string",
+          headerSortStartingDir: "desc",
+          width: 120,
+        },
+
         {
           title: "Tags",
           field: "tags",
           widthGrow: 2,
           formatter: (cell) => (cell.getValue() || []).join(", "),
-          sorter: (a, b) => (a || []).join(", ").localeCompare((b || []).join(", ")),
+          sorter: (a, b) =>
+            (a || []).join(", ").localeCompare((b || []).join(", ")),
         },
         { title: "Summary", field: "summary", sorter: "string", widthGrow: 4 },
         {
@@ -58,7 +68,9 @@
           hozAlign: "center",
           formatter: (cell) => {
             const url = cell.getValue();
-            return url ? `<a href="${url}" target="_blank" rel="noopener">open</a>` : "";
+            return url
+              ? `<a href="${url}" target="_blank" rel="noopener">open</a>`
+              : "";
           },
         },
       ],
