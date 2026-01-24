@@ -46,38 +46,40 @@ render_with_liquid: true
 
 <script>
   const table = new Tabulator("#mentions-table", {
-    data: window.MENTIONS_DATA || [],
-    layout: "fitColumns",
-    height: "70vh",
-    pagination: true,
-    paginationSize: 25,
-    initialSort: [{ column: "date", dir: "desc" }],
-    columns: [
-      { title: "Name", field: "name", headerFilter: "input", widthGrow: 2 },
-      { title: "House", field: "house", headerFilter: true, width: 120 },
-      { title: "Party", field: "party", headerFilter: "input", widthGrow: 1 },
-      { title: "Action", field: "action_type", headerFilter: "input", widthGrow: 1 },
-      { title: "Date", field: "date", sorter: "date", width: 120 },
-      {
-        title: "Tags",
-        field: "tags",
-        headerFilter: "input",
-        widthGrow: 2,
-        formatter: (cell) => (cell.getValue() || []).join(", "),
+  data: window.MENTIONS_DATA || [],
+  layout: "fitColumns",
+
+  // важно: убираем фиксированную высоту, чтобы страница была "одна" и список шел вниз
+  // height: "70vh",  // УДАЛИТЬ
+
+  columns: [
+    { title: "Name", field: "name", widthGrow: 2 },
+    { title: "House", field: "house", width: 120 },
+    { title: "Party", field: "party", widthGrow: 1 },
+    { title: "Action", field: "action_type", widthGrow: 1 },
+    { title: "Date", field: "date", sorter: "date", width: 120 },
+    {
+      title: "Tags",
+      field: "tags",
+      widthGrow: 2,
+      formatter: (cell) => (cell.getValue() || []).join(", "),
+    },
+    { title: "Summary", field: "summary", widthGrow: 4 },
+    {
+      title: "Link",
+      field: "link",
+      width: 90,
+      hozAlign: "center",
+      formatter: (cell) => {
+        const url = cell.getValue();
+        return url ? `<a href="${url}" target="_blank" rel="noopener">open</a>` : "";
       },
-      { title: "Summary", field: "summary", headerFilter: "input", widthGrow: 4 },
-      {
-        title: "Link",
-        field: "link",
-        width: 90,
-        hozAlign: "center",
-        formatter: (cell) => {
-          const url = cell.getValue();
-          return url ? `<a href="${url}" target="_blank" rel="noopener">open</a>` : "";
-        },
-      },
-    ],
-  });
+    },
+  ],
+
+  // сортировка по умолчанию (остается)
+  initialSort: [{ column: "date", dir: "desc" }],
+});
 
   const elSearch = document.getElementById("mentions-search");
   const elHouse  = document.getElementById("mentions-house");
@@ -108,3 +110,4 @@ render_with_liquid: true
   elParty.addEventListener("change", applyFilters);
   elSearch.addEventListener("input", applyFilters);
 </script>
+
