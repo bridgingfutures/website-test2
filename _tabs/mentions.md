@@ -4,13 +4,21 @@ icon: fas fa-at
 order: 2
 permalink: /mentions/
 layout: page
-
+render_with_liquid: true
 ---
 
-<link href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator.min.css" rel="stylesheet">
+<!-- Tabulator: midnight theme (better for dark sites) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator_midnight.min.css">
+
+<style>
+  /* Make it blend with Chirpy typography a bit better */
+  #mentions-table .tabulator { font-size: 0.95rem; }
+  #mentions-table a { text-decoration: underline; }
+</style>
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-  <input id="mentions-search" class="form-control" style="max-width:420px" placeholder="Search (name, summary, tags)…">
+  <input id="mentions-search" class="form-control" style="max-width:420px"
+         placeholder="Search (name, summary, tags)…">
   <select id="mentions-house" class="form-select" style="max-width:220px">
     <option value="">House: All</option>
     <option value="Commons">Commons</option>
@@ -29,15 +37,16 @@ layout: page
 <div id="mentions-table"></div>
 
 <script>
-  // Данные из _data/mentions.yml
-  window.MENTIONS_DATA = {{ site.data.mentions | jsonify }};
+  // If this prints "null" — Jekyll не видит файл _data/mentions_table.yml
+  window.MENTIONS_DATA = {{ site.data.mentions_table | jsonify }};
+  console.log("Mentions rows:", Array.isArray(window.MENTIONS_DATA) ? window.MENTIONS_DATA.length : window.MENTIONS_DATA);
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
 
 <script>
   const table = new Tabulator("#mentions-table", {
-    data: window.MENTIONS_DATA,
+    data: window.MENTIONS_DATA || [],
     layout: "fitColumns",
     height: "70vh",
     pagination: true,
@@ -70,7 +79,6 @@ layout: page
     ],
   });
 
-  // Внешние фильтры
   const elSearch = document.getElementById("mentions-search");
   const elHouse  = document.getElementById("mentions-house");
   const elParty  = document.getElementById("mentions-party");
