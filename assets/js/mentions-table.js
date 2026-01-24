@@ -77,27 +77,33 @@
       layout: "fitColumns",
       placeholder: "No mentions yet.",
       initialSort: [{ column: "date", dir: "desc" }],
-      columns: [
-        { title: "Name", field: "name", sorter: "string", widthGrow: 2 },
-        { title: "House", field: "house", sorter: "string", width: 120 },
-        { title: "Party", field: "party", sorter: "string", widthGrow: 1 },
-        { title: "Action", field: "action_type", sorter: "string", widthGrow: 1 },
 
-        // ISO YYYY-MM-DD корректно сортируется как строка
+      columns: [
+        { title: "Name", field: "name", sorter: "string", widthGrow: 2, minWidth: 160 },
+
+        // Уже
+        { title: "House", field: "house", sorter: "string", width: 95 },
+
+        { title: "Party", field: "party", sorter: "string", width: 110 },
+
+        // Шире
+        { title: "Action", field: "action_type", sorter: "string", width: 170, minWidth: 170 },
+
         {
           title: "Date",
           field: "date",
-          sorter: "string",
+          sorter: "string", // ISO YYYY-MM-DD сортируется правильно
           headerSortStartingDir: "desc",
           width: 120,
         },
 
-        // Summary -> Quote, без Tags и без Link-колонки
+        // ✅ Quote берём из поля quote (не summary)
         {
           title: "Quote",
-          field: "summary",
+          field: "quote",
           sorter: "string",
-          widthGrow: 6,
+          widthGrow: 8,
+          minWidth: 420,
           formatter: function (cell) {
             var row = cell.getRow().getData() || {};
             var quote = escapeHtml(cell.getValue() || "");
@@ -126,7 +132,6 @@
   }
 
   function init() {
-    // Chirpy/Turbo может дорисовывать контент чуть позже
     setTimeout(build, 0);
     setTimeout(build, 150);
   }
