@@ -1,9 +1,8 @@
 (function () {
-  // --- SETTINGS (можешь менять тут при желании) ---
+  // --- Tabulator themes (v6+) ---
   var TABULATOR_CSS_DARK_ID = "tabulator-theme-dark";
   var TABULATOR_CSS_LIGHT_ID = "tabulator-theme-light";
 
-  // CDN темы Tabulator (v6+)
   var TABULATOR_CSS_DARK =
     "https://cdn.jsdelivr.net/npm/tabulator-tables@6.3.1/dist/css/tabulator_midnight.min.css";
   var TABULATOR_CSS_LIGHT =
@@ -23,25 +22,8 @@
 
     var css =
       "#mentions-table-wrap { width: 100%; }\n" +
-      "#mentions-table-toolbar {\n" +
-      "  display: flex;\n" +
-      "  justify-content: flex-end;\n" +
-      "  gap: 8px;\n" +
-      "  margin: 8px 0 10px 0;\n" +
-      "}\n" +
-      "#mentions-expand-btn {\n" +
-      "  border: 1px solid rgba(255,255,255,0.15);\n" +
-      "  background: transparent;\n" +
-      "  color: inherit;\n" +
-      "  padding: 6px 10px;\n" +
-      "  border-radius: 8px;\n" +
-      "  font-size: 0.9rem;\n" +
-      "  opacity: 0.85;\n" +
-      "}\n" +
-      "#mentions-expand-btn:hover { opacity: 1; }\n" +
-      "html[data-mode='light'] #mentions-expand-btn { border-color: rgba(0,0,0,0.15); }\n" +
       "\n" +
-      /* Full width mode: растягиваем main-content на всю ширину контейнера */
+      "/* Full width by default on this page */\n" +
       "body.mentions-fullwidth main[aria-label='Main Content']{\n" +
       "  max-width: 100% !important;\n" +
       "  flex: 0 0 100% !important;\n" +
@@ -80,18 +62,26 @@
   }
 
   function isDarkMode() {
-    // Chirpy обычно выставляет html[data-mode="dark|light"]
     var html = document.documentElement;
+    var body = document.body;
+
+    // 1) Chirpy can set html[data-mode="dark|light"]
     var mode = html.getAttribute("data-mode");
     if (mode === "dark") return true;
     if (mode === "light") return false;
 
-    // fallback: если атрибута нет — смотрим prefers-color-scheme
+    // 2) Fallback: some builds toggle classes instead
+    var htmlClass = (html.className || "").toLowerCase();
+    var bodyClass = (body && body.className ? body.className : "").toLowerCase();
+
+    if (htmlClass.includes("dark") || htmlClass.includes("dark-mode")) return true;
+    if (bodyClass.includes("dark") || bodyClass.includes("dark-mode")) return true;
+
+    // 3) Last resort: prefers-color-scheme
     return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
 
   function ensureTabulatorThemeCss() {
-    // Загружаем оба линка один раз, потом только включаем/выключаем
     var darkLink = document.getElementById(TABULATOR_CSS_DARK_ID);
     var lightLink = document.getElementById(TABULATOR_CSS_LIGHT_ID);
 
@@ -116,46 +106,16 @@
     lightLink.disabled = dark;
   }
 
-  function mountToolbarOnce() {
-    if (document.getElementById("mentions-table-toolbar")) return;
-
-    var wrap = document.getElementById("mentions-table-wrap");
-    var table = document.getElementById("mentions-table");
-    if (!wrap || !table) return;
-
-    var toolbar = document.createElement("div");
-    toolbar.id = "mentions-table-toolbar";
-
-    var btn = document.createElement("button");
-    btn.id = "mentions-expand-btn";
-    btn.type = "button";
-    btn.textContent = document.body.classList.contains("mentions-fullwidth")
-      ? "Collapse"
-      : "Expand";
-
-    btn.addEventListener("click", function () {
-      document.body.classList.toggle("mentions-fullwidth");
-      btn.textContent = document.body.classList.contains("mentions-fullwidth")
-        ? "Collapse"
-        : "Expand";
-
-      // Табулятору надо пересчитать размеры колонок
-      setTimeout(function () {
-        var tableEl = document.getElementById("mentions-table");
-        if (tableEl && tableEl._tab) {
-          tableEl._tab.redraw(true);
-        }
-      }, 50);
-    });
-
-    toolbar.appendChild(btn);
-    wrap.insertBefore(toolbar, table);
+  function forceFullWidthDefault() {
+    // Always expanded on Mentions page
+    if (!document.body.classList.contains("mentions-fullwidth")) {
+      document.body.classList.add("mentions-fullwidth");
+    }
   }
 
   function build() {
     var tableEl = document.getElementById("mentions-table");
     var dataEl = document.getElementById("mentions-data");
-
     if (!tableEl || !dataEl) return;
 
     if (typeof Tabulator !== "function") {
@@ -163,18 +123,17 @@
       return;
     }
 
+    forceFullWidthDefault();
     ensureTabulatorThemeCss();
     injectLocalCssOnce();
 
-    // Обернём таблицу в wrap, чтобы было куда вставить toolbar
+    // Wrap once (optional but safe)
     if (!document.getElementById("mentions-table-wrap")) {
       var wrap = document.createElement("div");
       wrap.id = "mentions-table-wrap";
       tableEl.parentNode.insertBefore(wrap, tableEl);
       wrap.appendChild(tableEl);
     }
-
-    mountToolbarOnce();
 
     var raw = (dataEl.textContent || "").trim();
     var data = [];
@@ -186,7 +145,7 @@
     }
     if (!Array.isArray(data)) data = [];
 
-    // Turbo/повторная инициализация
+    // Re-init safe for Turbo
     if (tableEl._tab) {
       tableEl._tab.destroy();
       tableEl._tab = null;
@@ -197,24 +156,21 @@
       layout: "fitColumns",
       placeholder: "No mentions yet.",
 
-      // ✅ по умолчанию: новые -> старые
+      // New -> Old by default
       initialSort: [{ column: "date", dir: "desc" }],
 
       columns: [
         { title: "Name", field: "name", sorter: "string", widthGrow: 2, minWidth: 150 },
-
-        // уже
         { title: "House", field: "house", sorter: "string", width: 85 },
-
         { title: "Party", field: "party", sorter: "string", width: 105 },
 
-        // ✅ Action теперь можно сужать: minWidth убран
+        // Action narrowable
         { title: "Action", field: "action_type", sorter: "string", width: 140 },
 
         {
           title: "Date",
           field: "date",
-          sorter: "string", // ISO YYYY-MM-DD сортируется корректно
+          sorter: "string", // ISO YYYY-MM-DD sorts correctly
           headerSortStartingDir: "desc",
           width: 115,
         },
@@ -224,7 +180,7 @@
           field: "quote",
           sorter: "string",
           widthGrow: 10,
-          minWidth: 420,
+          minWidth: 520,
           formatter: function (cell) {
             var row = cell.getRow().getData() || {};
             var quote = escapeHtml(cell.getValue() || "");
@@ -251,34 +207,53 @@
       ],
     });
 
-    // если после отрисовки надо поджать/пересчитать
     setTimeout(function () {
       if (tableEl._tab) tableEl._tab.redraw(true);
     }, 50);
   }
 
+  function hookThemeChanges() {
+    if (window.__mentionsThemeHooked) return;
+    window.__mentionsThemeHooked = true;
+
+    function apply() {
+      ensureTabulatorThemeCss();
+      var tableEl = document.getElementById("mentions-table");
+      if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
+    }
+
+    // 1) If Chirpy changes attributes/classes
+    var obs = new MutationObserver(function () {
+      apply();
+    });
+
+    obs.observe(document.documentElement, { attributes: true });
+    if (document.body) obs.observe(document.body, { attributes: true });
+
+    // 2) If user clicks the toggle button
+    document.addEventListener("click", function (e) {
+      var t = e.target;
+      var btn = t && t.closest ? t.closest("#mode-toggle") : null;
+      if (btn) {
+        // give Chirpy a moment to switch mode then apply
+        setTimeout(apply, 50);
+        setTimeout(apply, 200);
+      }
+    });
+
+    // 3) prefers-color-scheme changes
+    if (window.matchMedia) {
+      var mq = window.matchMedia("(prefers-color-scheme: dark)");
+      if (mq && mq.addEventListener) mq.addEventListener("change", apply);
+    }
+  }
+
   function init() {
+    hookThemeChanges();
+
+    // Chirpy/Turbo can render after events
     setTimeout(build, 0);
     setTimeout(build, 150);
-
-    // ✅ реагируем на переключение темы (Chirpy)
-    // следим за атрибутом data-mode у <html>
-    if (!window.__mentionsThemeObserver) {
-      window.__mentionsThemeObserver = new MutationObserver(function (mutations) {
-        for (var i = 0; i < mutations.length; i++) {
-          if (mutations[i].type === "attributes" && mutations[i].attributeName === "data-mode") {
-            ensureTabulatorThemeCss();
-            var tableEl = document.getElementById("mentions-table");
-            if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
-          }
-        }
-      });
-
-      window.__mentionsThemeObserver.observe(document.documentElement, {
-        attributes: true,
-        attributeFilter: ["data-mode"],
-      });
-    }
   }
 
   document.addEventListener("DOMContentLoaded", init);
