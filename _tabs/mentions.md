@@ -10,7 +10,24 @@ layout: page
   /* Hide auto page title (we use our own heading) */
   h1.dynamic-title { display: none; }
 
-  /* Make Tabulator fit Chirpy better */
+  /* ===== Mentions page: remove right panel and widen content ===== */
+  #panel-wrapper { display: none !important; }
+
+  /* Make main content take the space that used to be main + panel */
+  main.col-xl-9 { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+  main.col-lg-11 { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+  main.col-12 { width: 100% !important; max-width: 100% !important; }
+
+  /* Also widen the wrapper that holds footer */
+  #tail-wrapper.col-xl-9 { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+  #tail-wrapper.col-lg-11 { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+
+  /* Slightly reduce side padding on very wide screens */
+  @media (min-width: 1200px) {
+    .container.px-xxl-5 { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+  }
+
+  /* ===== Make Tabulator fit Chirpy better ===== */
   #mentions-table {
     margin-top: 0.75rem;
     border-radius: 0.75rem;
@@ -60,6 +77,7 @@ Here we collect parliamentary mentions and actions related to the UK Ukraine sch
 
 <!-- Tabulator themes: light + dark -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/css/tabulator_simple.min.css">
+
 <!-- Tabulator: two themes (light + dark). JS will toggle them -->
 <link id="tabulator-css-light"
       rel="stylesheet"
@@ -74,4 +92,3 @@ Here we collect parliamentary mentions and actions related to the UK Ukraine sch
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
 
 <script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=14"></script>
-
