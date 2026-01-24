@@ -1,7 +1,8 @@
 ---
 title: Mentions
 icon: fas fa-at
-order: 6
+order: 2
 permalink: /mentions/
 layout: page
+
 ---
