@@ -34,6 +34,7 @@ Here we collect parliamentary mentions and actions related to the UK Ukraine sch
      Табуляторные CSS будут подключаться и переключаться внутри mentions-table.js -->
 
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
-<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=10"></script>
+<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=12"></script>
+
 
 
