@@ -42,6 +42,13 @@ Read: <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20S
 In Canada, Ukrainian community organisations and policymakers have publicly called for a **pathway to permanent residency** for displaced Ukrainians.  
 Read: <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">UCC – Dec 17, 2025 statement</a>
 
+### New Zealand: a residence-class visa (not time-limited protection) + clear route to PR and citizenship
+New Zealand created a Ukraine Resident Visa for eligible Ukrainians already in the country under the 2022 Special Ukraine Visa framework. This is a residence-class visa (not a temporary protection extension), and Immigration NZ states that after 2 years on this visa, holders can apply for a Permanent Resident Visa. With residence status, people can also move toward citizenship via New Zealand’s standard presence requirements.
+Read: <a href="https://www.immigration.govt.nz/process-to-apply/once-you-have-a-visa/bringing-family-to-new-zealand/visas-for-family-of-ukrainians-in-new-zealand-translated-pages/ukraine-resident-visa/">Immigration NZ – Ukraine Resident Visa</a> |
+<a href="https://www.immigration.govt.nz/about-us/news-centre/ukraine-resident-visa-category-closing-in-march-2026/">Immigration NZ – closure notice (March 2026)</a> |
+<a href="https://www.immigration.govt.nz/visas/permanent-resident-visa">Immigration NZ – Permanent Resident Visa</a> |
+<a href="https://www.govt.nz/browse/passports-citizenship-and-identity/nz-citizenship/requirements-for-nz-citizenship/presence-requirements/">Govt.nz – citizenship presence requirements</a>
+
 ## Employment: the UK is in the top three for Ukrainian employment rates
 OECD data shows high labour-market participation by displaced Ukrainians across multiple host countries. On **page 64** of the OECD *International Migration Outlook 2025*, the report notes that in 2024 **Poland (78%)**, **Lithuania (72%)** and the **United Kingdom (69%)** recorded the highest employment rates, while **Czechia, Denmark, Estonia and the Netherlands** also reported rates close to or exceeding **60%**.  
 Read: <a href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/international-migration-outlook-2025_355ae9fd/ae26c893-en.pdf">OECD – International Migration Outlook 2025 (PDF)</a>
@@ -69,6 +76,7 @@ Sources:
 <a href="https://www.rails.org.au/sites/default/files/2024-10/24.10.16%20Subclass%20851%20Ukrainians.pdf">Australia – RAILS Subclass 851 briefing (PDF)</a> |
 <a href="https://www.ucc.ca/2025/12/17/ucc-joins-senator-kutcher-calling-on-government-to-provide-pathway-to-permanent-residency-for-displaced-ukrainians/">Canada – UCC statement (Dec 17, 2025)</a>
 </small>
+
 
 
 
