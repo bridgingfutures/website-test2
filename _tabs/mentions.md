@@ -4,6 +4,7 @@ icon: fas fa-at
 order: 2
 permalink: /mentions/
 layout: page
+panel: false
 ---
 
 <style>
@@ -20,7 +21,8 @@ Here we collect parliamentary mentions and actions related to the UK Ukraine sch
 <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
 
-<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=8"></script>
+<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=9"></script>
+
 
 
 
