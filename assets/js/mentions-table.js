@@ -71,10 +71,10 @@
       initialSort: [{ column: "date", dir: "desc" }],
 
       columns: [
-        { title: "Name", field: "name", sorter: "string", width: 160, minWidth: 140 },
-        { title: "House", field: "house", sorter: "string", width: 90, minWidth: 80 },
-        { title: "Party", field: "party", sorter: "string", width: 90, minWidth: 80 },
-        { title: "Action", field: "action_type", sorter: "string", width: 160, minWidth: 120 },
+        { title: "Name", field: "name", sorter: "string", width: 100, minWidth: 100 },
+        { title: "House", field: "house", sorter: "string", width: 70, minWidth: 70 },
+        { title: "Party", field: "party", sorter: "string", width: 70, minWidth: 70 },
+        { title: "Action", field: "action_type", sorter: "string", width: 110, minWidth: 110 },
 
         // сортировка по ISO-дате будет работать корректно
         { title: "Date", field: "date", sorter: "string", width: 110, minWidth: 105 },
