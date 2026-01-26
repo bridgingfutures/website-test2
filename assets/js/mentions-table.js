@@ -77,7 +77,7 @@
         { title: "Action", field: "action_type", sorter: "string", width: 105, minWidth: 105 },
 
         // сортировка по ISO-дате будет работать корректно
-        { title: "Date", field: "date", sorter: "string", width: 80, minWidth: 80 },
+        { title: "Date", field: "date", sorter: "string", width: 75, minWidth: 75 },
 
         {
           title: "Quote",
