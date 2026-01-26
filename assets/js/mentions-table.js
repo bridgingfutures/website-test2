@@ -84,6 +84,8 @@
           field: "quote",
           sorter: "string",
           widthGrow: 5,
+          minWidth: 260,     // ← поставь сколько хочешь (например 240–320)
+          widthShrink: 0,    // ← не даём этой колонке “схлопываться” первой
           formatter: (cell) => {
             const row = cell.getRow().getData();
             const text = cell.getValue() || "";
