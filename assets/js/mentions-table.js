@@ -74,7 +74,7 @@
         { title: "Name", field: "name", sorter: "string", width: 100, minWidth: 100 },
         { title: "House", field: "house", sorter: "string", width: 70, minWidth: 70 },
         { title: "Party", field: "party", sorter: "string", width: 85, minWidth: 85 },
-        { title: "Action", field: "action_type", sorter: "string", width: 105, minWidth: 105 },
+        { title: "Action", field: "action_type", sorter: "string", width: 90, minWidth: 90 },
 
         // сортировка по ISO-дате будет работать корректно
         { title: "Date", field: "date", sorter: "string", width: 75, minWidth: 75 },
