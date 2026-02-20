@@ -96,12 +96,17 @@ layout: page
   }
   .bf-hpop .bf-list{
     margin-top:.5rem;
-    max-height:240px;
-    overflow:auto;
-    border:1px solid rgba(127,127,127,.18);
+    max-height:none;          /* по умолчанию без ограничений */
+    overflow-y:visible;       /* скролл включим только при >20 */
+    border:1px solid rgba(127,127,127,.65);
     border-radius:.5rem;
     padding:.25rem;
   }
+
+  .bf-hpop .bf-list.bf-scroll{
+    overflow-y:auto;
+  }
+  
   .bf-hpop .bf-item{
     display:flex;
     gap:.5rem;
@@ -175,6 +180,7 @@ layout: page
 Here we collect parliamentary mentions and actions focused on long-term stability for people on the UK Ukraine schemes.
 
 {% include mentions-table.html %}
+
 
 
 
