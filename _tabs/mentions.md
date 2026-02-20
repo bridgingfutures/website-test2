@@ -134,6 +134,28 @@ layout: page
     border-color: rgba(127,127,127,.70) !important;
     background: rgba(127,127,127,.12) !important;
   }
+
+  /* ===== Wrap long text in narrow columns (no ellipsis) ===== */
+.tabulator .tabulator-cell[tabulator-field="name"],
+.tabulator .tabulator-cell[tabulator-field="house"],
+.tabulator .tabulator-cell[tabulator-field="party"],
+.tabulator .tabulator-cell[tabulator-field="action_type"]{
+  white-space: normal !important;      /* разрешаем перенос строк */
+  overflow: visible !important;        /* не режем содержимое */
+  text-overflow: clip !important;      /* убираем троеточие */
+  word-break: normal !important;       /* перенос по словам */
+  overflow-wrap: break-word !important;/* на случай очень длинных слов */
+}
+
+/* (опционально) если в хедере тоже где-то троеточие — убираем для этих колонок */
+.tabulator .tabulator-col[tabulator-field="name"] .tabulator-col-title,
+.tabulator .tabulator-col[tabulator-field="house"] .tabulator-col-title,
+.tabulator .tabulator-col[tabulator-field="party"] .tabulator-col-title,
+.tabulator .tabulator-col[tabulator-field="action_type"] .tabulator-col-title{
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
 </style>
 
 # Parliamentary mentions tracker
@@ -141,3 +163,4 @@ layout: page
 Here we collect parliamentary mentions and actions related to the UK Ukraine schemes.
 
 {% include mentions-table.html %}
+
