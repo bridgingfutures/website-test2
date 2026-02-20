@@ -156,6 +156,18 @@ layout: page
   overflow: visible !important;
   text-overflow: clip !important;
 }
+
+/* Make line-height in cells match quote text */
+.tabulator .tabulator-cell{
+  line-height: 1.35 !important;   /* как в .mentions-quote-text */
+}
+
+/* Optional: slightly tighter vertical padding for multi-line cells */
+.tabulator .tabulator-cell{
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
 </style>
 
 # Parliamentary mentions tracker
@@ -163,4 +175,5 @@ layout: page
 Here we collect parliamentary mentions and actions related to the UK Ukraine schemes.
 
 {% include mentions-table.html %}
+
 
