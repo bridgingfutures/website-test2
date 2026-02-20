@@ -296,11 +296,43 @@ function bfChecklistPopup(field, titleText) {
       // по умолчанию: новые сверху
       initialSort: [{ column: "date", dir: "desc" }],
 
-      columns: [
-        { title: "Name", field: "name", sorter: "string", width: 100, minWidth: 100 },
-        { title: "House", field: "house", sorter: "string", width: 70, minWidth: 70 },
-        { title: "Party", field: "party", sorter: "string", width: 85, minWidth: 85 },
-        { title: "Action", field: "action_type", sorter: "string", width: 90, minWidth: 90 },
+columns: [
+  {
+    title: "Name",
+    field: "name",
+    sorter: "string",
+    width: 100,
+    minWidth: 100,
+    headerPopup: bfNamePopup,
+    headerPopupIcon: '<i class="fa-solid fa-magnifying-glass"></i>',
+  },
+  {
+    title: "House",
+    field: "house",
+    sorter: "string",
+    width: 70,
+    minWidth: 70,
+    headerPopup: bfChecklistPopup("house", "House"),
+    headerPopupIcon: '<i class="fa-solid fa-filter"></i>',
+  },
+  {
+    title: "Party",
+    field: "party",
+    sorter: "string",
+    width: 85,
+    minWidth: 85,
+    headerPopup: bfChecklistPopup("party", "Party"),
+    headerPopupIcon: '<i class="fa-solid fa-filter"></i>',
+  },
+  {
+    title: "Action",
+    field: "action_type",
+    sorter: "string",
+    width: 90,
+    minWidth: 90,
+    headerPopup: bfChecklistPopup("action_type", "Action"),
+    headerPopupIcon: '<i class="fa-solid fa-filter"></i>',
+  },
 
         // сортировка по ISO-дате будет работать корректно
         { title: "Date", field: "date", sorter: "string", width: 75, minWidth: 75 },
