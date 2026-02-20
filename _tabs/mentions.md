@@ -16,12 +16,37 @@ layout: page
 <script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=15"></script>
 
 <style>
-  /* Hide title in the sidebar / page header */
+  /* Hide auto title */
   h1.dynamic-title { display: none; }
   header .post-title { display: none; }
 
-  /* Make table full width */
-  .post-content { max-width: 100% !important; }
+  /* ===== Mentions page: hide right panel (Recently Updated / Trending Tags) ===== */
+  #panel-wrapper { display: none !important; }
+
+  /* Widen main content to full width */
+  main.col-xl-9,
+  main.col-lg-11,
+  main.col-12 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Also widen footer wrapper */
+  #tail-wrapper.col-xl-9,
+  #tail-wrapper.col-lg-11 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Slightly reduce side padding on very wide screens */
+  @media (min-width: 1200px) {
+    .container.px-xxl-5 {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+  }
 
   /* Quote cell layout + open icon */
   .mentions-quote {
@@ -46,10 +71,7 @@ layout: page
 
   .mentions-open:hover { opacity: 1; }
 
-  /* Make the icon button visually consistent */
-  .mentions-open i {
-    font-size: .95rem;
-  }
+  .mentions-open i { font-size: .95rem; }
 
   /* ===== BF: header popup filters (Tabulator) ===== */
   .bf-hpop{ padding:.75rem; width:280px; max-width:80vw; }
@@ -90,9 +112,28 @@ layout: page
   }
   .bf-hpop .bf-item:hover{ background: rgba(127,127,127,.10); }
   .bf-hpop .bf-item input{ margin:0; }
+
   /* icon visibility */
   .tabulator .tabulator-header-popup-button{ opacity:.65; }
   .tabulator .tabulator-col.bf-filtered .tabulator-header-popup-button{ opacity:1; }
+
+  /* ===== BF popup: stronger borders / strokes ===== */
+  .bf-hpop .bf-btn {
+    border-color: rgba(127,127,127,.70) !important;
+  }
+  .bf-hpop .bf-input {
+    border-color: rgba(127,127,127,.65) !important;
+  }
+  .bf-hpop .bf-list {
+    border-color: rgba(127,127,127,.65) !important;
+  }
+  .bf-hpop .bf-item {
+    border: 1px solid rgba(127,127,127,.40) !important;
+  }
+  .bf-hpop .bf-item:hover {
+    border-color: rgba(127,127,127,.70) !important;
+    background: rgba(127,127,127,.12) !important;
+  }
 </style>
 
 # Parliamentary mentions tracker
