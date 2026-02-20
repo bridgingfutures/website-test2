@@ -66,10 +66,10 @@
     return Array.from(set).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
   }
 
-  function isDefaultExcludedAction(v) {
-    const s = String(v || "").trim();
-    // Exclude "Letter", "Letter (...)" and "EDM" by default
-    return /^letter\b/i.test(s) || /^edm\b/i.test(s);
+function isDefaultExcludedAction(v) {
+  const s = String(v || "").trim().toLowerCase();
+  // Disable ONLY exact "Letter" and exact "EDM"
+  return s === "letter" || s === "edm";
   }
 
   // ==========================================================
