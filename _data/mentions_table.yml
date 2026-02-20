@@ -652,3 +652,17 @@
   quote: To ask His Majesty's Government what plans they have to extend the right given to Ukrainian citizens to reside in,
     and benefit from relevant services in, the UK.
   link: https://questions-statements.parliament.uk/written-questions/detail/2025-03-03/hl5436
+- name: Mohammad TEST
+  house: Commons
+  party: Labour
+  action_type: EDM
+  date: '2026-02-10'
+  quote: To ask the Secretary of State for the Home Department, what steps the Government is taking to ensure that displaced Ukrainians in the United Kingdom have access to long-term residency...
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-09/111759
+- name: Mohammad TEST2
+  house: Commons
+  party: Labour
+  action_type: Letter
+  date: '2026-02-10'
+  quote: To ask the Secretary of State for the Home Department, what steps the Government is taking to ensure that displaced Ukrainians in the United Kingdom have access to long-term residency...
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-09/111759
