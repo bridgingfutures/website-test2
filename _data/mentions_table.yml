@@ -8,7 +8,7 @@
   link: https://questions-statements.parliament.uk/written-questions/detail/2024-10-09/8360
 - name: Rachael Maskell
   house: Commons
-  party: Labour
+  party: Labour (Co-op)
   action_type: Written Question
   date: '2025-02-10'
   quote: To ask the Secretary of State for the Home Department, what assessment she has made of the potential merits of enabling
@@ -76,7 +76,7 @@
   link: https://hansard.parliament.uk/Commons/2024-02-06/debates/799EECEC-BB48-421B-9086-D3A4E050AF4E/HomesForUkraineSchemePotentialExtension#contribution-497382FF-E11F-4AFC-B7F1-1B7D0DE38F6F
 - name: Dame Meg Hillier
   house: Commons
-  party: Labour
+  party: Labour (Co-op)
   action_type: Committee
   date: '2024-02-23'
   quote: '...they will make a decision about whether scheme visas will be extended and whether there will be options for permanent
@@ -344,13 +344,6 @@
   date: '2026-01-14'
   quote: I urge the Government to look at that to ensure that we have a process towards long-term settlement in the UK
   link: https://hansard.parliament.uk/Commons/2026-01-14/debates/37E21C6E-1185-4D6E-8923-FA6938AD6FAC/Ukraine#contribution-F3C6EB50-726E-4237-8CE5-EAA7D792D153
-- name: Martin Wrigley
-  house: Commons
-  party: Liberal Democrat
-  action_type: Debate
-  date: '2025-09-08'
-  quote: We should be considering including them in the five-year period for leave to remain in this country.
-  link: https://hansard.parliament.uk/commons/2025-09-08/debates/25EC2767-BBFF-4FE8-8F52-65B2C28CED10/IndefiniteLeaveToRemain#contribution-B4C43291-1A5B-4E48-BA44-AA97D841AD4B
 - name: Freddie van Mierlo
   house: Commons
   party: Liberal Democrat
@@ -548,7 +541,6 @@
   quote: '...make individuals under the Ukraine Toggle showing location of scheme eligible for indefinite permission to stay
     once their permission has expired...'
   link: https://hansard.parliament.uk/Lords/2025-09-08/debates/492E0D51-6FDB-456B-AC15-660676484CA9/BorderSecurityAsylumAndImmigrationBill?highlight=ukraine%20visa#contribution-1C04100E-BBDF-456C-9650-38AC36717BCA
-    ,
 - name: Baroness Kennedy of The Shaws
   house: Lords
   party: Labour
@@ -572,7 +564,6 @@
   quote: '...so that a person becomes eligible for indefinite leave to remain when that person has completed the maximum aggregate
     period of limited leave (including any extensions) available under the Ukraine humanitarian scheme...'
   link: https://hansard.parliament.uk/Lords/2025-09-08/debates/492E0D51-6FDB-456B-AC15-660676484CA9/BorderSecurityAsylumAndImmigrationBill?highlight=ukraine%20visa#contribution-1C04100E-BBDF-456C-9650-38AC36717BCA
-    ,
 - name: Lord Alton of Liverpool
   house: Lords
   party: Crossbench
@@ -652,38 +643,94 @@
   quote: To ask His Majesty's Government what plans they have to extend the right given to Ukrainian citizens to reside in,
     and benefit from relevant services in, the UK.
   link: https://questions-statements.parliament.uk/written-questions/detail/2025-03-03/hl5436
-- name: Mohammad TEST
+- name: Stuart C McDonald
+  house: Commons
+  party: Scottish National Party
+  action_type: Committee
+  date: '2025-03-03'
+  quote: Being recognised as a refugee gives you a whole host of rights; it can lead to settlement after five years, which some of the options that the Government are offering Ukrainians do not lead to.
+  link: https://committees.parliament.uk/oralevidence/9908/pdf/
+- name: Martin Wrigley
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2025-07-21'
+  quote: My basic ask of the Minister and the Government is to look at a longer-term extension of the Homes for Ukraine scheme to give our guests certainty, in some part of their lives at least.
+  link: https://hansard.parliament.uk/Commons/2025-07-21/debates/FF31E852-908D-4CBF-BBA1-3EEB5E1DEF7C/ExtendingTheUkrainePermissionExtensionScheme#contribution-292371E8-AB9E-497B-951B-E7C87A8B8954
+- name: Claire Young
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2025-07-21'
+  quote: They are looking for a more permanent solution than the temporary solution that we have. They have integrated well into British society. Does my hon. Friend agree that the Government should look at a permanent solution for people in that situation?
+  link: https://hansard.parliament.uk/Commons/2025-07-21/debates/FF31E852-908D-4CBF-BBA1-3EEB5E1DEF7C/ExtendingTheUkrainePermissionExtensionScheme#contribution-3C3D9C7C-EEB3-4226-9E13-9E07A10B4674
+- name: Victoria Collins
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2025-07-21'
+  quote: I have a Ukrainian guest who says they feel safe and settled in Berkhamsted and cannot return, and is asking for a long-term solution.
+  link: https://hansard.parliament.uk/Commons/2025-07-21/debates/FF31E852-908D-4CBF-BBA1-3EEB5E1DEF7C/ExtendingTheUkrainePermissionExtensionScheme#contribution-B4AADC12-5416-4BE9-A449-98AFD541F399
+- name: Manuela Perteghella
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2025-07-21'
+  quote: Does my hon. Friend agree that we a need bespoke route to permanent residency for Ukrainians who want to stay in the UK?
+  link: https://hansard.parliament.uk/Commons/2025-07-21/debates/FF31E852-908D-4CBF-BBA1-3EEB5E1DEF7C/ExtendingTheUkrainePermissionExtensionScheme#contribution-C3B2F945-E4E2-406B-AE4D-3F93B202E1BB
+- name: Sarah Russell
   house: Commons
   party: Labour
-  action_type: EDM
-  date: '2026-02-10'
-  quote: To ask the Secretary of State for the Home Department, what steps the Government is taking to ensure that displaced Ukrainians in the United Kingdom have access to long-term residency...
-  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-09/111759
-- name: Mohammad TEST2
+  action_type: Debate
+  date: '2025-07-21'
+  quote: Their parents are deeply concerned about what will happen to them going forward, so it would be appropriate for us to look to put in place permanent measures as soon as humanly possible.
+  link: https://hansard.parliament.uk/Commons/2025-07-21/debates/FF31E852-908D-4CBF-BBA1-3EEB5E1DEF7C/ExtendingTheUkrainePermissionExtensionScheme#contribution-568BB59D-8BDF-461F-9ECC-A6BB29693066
+- name: Douglas McAllister
   house: Commons
   party: Labour
-  action_type: Letter
-  date: '2026-02-10'
-  quote: To ask the Secretary of State for the Home Department, what steps the Government is taking to ensure that displaced Ukrainians in the United Kingdom have access to long-term residency...
-  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-09/111759
-- name: Mohammad TEST3
+  action_type: Debate
+  date: '2025-07-21'
+  quote: Does he agree with me that the Government must urgently review the short-term nature of their stay?
+  link: https://hansard.parliament.uk/Commons/2025-07-21/debates/FF31E852-908D-4CBF-BBA1-3EEB5E1DEF7C/ExtendingTheUkrainePermissionExtensionScheme#contribution-E97CC99B-3EC7-4F54-8E87-FAD2C57B339A
+- name: Ellie Chowns
+  house: Commons
+  party: Green
+  action_type: Debate
+  date: '2025-07-21'
+  quote: Will she therefore commit to reviewing the situation and giving them hope for the future?
+  link: https://hansard.parliament.uk/Commons/2025-07-21/debates/FF31E852-908D-4CBF-BBA1-3EEB5E1DEF7C/ExtendingTheUkrainePermissionExtensionScheme#contribution-F0B3448B-4728-43F3-A577-8A24559B585D
+- name: Martin Wrigley
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2026-01-29'
+  quote: ...we need to consider options and futures for those Ukrainians to whom we have given shelter in the UK under the Homes for Ukraine scheme, to give them an option for when they return, rather than assuming that peace is the point at which they must return?
+  link: https://hansard.parliament.uk/Commons/2026-01-29/debates/8E7CB381-297E-4AEE-B8AF-5BBA9FCB5CFA/UkraineNon-RecognitionOfRussian-OccupiedTerritories#contribution-152DA17B-5FEE-4F35-882A-92B482F82D0A
+- name: Alex Sobel
+  house: Commons
+  party: Labour (Co-op)
+  action_type: Debate
+  date: '2026-01-29'
+  quote: 'If we look back to the 1990s… that gives us a model. Many of the people who sought refuge here during those wars were able to stay, but now many have gone back—after we de-mined, supported the process of reconciliation and provided mental health support and other things…'
+  link: https://hansard.parliament.uk/Commons/2026-01-29/debates/8E7CB381-297E-4AEE-B8AF-5BBA9FCB5CFA/UkraineNon-RecognitionOfRussian-OccupiedTerritories#contribution-99F48FD9-98DA-49D1-A8E4-67214DB73185
+- name: Will Forster
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2026-02-02'
+  quote: The Liberal Democrats urge the Government to take necessary steps to provide Ukrainian refugees in the UK with the stability and security they deserve by establishing a clear pathway to ILR.
+  link: https://hansard.parliament.uk/commons/2026-02-02/debates/A0693D73-AD95-418E-86A6-FAB882454522/IndefiniteLeaveToRemain#contribution-E14F7D58-02C1-4A96-B050-B37F65C77EDC
+- name: James Naish
   house: Commons
   party: Labour
-  action_type: Letter (Author)
-  date: '2026-02-10'
-  quote: To ask the Secretary of State for the Home Department, what steps the Government is taking to ensure that displaced Ukrainians in the United Kingdom have access to long-term residency...
-  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-09/111759
-- name: Mohammad TEST4
+  action_type: Debate
+  date: '2026-02-02'
+  quote: The hon. Gentleman mentions Ukraine. Obviously, most Ukrainians will not be eligible for ILR as we are discussing it, and this may be an area where we do need rule changes. A lot of young people who have come over from Ukraine with their families will now know nothing other than our education system and our ways of life. Does he agree that it would be good if the Minister looked carefully at the approach we take with Ukrainians?
+  link: https://hansard.parliament.uk/commons/2026-02-02/debates/A0693D73-AD95-418E-86A6-FAB882454522/IndefiniteLeaveToRemain#contribution-CBAF2040-0966-4F3D-A326-16B088A77A3F
+- name: Mohammad Yasin
   house: Commons
   party: Labour
-  action_type: EDM (Author)
-  date: '2026-02-10'
-  quote: To ask the Secretary of State for the Home Department, what steps the Government is taking to ensure that displaced Ukrainians in the United Kingdom have access to long-term residency...
-  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-09/111759
-- name: Mohammad TEST5
-  house: Commons
-  party: Labour
-  action_type: Other mention
+  action_type: Written Question
   date: '2026-02-10'
   quote: To ask the Secretary of State for the Home Department, what steps the Government is taking to ensure that displaced Ukrainians in the United Kingdom have access to long-term residency...
   link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-09/111759
