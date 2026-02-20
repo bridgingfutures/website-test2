@@ -64,6 +64,232 @@
       tableEl._tab = null;
     }
 
+/* =========================
+   BF: header popup filters
+   ========================= */
+
+const BF_FILTER_STATE = {
+  name: "",
+  house: null,
+  party: null,
+  action_type: null,
+};
+
+function bfDisplayVal(v) {
+  const s = (v ?? "").toString().trim();
+  return s === "" ? "(blank)" : s;
+}
+
+function bfUniqSorted(arr) {
+  return [...new Set(arr)].sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: "base" })
+  );
+}
+
+function bfGetAllValues(table, field) {
+  // "all" — чтобы значения не зависели от текущей фильтрации
+  const data = table.getData("all"); // Tabulator поддерживает row ranges :contentReference[oaicite:1]{index=1}
+  return bfUniqSorted(data.map((r) => bfDisplayVal(r[field])));
+}
+
+function bfApplyFilters(table) {
+  const filters = [];
+
+  const q = (BF_FILTER_STATE.name || "").trim().toLowerCase();
+  if (q) {
+    filters.push({
+      field: "name",
+      type: (filterVal, rowVal) =>
+        bfDisplayVal(rowVal).toLowerCase().includes(filterVal),
+      value: q,
+    });
+  }
+
+  ["house", "party", "action_type"].forEach((field) => {
+    const selected = BF_FILTER_STATE[field];
+    if (Array.isArray(selected)) {
+      filters.push({
+        field,
+        type: (filterVal, rowVal) => filterVal.includes(bfDisplayVal(rowVal)),
+        value: selected,
+      });
+    }
+  });
+
+  if (filters.length) table.setFilter(filters);
+  else table.clearFilter();
+
+  // визуально отметим, где фильтр активен
+  ["name", "house", "party", "action_type"].forEach((field) => {
+    const col = table.getColumn(field);
+    if (!col) return;
+
+    const active =
+      field === "name"
+        ? !!q
+        : Array.isArray(BF_FILTER_STATE[field]) &&
+          BF_FILTER_STATE[field].length !== bfGetAllValues(table, field).length;
+
+    col.getElement()?.classList.toggle("bf-filtered", active);
+  });
+}
+
+function bfNamePopup(e, column, onRendered) {
+  const table = column.getTable(); // Column component умеет получить table :contentReference[oaicite:2]{index=2}
+
+  const wrap = document.createElement("div");
+  wrap.className = "bf-hpop";
+
+  const title = document.createElement("div");
+  title.className = "bf-title";
+  title.textContent = "Search in Name";
+
+  const input = document.createElement("input");
+  input.className = "bf-input";
+  input.type = "text";
+  input.placeholder = "Type name or surname...";
+  input.value = BF_FILTER_STATE.name || "";
+
+  const actions = document.createElement("div");
+  actions.className = "bf-actions";
+
+  const btnClear = document.createElement("button");
+  btnClear.type = "button";
+  btnClear.className = "bf-btn";
+  btnClear.textContent = "Clear";
+
+  actions.appendChild(btnClear);
+
+  input.addEventListener("input", () => {
+    BF_FILTER_STATE.name = input.value;
+    bfApplyFilters(table);
+  });
+
+  btnClear.addEventListener("click", () => {
+    BF_FILTER_STATE.name = "";
+    input.value = "";
+    bfApplyFilters(table);
+    input.focus();
+  });
+
+  wrap.appendChild(title);
+  wrap.appendChild(input);
+  wrap.appendChild(actions);
+
+  onRendered(() => input.focus());
+  return wrap;
+}
+
+function bfChecklistPopup(field, titleText) {
+  return function (e, column, onRendered) {
+    const table = column.getTable();
+
+    const values = bfGetAllValues(table, field);
+
+    // если фильтра нет — считаем, что выбраны все
+    const selected = new Set(
+      Array.isArray(BF_FILTER_STATE[field]) ? BF_FILTER_STATE[field] : values
+    );
+
+    const wrap = document.createElement("div");
+    wrap.className = "bf-hpop";
+
+    const title = document.createElement("div");
+    title.className = "bf-title";
+    title.textContent = titleText;
+
+    const search = document.createElement("input");
+    search.className = "bf-input";
+    search.type = "text";
+    search.placeholder = "Search values...";
+
+    const actions = document.createElement("div");
+    actions.className = "bf-actions";
+
+    const btnAll = document.createElement("button");
+    btnAll.type = "button";
+    btnAll.className = "bf-btn";
+    btnAll.textContent = "All";
+
+    const btnNone = document.createElement("button");
+    btnNone.type = "button";
+    btnNone.className = "bf-btn";
+    btnNone.textContent = "None";
+
+    actions.appendChild(btnAll);
+    actions.appendChild(btnNone);
+
+    const list = document.createElement("div");
+    list.className = "bf-list";
+
+    function commitAndApply() {
+      // Если выбраны ВСЕ — фильтр снимаем (null).
+      // Иначе — сохраняем массив выбранных (включая пустой => таблица станет пустой)
+      BF_FILTER_STATE[field] =
+        selected.size === values.length ? null : Array.from(selected);
+
+      bfApplyFilters(table);
+    }
+
+    function renderList() {
+      const q = search.value.trim().toLowerCase();
+      list.innerHTML = "";
+
+      values.forEach((v) => {
+        if (q && !v.toLowerCase().includes(q)) return;
+
+        const label = document.createElement("label");
+        label.className = "bf-item";
+
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.checked = selected.has(v);
+
+        const text = document.createElement("span");
+        text.textContent = v;
+
+        cb.addEventListener("change", () => {
+          if (cb.checked) selected.add(v);
+          else selected.delete(v);
+
+          commitAndApply();
+        });
+
+        label.appendChild(cb);
+        label.appendChild(text);
+        list.appendChild(label);
+      });
+    }
+
+    search.addEventListener("input", renderList);
+
+    btnAll.addEventListener("click", () => {
+      values.forEach((v) => selected.add(v));
+      renderList();
+      commitAndApply();
+    });
+
+    btnNone.addEventListener("click", () => {
+      selected.clear();
+      renderList();
+      commitAndApply();
+    });
+
+    wrap.appendChild(title);
+    wrap.appendChild(search);
+    wrap.appendChild(actions);
+    wrap.appendChild(list);
+
+    renderList();
+    onRendered(() => search.focus());
+
+    return wrap;
+  };
+}
+
+
+
+    
     tableEl._tab = new Tabulator(tableEl, {
       data: Array.isArray(data) ? data : [],
       layout: "fitColumns",
