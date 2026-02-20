@@ -66,10 +66,10 @@
     return Array.from(set).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
   }
 
-function isDefaultExcludedAction(v) {
-  const s = String(v || "").trim().toLowerCase();
-  // Disable ONLY exact "Letter" and exact "EDM"
-  return s === "letter" || s === "edm";
+  function isDefaultExcludedAction(v) {
+    const s = String(v || "").trim().toLowerCase();
+    // Disable ONLY exact "Letter" and exact "EDM"
+    return s === "letter" || s === "edm";
   }
 
   // ==========================================================
@@ -178,6 +178,38 @@ function isDefaultExcludedAction(v) {
       }
     }
 
+    // ---- auto height: grow until 20 items, then scroll ----
+    function adjustListHeight() {
+      const LIMIT = 20;
+
+      const needsScroll = allValues.length > LIMIT;
+
+      // Toggle class (your CSS uses .bf-list.bf-scroll for overflow)
+      list.classList.toggle("bf-scroll", needsScroll);
+
+      // Also set inline styles as a safety net (in case CSS is cached / old)
+      if (!needsScroll) {
+        list.style.maxHeight = "none";
+        list.style.overflowY = "visible";
+        return;
+      }
+
+      // Measure row height from DOM (more reliable than guessing)
+      const firstItem = list.querySelector(".bf-item");
+      const rowH = firstItem ? firstItem.getBoundingClientRect().height : 32;
+
+      const targetRows = Math.min(LIMIT, allValues.length);
+
+      // a bit of padding so last row isn't clipped
+      const desiredPx = Math.ceil(targetRows * rowH + 12);
+
+      // Cap to 60% of viewport height so popup stays usable
+      const capPx = Math.floor(window.innerHeight * 0.6);
+
+      list.style.maxHeight = Math.min(desiredPx, capPx) + "px";
+      list.style.overflowY = "auto";
+    }
+
     btnAll.addEventListener("click", () => {
       selectedSet.clear();
       for (const v of allValues) selectedSet.add(v);
@@ -196,6 +228,10 @@ function isDefaultExcludedAction(v) {
     wrap.appendChild(list);
 
     render();
+
+    // Wait a tick so DOM is laid out, then measure
+    requestAnimationFrame(adjustListHeight);
+
     return wrap;
   }
 
@@ -252,7 +288,8 @@ function isDefaultExcludedAction(v) {
 
       if (houseValues.length && !state.house.has(String(rowData.house || "").trim())) return false;
       if (partyValues.length && !state.party.has(String(rowData.party || "").trim())) return false;
-      if (actionValues.length && !state.action.has(String(rowData.action_type || "").trim())) return false;
+      if (actionValues.length && !state.action.has(String(rowData.action_type || "").trim()))
+        return false;
 
       return true;
     }
