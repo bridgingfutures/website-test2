@@ -1,21 +1,21 @@
 (function () {
   "use strict";
 
+  let table = null;
+  let themeObserver = null;
+
   // ==========================================================
   // Theme sync (Chirpy <-> Tabulator)
   // ==========================================================
   function getChirpyMode() {
     const html = document.documentElement;
 
-    // Chirpy normally sets data-mode="dark|light"
     const attr = html.getAttribute("data-mode");
     if (attr === "dark" || attr === "light") return attr;
 
-    // fallbacks (in case Chirpy changes internals)
     if (html.classList.contains("dark")) return "dark";
     if (html.classList.contains("light")) return "light";
 
-    // last fallback
     return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
@@ -68,7 +68,7 @@
 
   function isDefaultExcludedAction(v) {
     const s = String(v || "").trim();
-    // exclude "Letter", "Letter (...)" and "EDM" by default
+    // Exclude "Letter", "Letter (...)" and "EDM" by default
     return /^letter\b/i.test(s) || /^edm\b/i.test(s);
   }
 
@@ -114,9 +114,7 @@
     wrap.appendChild(input);
     wrap.appendChild(actions);
 
-    // focus after render
     setTimeout(() => input.focus(), 0);
-
     return wrap;
   }
 
@@ -151,27 +149,33 @@
 
     const checkboxes = [];
 
-    for (const v of allValues) {
-      const row = document.createElement("label");
-      row.className = "bf-item";
+    function render() {
+      list.innerHTML = "";
+      checkboxes.length = 0;
 
-      const cb = document.createElement("input");
-      cb.type = "checkbox";
-      cb.checked = selectedSet.has(v);
-      cb.addEventListener("change", () => {
-        if (cb.checked) selectedSet.add(v);
-        else selectedSet.delete(v);
-        onApply();
-      });
+      for (const v of allValues) {
+        const row = document.createElement("label");
+        row.className = "bf-item";
 
-      const text = document.createElement("span");
-      text.textContent = v;
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.checked = selectedSet.has(v);
 
-      row.appendChild(cb);
-      row.appendChild(text);
-      list.appendChild(row);
+        cb.addEventListener("change", () => {
+          if (cb.checked) selectedSet.add(v);
+          else selectedSet.delete(v);
+          onApply();
+        });
 
-      checkboxes.push({ v, cb });
+        const text = document.createElement("span");
+        text.textContent = v;
+
+        row.appendChild(cb);
+        row.appendChild(text);
+        list.appendChild(row);
+
+        checkboxes.push({ v, cb });
+      }
     }
 
     btnAll.addEventListener("click", () => {
@@ -190,13 +194,15 @@
     wrap.appendChild(title);
     wrap.appendChild(actions);
     wrap.appendChild(list);
+
+    render();
     return wrap;
   }
 
   // ==========================================================
   // Build table
   // ==========================================================
-  function build() {
+  function buildMentionsTable() {
     const tableEl = document.getElementById("mentions-table");
     const dataEl = document.getElementById("mentions-data");
     if (!tableEl || !dataEl) return;
@@ -206,36 +212,36 @@
       return;
     }
 
-    // Apply theme BEFORE first render
+    // Theme BEFORE first render
     applyTabulatorTheme();
 
     // Parse data
-    const raw = (dataEl.textContent || "").trim();
     let data = [];
     try {
+      const raw = (dataEl.textContent || "").trim();
       data = JSON.parse(raw || "[]");
+      if (!Array.isArray(data)) data = [];
     } catch (e) {
       console.error("[Mentions] JSON parse failed", e);
       return;
     }
-    if (!Array.isArray(data)) data = [];
 
-    // Backward compat: if YAML had "summary", map it to "quote"
+    // Back-compat: summary -> quote
     for (const r of data) {
       if (r && typeof r === "object" && !("quote" in r) && "summary" in r) r.quote = r.summary;
     }
 
-    // Filter values
+    // Domains for filters
     const houseValues = uniqueSorted(data.map((d) => d.house));
     const partyValues = uniqueSorted(data.map((d) => d.party));
     const actionValues = uniqueSorted(data.map((d) => d.action_type));
 
-    // State (Sets are stable references; we mutate them, don't reassign)
+    // State
     const state = {
       nameQuery: "",
       house: new Set(houseValues),
       party: new Set(partyValues),
-      action: new Set(actionValues.filter((v) => !isDefaultExcludedAction(v))),
+      action: new Set(actionValues.filter((v) => !isDefaultExcludedAction(v))), // Letter/EDM off by default
     };
 
     // Row filter
@@ -251,180 +257,191 @@
       return true;
     }
 
-    // Apply filter + update header indicators
-    function applyFilters() {
-      if (!tableEl._tab) return;
-      tableEl._tab.setFilter(rowFilter);
-      updateFilteredIndicators();
-    }
-
     function updateFilteredIndicators() {
-      if (!tableEl._tab) return;
+      if (!table) return;
 
       const mark = (field, isFiltered) => {
-        const col = tableEl._tab.getColumn(field);
+        const col = table.getColumn(field);
         if (!col) return;
         const el = col.getElement && col.getElement();
         if (!el) return;
         el.classList.toggle("bf-filtered", !!isFiltered);
       };
 
+      mark("name", !!state.nameQuery);
       mark("house", state.house.size !== houseValues.length);
       mark("party", state.party.size !== partyValues.length);
       mark("action_type", state.action.size !== actionValues.length);
-      mark("name", !!state.nameQuery);
     }
 
-    // Destroy old table if any
-    if (tableEl._tab) {
-      tableEl._tab.destroy();
-      tableEl._tab = null;
+    function applyFilters() {
+      if (!table) return;
+      table.setFilter(rowFilter);
+      updateFilteredIndicators();
     }
 
-    tableEl._tab = new Tabulator(tableEl, {
-      data,
-      layout: "fitColumns",
-      initialSort: [{ column: "date", dir: "desc" }],
+    // Kill previous table / observer if any
+    if (table) {
+      try {
+        table.destroy();
+      } catch (_) {}
+      table = null;
+    }
+    if (themeObserver) {
+      try {
+        themeObserver.disconnect();
+      } catch (_) {}
+      themeObserver = null;
+    }
 
-      columns: [
-  {
-    title: "Name",
-    field: "name",
-    sorter: "string",
-    minWidth: 160,
-    widthGrow: 0,
-    widthShrink: 0,
-    headerPopup: () => makeNamePopup(state, applyFilters),
-    headerPopupIcon: () => "<i class='fas fa-search'></i>",
-  },
-  {
-    title: "House",
-    field: "house",
-    sorter: "string",
-    minWidth: 100,
-    widthGrow: 0,
-    widthShrink: 0,
-    headerPopup: () =>
-      makeChecklistPopup({
-        titleText: "House",
-        allValues: houseValues,
-        selectedSet: state.house,
-        onApply: applyFilters,
-      }),
-    headerPopupIcon: () => "<i class='fas fa-filter'></i>",
-  },
-  {
-    title: "Party",
-    field: "party",
-    sorter: "string",
-    minWidth: 160,
-    widthGrow: 0,
-    widthShrink: 0,
-    headerPopup: () =>
-      makeChecklistPopup({
-        titleText: "Party",
-        allValues: partyValues,
-        selectedSet: state.party,
-        onApply: applyFilters,
-      }),
-    headerPopupIcon: () => "<i class='fas fa-filter'></i>",
-  },
-  {
-    title: "Action",
-    field: "action_type",
-    sorter: "string",
-    minWidth: 140,
-    widthGrow: 0,
-    widthShrink: 0,
-    headerPopup: () =>
-      makeChecklistPopup({
-        titleText: "Action",
-        allValues: actionValues,
-        selectedSet: state.action,
-        onApply: applyFilters,
-      }),
-    headerPopupIcon: () => "<i class='fas fa-filter'></i>",
-  },
-  {
-    title: "Date",
-    field: "date",
-    sorter: "string",
-    minWidth: 110,
-    widthGrow: 0,
-    widthShrink: 0,
-  },
-  {
-    title: "Quote",
-    field: "quote",
-    sorter: "string",
-    minWidth: 320,
-    widthGrow: 10,   // забирает всё “остаточное”
-    widthShrink: 1,
-    formatter: (cell) => {
+    // Quote formatter (text + open icon)
+    function quoteFormatter(cell) {
       const row = cell.getRow().getData();
-      const text = cell.getValue() || "";
-      const url = row.link || "";
-
+      const text = escapeHtml(cell.getValue() || "");
+      const url = row.link ? String(row.link) : "";
       const icon = url
-        ? `<a class="mentions-open" href="${url}" target="_blank" rel="noopener" aria-label="Open source">
+        ? `<a class="mentions-open" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="Open source">
              <i class="fas fa-up-right-from-square"></i>
            </a>`
         : "";
 
       return `<div class="mentions-quote">
-                <span class="mentions-quote-text">${escapeHtml(text)}</span>
+                <span class="mentions-quote-text">${text}</span>
                 ${icon}
               </div>`;
-    },
-  },
-],
+    }
+
+    // Build Tabulator
+    table = new Tabulator(tableEl, {
+      data,
+      layout: "fitColumns",
+      placeholder: "No matching entries",
+      initialSort: [{ column: "date", dir: "desc" }],
+
+      responsiveLayout: false,
+      movableColumns: false,
+
+      columns: [
+        {
+          title: "Name",
+          field: "name",
+          sorter: "string",
+          width: 180,
+          minWidth: 180,
+          widthGrow: 0,
+          widthShrink: 0,
+          headerPopup: () => makeNamePopup(state, applyFilters),
+          headerPopupIcon: () => "<i class='fas fa-magnifying-glass'></i>",
+        },
+        {
+          title: "House",
+          field: "house",
+          sorter: "string",
+          width: 120,
+          minWidth: 120,
+          widthGrow: 0,
+          widthShrink: 0,
+          headerPopup: () =>
+            makeChecklistPopup({
+              titleText: "House",
+              allValues: houseValues,
+              selectedSet: state.house,
+              onApply: applyFilters,
+            }),
+          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
+        },
+        {
+          title: "Party",
+          field: "party",
+          sorter: "string",
+          width: 190,
+          minWidth: 190,
+          widthGrow: 0,
+          widthShrink: 0,
+          headerPopup: () =>
+            makeChecklistPopup({
+              titleText: "Party",
+              allValues: partyValues,
+              selectedSet: state.party,
+              onApply: applyFilters,
+            }),
+          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
+        },
+        {
+          title: "Action",
+          field: "action_type",
+          sorter: "string",
+          width: 150,
+          minWidth: 150,
+          widthGrow: 0,
+          widthShrink: 0,
+          headerPopup: () =>
+            makeChecklistPopup({
+              titleText: "Action",
+              allValues: actionValues,
+              selectedSet: state.action,
+              onApply: applyFilters,
+            }),
+          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
+        },
+        {
+          title: "Date",
+          field: "date",
+          sorter: "string", // ISO yyyy-mm-dd sorts fine as string
+          width: 115,
+          minWidth: 115,
+          widthGrow: 0,
+          widthShrink: 0,
+        },
+        {
+          title: "Quote",
+          field: "quote",
+          sorter: "string",
+          minWidth: 340,
+          widthGrow: 10, // take all remaining space
+          widthShrink: 1,
+          formatter: quoteFormatter,
+          headerSort: false,
+        },
+      ],
     });
 
-    // Initial filter (hides Letter/EDM by default when present)
+    // Initial filter: hides Letter/EDM by default when present
     applyFilters();
 
-    // Chirpy may update data-mode slightly later; re-apply theme
+    // Re-apply theme (Chirpy may update mode after render)
     setTimeout(() => {
       applyTabulatorTheme();
-      tableEl._tab && tableEl._tab.redraw(true);
+      table && table.redraw(true);
     }, 0);
     setTimeout(() => {
       applyTabulatorTheme();
-      tableEl._tab && tableEl._tab.redraw(true);
+      table && table.redraw(true);
     }, 150);
-  }
 
-  // ==========================================================
-  // Init + react to theme toggles (Chirpy)
-  // ==========================================================
-  function init() {
-    build();
-
-    // Watch for theme changes on <html>
-    const mo = new MutationObserver(() => {
+    // Watch theme changes on <html>
+    themeObserver = new MutationObserver(() => {
       applyTabulatorTheme();
-      const tableEl = document.getElementById("mentions-table");
-      if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
+      table && table.redraw(true);
     });
 
-    mo.observe(document.documentElement, {
+    themeObserver.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["data-mode", "class"],
     });
 
-    // Extra safety: Chirpy's mode toggle button
+    // Extra safety: Chirpy mode button
     const modeBtn = document.getElementById("mode-toggle");
     if (modeBtn) {
       modeBtn.addEventListener("click", () => {
         setTimeout(() => {
           applyTabulatorTheme();
-          const tableEl = document.getElementById("mentions-table");
-          if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
+          table && table.redraw(true);
         }, 50);
       });
     }
   }
 
-  document.addEventListener("DOMContentLoaded", init);
-  document.addEventListener("turbo:load", init);
+  document.addEventListener("DOMContentLoaded", buildMentionsTable);
+  document.addEventListener("turbo:load", buildMentionsTable);
 })();
