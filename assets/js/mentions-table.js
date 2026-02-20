@@ -166,4 +166,163 @@
           cb.type = 'checkbox';
           cb.checked = state[field].has(v);
 
-          cb.ad
+          cb.addEventListener('change', () => {
+            if (cb.checked) state[field].add(v);
+            else state[field].delete(v);
+            applyFilters();
+          });
+
+          const txt = el('span', 'bf-item-text', v);
+          label.appendChild(cb);
+          label.appendChild(txt);
+          list.appendChild(label);
+        }
+      };
+
+      actions.appendChild(
+        makeButton('All', () => {
+          state[field] = new Set(values[field]);
+          applyFilters();
+          renderList();
+        })
+      );
+
+      actions.appendChild(
+        makeButton('None', () => {
+          state[field].clear();
+          applyFilters();
+          renderList();
+        })
+      );
+
+      renderList();
+
+      // focus management: keep popup stable
+      onRendered(() => {
+        // nothing special; checkbox UX is fine
+      });
+
+      return wrap;
+    };
+
+    const namePopup = (e, column, onRendered) => {
+      const wrap = el('div', 'bf-hpop');
+
+      wrap.appendChild(el('div', 'bf-title', 'Name'));
+
+      const input = document.createElement('input');
+      input.className = 'bf-input';
+      input.type = 'text';
+      input.placeholder = 'Type to filter…';
+      input.value = state.nameQuery;
+
+      input.addEventListener('input', () => {
+        state.nameQuery = input.value;
+        applyFilters();
+      });
+
+      const actions = el('div', 'bf-actions');
+      const clearBtn = makeButton('Clear', () => {
+        input.value = '';
+        state.nameQuery = '';
+        applyFilters();
+        input.focus();
+      });
+
+      actions.appendChild(clearBtn);
+
+      wrap.appendChild(input);
+      wrap.appendChild(actions);
+
+      onRendered(() => {
+        // focus the input when popup opens
+        setTimeout(() => input.focus(), 0);
+      });
+
+      return wrap;
+    };
+
+    const quoteFormatter = (cell) => {
+      const row = cell.getRow().getData();
+      const quote = escapeHtml(row.quote || '');
+      const link = row.link ? escapeHtml(row.link) : '';
+
+      if (!link) return `<div class="mentions-quote-text">${quote}</div>`;
+
+      return `
+        <div class="mentions-quote">
+          <div class="mentions-quote-text">${quote}</div>
+          <a class="mentions-open" href="${link}" target="_blank" rel="noopener noreferrer" aria-label="Open source">
+            <i class="fas fa-up-right-from-square"></i>
+          </a>
+        </div>
+      `;
+    };
+
+    // ---------- build table ----------
+    table = new Tabulator(tableHost, {
+      data,
+      layout: 'fitColumns',
+      reactiveData: false,
+      height: 'auto',
+      tooltips: true,
+      placeholder: 'No matching records',
+      initialSort: [{ column: 'date', dir: 'desc' }],
+      columns: [
+        {
+          title: 'Name',
+          field: 'name',
+          sorter: 'string',
+          minWidth: 190,
+          width: 220,
+          headerPopup: namePopup,
+          headerPopupIcon: "<i class='fas fa-magnifying-glass'></i>",
+        },
+        {
+          title: 'House',
+          field: 'house',
+          sorter: 'string',
+          width: 120,
+          headerPopup: checklistPopupFactory('house', 'House'),
+          headerPopupIcon: "<i class='fas fa-filter'></i>",
+        },
+        {
+          title: 'Party',
+          field: 'party',
+          sorter: 'string',
+          minWidth: 170,
+          width: 210,
+          headerPopup: checklistPopupFactory('party', 'Party'),
+          headerPopupIcon: "<i class='fas fa-filter'></i>",
+        },
+        {
+          title: 'Action',
+          field: 'action_type',
+          sorter: 'string',
+          minWidth: 150,
+          width: 170,
+          headerPopup: checklistPopupFactory('action_type', 'Action'),
+          headerPopupIcon: "<i class='fas fa-filter'></i>",
+        },
+        {
+          title: 'Date',
+          field: 'date',
+          sorter: 'string',
+          width: 115,
+        },
+        {
+          title: 'Quote',
+          field: 'quote',
+          formatter: quoteFormatter,
+          widthGrow: 4,
+          minWidth: 260,
+        },
+      ],
+    });
+
+    // apply filters once table is ready (also sets header indicator class)
+    table.on('tableBuilt', () => {
+      applyFilters();
+    });
+  });
+})();
