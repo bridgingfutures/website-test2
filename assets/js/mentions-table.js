@@ -1,328 +1,425 @@
-/* Bridging Futures — Mentions table (Tabulator)
+(function () {
+  "use strict";
 
-   Features
-   - Name: popup with text input (filters as you type)
-   - House / Party / Action: popup with checkbox list (no input), vertical layout
-   - Date / Quote: no popup
+  // ==========================================================
+  // Theme sync (Chirpy <-> Tabulator)
+  // ==========================================================
+  function getChirpyMode() {
+    const html = document.documentElement;
 
-   Data source
-   - Reads JSON from <script id="mentions-data" type="application/json"> ... </script>
-*/
+    // Chirpy normally sets data-mode="dark|light"
+    const attr = html.getAttribute("data-mode");
+    if (attr === "dark" || attr === "light") return attr;
 
-(() => {
-  'use strict';
+    // fallbacks (in case Chirpy changes internals)
+    if (html.classList.contains("dark")) return "dark";
+    if (html.classList.contains("light")) return "light";
 
-  // ---------- utils ----------
-  const norm = (v) => {
-    const s = (v ?? '').toString().trim();
-    return s.length ? s : '(blank)';
-  };
+    // last fallback
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  }
 
-  const escapeHtml = (str) =>
-    (str ?? '')
-      .toString()
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#039;');
+  function applyTabulatorTheme() {
+    const lightCss = document.getElementById("tabulator-css-light");
+    const darkCss = document.getElementById("tabulator-css-dark");
+    if (!lightCss || !darkCss) return;
 
-  const uniqSorted = (arr) => {
-    const set = new Set(arr.map(norm));
-    return Array.from(set).sort((a, b) =>
-      a.localeCompare(b, undefined, { sensitivity: 'base' })
-    );
-  };
+    const isDark = getChirpyMode() === "dark";
 
-  const readMentionsData = () => {
-    const el = document.getElementById('mentions-data');
-    if (!el) return [];
-    try {
-      return JSON.parse(el.textContent || '[]');
-    } catch (err) {
-      console.error('[BF] Failed to parse #mentions-data JSON:', err);
-      return [];
+    // Enable exactly one stylesheet (property + attribute for max compatibility)
+    lightCss.disabled = isDark;
+    darkCss.disabled = !isDark;
+
+    if (isDark) {
+      lightCss.setAttribute("disabled", "");
+      darkCss.removeAttribute("disabled");
+    } else {
+      darkCss.setAttribute("disabled", "");
+      lightCss.removeAttribute("disabled");
     }
-  };
+  }
 
-  // ---------- theme (Chirpy) ----------
-  const syncTabulatorTheme = () => {
-    const isDark = document.documentElement.getAttribute('data-mode') === 'dark';
-    const light = document.getElementById('tabulator-css-light');
-    const dark = document.getElementById('tabulator-css-dark');
-    if (!light || !dark) return;
-    light.disabled = isDark;
-    dark.disabled = !isDark;
-  };
+  // ==========================================================
+  // Helpers
+  // ==========================================================
+  function escapeHtml(str) {
+    return String(str)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
 
-  // ---------- popup UI ----------
-  const el = (tag, cls, text) => {
-    const n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (text != null) n.textContent = text;
-    return n;
-  };
+  function norm(str) {
+    return String(str || "").trim().toLowerCase();
+  }
 
-  const makeButton = (label, onClick) => {
-    const b = el('button', 'bf-btn', label);
-    b.type = 'button';
-    b.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      onClick();
+  function uniqueSorted(values) {
+    const set = new Set();
+    for (const v of values) {
+      const s = String(v || "").trim();
+      if (s) set.add(s);
+    }
+    return Array.from(set).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+  }
+
+  function isDefaultExcludedAction(v) {
+    const s = String(v || "").trim();
+    // exclude "Letter", "Letter (...)" and "EDM" by default
+    return /^letter\b/i.test(s) || /^edm\b/i.test(s);
+  }
+
+  // ==========================================================
+  // Header popups
+  // ==========================================================
+  function makeNamePopup(state, onChange) {
+    const wrap = document.createElement("div");
+    wrap.className = "bf-hpop";
+
+    const title = document.createElement("div");
+    title.className = "bf-title";
+    title.textContent = "Name";
+
+    const input = document.createElement("input");
+    input.className = "bf-input";
+    input.type = "text";
+    input.placeholder = "Type a name…";
+    input.value = state.nameQuery || "";
+
+    input.addEventListener("input", () => {
+      state.nameQuery = input.value || "";
+      onChange();
     });
-    return b;
-  };
 
-  document.addEventListener('DOMContentLoaded', () => {
-    // Guard: only run on Mentions page
-    const tableHost = document.getElementById('mentions-table');
-    if (!tableHost) return;
-    if (!window.Tabulator) {
-      console.error('[BF] Tabulator not loaded');
+    const actions = document.createElement("div");
+    actions.className = "bf-actions";
+
+    const clearBtn = document.createElement("button");
+    clearBtn.type = "button";
+    clearBtn.className = "bf-btn";
+    clearBtn.textContent = "Clear";
+    clearBtn.addEventListener("click", () => {
+      state.nameQuery = "";
+      input.value = "";
+      onChange();
+      input.focus();
+    });
+
+    actions.appendChild(clearBtn);
+
+    wrap.appendChild(title);
+    wrap.appendChild(input);
+    wrap.appendChild(actions);
+
+    // focus after render
+    setTimeout(() => input.focus(), 0);
+
+    return wrap;
+  }
+
+  function makeChecklistPopup(opts) {
+    const { titleText, allValues, selectedSet, onApply } = opts;
+
+    const wrap = document.createElement("div");
+    wrap.className = "bf-hpop";
+
+    const title = document.createElement("div");
+    title.className = "bf-title";
+    title.textContent = titleText;
+
+    const actions = document.createElement("div");
+    actions.className = "bf-actions";
+
+    const btnAll = document.createElement("button");
+    btnAll.type = "button";
+    btnAll.className = "bf-btn";
+    btnAll.textContent = "All";
+
+    const btnNone = document.createElement("button");
+    btnNone.type = "button";
+    btnNone.className = "bf-btn";
+    btnNone.textContent = "None";
+
+    actions.appendChild(btnAll);
+    actions.appendChild(btnNone);
+
+    const list = document.createElement("div");
+    list.className = "bf-list";
+
+    const checkboxes = [];
+
+    for (const v of allValues) {
+      const row = document.createElement("label");
+      row.className = "bf-item";
+
+      const cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.checked = selectedSet.has(v);
+      cb.addEventListener("change", () => {
+        if (cb.checked) selectedSet.add(v);
+        else selectedSet.delete(v);
+        onApply();
+      });
+
+      const text = document.createElement("span");
+      text.textContent = v;
+
+      row.appendChild(cb);
+      row.appendChild(text);
+      list.appendChild(row);
+
+      checkboxes.push({ v, cb });
+    }
+
+    btnAll.addEventListener("click", () => {
+      selectedSet.clear();
+      for (const v of allValues) selectedSet.add(v);
+      for (const x of checkboxes) x.cb.checked = true;
+      onApply();
+    });
+
+    btnNone.addEventListener("click", () => {
+      selectedSet.clear();
+      for (const x of checkboxes) x.cb.checked = false;
+      onApply();
+    });
+
+    wrap.appendChild(title);
+    wrap.appendChild(actions);
+    wrap.appendChild(list);
+    return wrap;
+  }
+
+  // ==========================================================
+  // Build table
+  // ==========================================================
+  function build() {
+    const tableEl = document.getElementById("mentions-table");
+    const dataEl = document.getElementById("mentions-data");
+    if (!tableEl || !dataEl) return;
+
+    if (typeof Tabulator !== "function") {
+      console.error("[Mentions] Tabulator not loaded");
       return;
     }
 
-    syncTabulatorTheme();
-    // keep theme in sync when user toggles mode
-    new MutationObserver(syncTabulatorTheme).observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['data-mode'],
-    });
+    // Apply theme BEFORE first render
+    applyTabulatorTheme();
 
-    const data = readMentionsData();
+    // Parse data
+    const raw = (dataEl.textContent || "").trim();
+    let data = [];
+    try {
+      data = JSON.parse(raw || "[]");
+    } catch (e) {
+      console.error("[Mentions] JSON parse failed", e);
+      return;
+    }
+    if (!Array.isArray(data)) data = [];
 
-    // values for checklist columns (computed once from full dataset)
-    const values = {
-      house: uniqSorted(data.map((d) => d.house)),
-      party: uniqSorted(data.map((d) => d.party)),
-      action_type: uniqSorted(data.map((d) => d.action_type)),
-    };
+    // Backward compat: if YAML had "summary", map it to "quote"
+    for (const r of data) {
+      if (r && typeof r === "object" && !("quote" in r) && "summary" in r) r.quote = r.summary;
+    }
 
-    // filter state
+    // Filter values
+    const houseValues = uniqueSorted(data.map((d) => d.house));
+    const partyValues = uniqueSorted(data.map((d) => d.party));
+    const actionValues = uniqueSorted(data.map((d) => d.action_type));
+
+    // State (Sets are stable references; we mutate them, don't reassign)
     const state = {
-      nameQuery: '',
-      house: new Set(values.house),
-      party: new Set(values.party),
-      action_type: new Set(values.action_type),
+      nameQuery: "",
+      house: new Set(houseValues),
+      party: new Set(partyValues),
+      action: new Set(actionValues.filter((v) => !isDefaultExcludedAction(v))),
     };
 
-    const isChecklistActive = (field) =>
-      state[field].size !== values[field].length;
+    // Row filter
+    function rowFilter(rowData) {
+      if (!rowData) return false;
 
-    const isNameActive = () => state.nameQuery.trim().length > 0;
+      if (state.nameQuery && !norm(rowData.name).includes(norm(state.nameQuery))) return false;
 
-    // Tabulator instance (declared here so helpers can use it)
-    let table;
-
-    const updateHeaderIndicators = () => {
-      const nameCol = table.getColumn('name');
-      if (nameCol) nameCol.getElement().classList.toggle('bf-filtered', isNameActive());
-
-      for (const f of ['house', 'party', 'action_type']) {
-        const col = table.getColumn(f);
-        if (!col) continue;
-        col.getElement().classList.toggle('bf-filtered', isChecklistActive(f));
-      }
-    };
-
-    const rowFilter = (rowData) => {
-      // name text query
-      const q = state.nameQuery.trim().toLowerCase();
-      if (q) {
-        const name = norm(rowData.name).toLowerCase();
-        if (!name.includes(q)) return false;
-      }
-
-      // checklists: if a set is empty => show nothing (Excel "None")
-      if (!state.house.has(norm(rowData.house))) return false;
-      if (!state.party.has(norm(rowData.party))) return false;
-      if (!state.action_type.has(norm(rowData.action_type))) return false;
+      if (houseValues.length && !state.house.has(String(rowData.house || "").trim())) return false;
+      if (partyValues.length && !state.party.has(String(rowData.party || "").trim())) return false;
+      if (actionValues.length && !state.action.has(String(rowData.action_type || "").trim())) return false;
 
       return true;
-    };
+    }
 
-    const applyFilters = () => {
-      table.setFilter(rowFilter);
-      updateHeaderIndicators();
-    };
+    // Apply filter + update header indicators
+    function applyFilters() {
+      if (!tableEl._tab) return;
+      tableEl._tab.setFilter(rowFilter);
+      updateFilteredIndicators();
+    }
 
-    const checklistPopupFactory = (field, title) => (e, column, onRendered) => {
-      const wrap = el('div', 'bf-hpop');
+    function updateFilteredIndicators() {
+      if (!tableEl._tab) return;
 
-      wrap.appendChild(el('div', 'bf-title', title));
-
-      const actions = el('div', 'bf-actions');
-      wrap.appendChild(actions);
-
-      const list = el('div', 'bf-list');
-      wrap.appendChild(list);
-
-      const renderList = () => {
-        list.innerHTML = '';
-        for (const v of values[field]) {
-          const label = el('label', 'bf-item');
-          const cb = document.createElement('input');
-          cb.type = 'checkbox';
-          cb.checked = state[field].has(v);
-
-          cb.addEventListener('change', () => {
-            if (cb.checked) state[field].add(v);
-            else state[field].delete(v);
-            applyFilters();
-          });
-
-          const txt = el('span', 'bf-item-text', v);
-          label.appendChild(cb);
-          label.appendChild(txt);
-          list.appendChild(label);
-        }
+      const mark = (field, isFiltered) => {
+        const col = tableEl._tab.getColumn(field);
+        if (!col) return;
+        const el = col.getElement && col.getElement();
+        if (!el) return;
+        el.classList.toggle("bf-filtered", !!isFiltered);
       };
 
-      actions.appendChild(
-        makeButton('All', () => {
-          state[field] = new Set(values[field]);
-          applyFilters();
-          renderList();
-        })
-      );
+      mark("house", state.house.size !== houseValues.length);
+      mark("party", state.party.size !== partyValues.length);
+      mark("action_type", state.action.size !== actionValues.length);
+      mark("name", !!state.nameQuery);
+    }
 
-      actions.appendChild(
-        makeButton('None', () => {
-          state[field].clear();
-          applyFilters();
-          renderList();
-        })
-      );
+    // Destroy old table if any
+    if (tableEl._tab) {
+      tableEl._tab.destroy();
+      tableEl._tab = null;
+    }
 
-      renderList();
-
-      // focus management: keep popup stable
-      onRendered(() => {
-        // nothing special; checkbox UX is fine
-      });
-
-      return wrap;
-    };
-
-    const namePopup = (e, column, onRendered) => {
-      const wrap = el('div', 'bf-hpop');
-
-      wrap.appendChild(el('div', 'bf-title', 'Name'));
-
-      const input = document.createElement('input');
-      input.className = 'bf-input';
-      input.type = 'text';
-      input.placeholder = 'Type to filter…';
-      input.value = state.nameQuery;
-
-      input.addEventListener('input', () => {
-        state.nameQuery = input.value;
-        applyFilters();
-      });
-
-      const actions = el('div', 'bf-actions');
-      const clearBtn = makeButton('Clear', () => {
-        input.value = '';
-        state.nameQuery = '';
-        applyFilters();
-        input.focus();
-      });
-
-      actions.appendChild(clearBtn);
-
-      wrap.appendChild(input);
-      wrap.appendChild(actions);
-
-      onRendered(() => {
-        // focus the input when popup opens
-        setTimeout(() => input.focus(), 0);
-      });
-
-      return wrap;
-    };
-
-    const quoteFormatter = (cell) => {
-      const row = cell.getRow().getData();
-      const quote = escapeHtml(row.quote || '');
-      const link = row.link ? escapeHtml(row.link) : '';
-
-      if (!link) return `<div class="mentions-quote-text">${quote}</div>`;
-
-      return `
-        <div class="mentions-quote">
-          <div class="mentions-quote-text">${quote}</div>
-          <a class="mentions-open" href="${link}" target="_blank" rel="noopener noreferrer" aria-label="Open source">
-            <i class="fas fa-up-right-from-square"></i>
-          </a>
-        </div>
-      `;
-    };
-
-    // ---------- build table ----------
-    table = new Tabulator(tableHost, {
+    tableEl._tab = new Tabulator(tableEl, {
       data,
-      layout: 'fitColumns',
-      reactiveData: false,
-      height: 'auto',
-      tooltips: true,
-      placeholder: 'No matching records',
-      initialSort: [{ column: 'date', dir: 'desc' }],
+      layout: "fitColumns",
+      initialSort: [{ column: "date", dir: "desc" }],
+
       columns: [
         {
-          title: 'Name',
-          field: 'name',
-          sorter: 'string',
-          minWidth: 190,
-          width: 220,
-          headerPopup: namePopup,
-          headerPopupIcon: "<i class='fas fa-magnifying-glass'></i>",
+          title: "Name",
+          field: "name",
+          sorter: "string",
+          width: 100,
+          minWidth: 100,
+          headerPopup: () => makeNamePopup(state, applyFilters),
+          headerPopupIcon: () => "<i class='fas fa-search'></i>",
         },
         {
-          title: 'House',
-          field: 'house',
-          sorter: 'string',
-          width: 120,
-          headerPopup: checklistPopupFactory('house', 'House'),
-          headerPopupIcon: "<i class='fas fa-filter'></i>",
+          title: "House",
+          field: "house",
+          sorter: "string",
+          width: 70,
+          minWidth: 70,
+          headerPopup: () =>
+            makeChecklistPopup({
+              titleText: "House",
+              allValues: houseValues,
+              selectedSet: state.house,
+              onApply: applyFilters,
+            }),
+          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
         },
         {
-          title: 'Party',
-          field: 'party',
-          sorter: 'string',
-          minWidth: 170,
-          width: 210,
-          headerPopup: checklistPopupFactory('party', 'Party'),
-          headerPopupIcon: "<i class='fas fa-filter'></i>",
+          title: "Party",
+          field: "party",
+          sorter: "string",
+          width: 85,
+          minWidth: 85,
+          headerPopup: () =>
+            makeChecklistPopup({
+              titleText: "Party",
+              allValues: partyValues,
+              selectedSet: state.party,
+              onApply: applyFilters,
+            }),
+          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
         },
         {
-          title: 'Action',
-          field: 'action_type',
-          sorter: 'string',
-          minWidth: 150,
-          width: 170,
-          headerPopup: checklistPopupFactory('action_type', 'Action'),
-          headerPopupIcon: "<i class='fas fa-filter'></i>",
+          title: "Action",
+          field: "action_type",
+          sorter: "string",
+          width: 90,
+          minWidth: 90,
+          headerPopup: () =>
+            makeChecklistPopup({
+              titleText: "Action",
+              allValues: actionValues,
+              selectedSet: state.action,
+              onApply: applyFilters,
+            }),
+          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
         },
         {
-          title: 'Date',
-          field: 'date',
-          sorter: 'string',
-          width: 115,
+          title: "Date",
+          field: "date",
+          sorter: "string",
+          width: 75,
+          minWidth: 75,
         },
         {
-          title: 'Quote',
-          field: 'quote',
-          formatter: quoteFormatter,
-          widthGrow: 4,
+          title: "Quote",
+          field: "quote",
+          sorter: "string",
+          widthGrow: 5,
           minWidth: 260,
+          widthShrink: 0,
+          formatter: (cell) => {
+            const row = cell.getRow().getData();
+            const text = cell.getValue() || "";
+            const url = row.link || "";
+
+            const icon = url
+              ? `<a class="mentions-open" href="${url}" target="_blank" rel="noopener" aria-label="Open source">
+                   <i class="fas fa-up-right-from-square"></i>
+                 </a>`
+              : "";
+
+            return `<div class="mentions-quote">
+                      <span class="mentions-quote-text">${escapeHtml(text)}</span>
+                      ${icon}
+                    </div>`;
+          },
         },
       ],
     });
 
-    // apply filters once table is ready (also sets header indicator class)
-    table.on('tableBuilt', () => {
-      applyFilters();
+    // Initial filter (hides Letter/EDM by default when present)
+    applyFilters();
+
+    // Chirpy may update data-mode slightly later; re-apply theme
+    setTimeout(() => {
+      applyTabulatorTheme();
+      tableEl._tab && tableEl._tab.redraw(true);
+    }, 0);
+    setTimeout(() => {
+      applyTabulatorTheme();
+      tableEl._tab && tableEl._tab.redraw(true);
+    }, 150);
+  }
+
+  // ==========================================================
+  // Init + react to theme toggles (Chirpy)
+  // ==========================================================
+  function init() {
+    build();
+
+    // Watch for theme changes on <html>
+    const mo = new MutationObserver(() => {
+      applyTabulatorTheme();
+      const tableEl = document.getElementById("mentions-table");
+      if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
     });
-  });
+
+    mo.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-mode", "class"],
+    });
+
+    // Extra safety: Chirpy's mode toggle button
+    const modeBtn = document.getElementById("mode-toggle");
+    if (modeBtn) {
+      modeBtn.addEventListener("click", () => {
+        setTimeout(() => {
+          applyTabulatorTheme();
+          const tableEl = document.getElementById("mentions-table");
+          if (tableEl && tableEl._tab) tableEl._tab.redraw(true);
+        }, 50);
+      });
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+  document.addEventListener("turbo:load", init);
 })();
