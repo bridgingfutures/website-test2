@@ -287,92 +287,97 @@
       initialSort: [{ column: "date", dir: "desc" }],
 
       columns: [
-        {
-          title: "Name",
-          field: "name",
-          sorter: "string",
-          width: 100,
-          minWidth: 100,
-          headerPopup: () => makeNamePopup(state, applyFilters),
-          headerPopupIcon: () => "<i class='fas fa-search'></i>",
-        },
-        {
-          title: "House",
-          field: "house",
-          sorter: "string",
-          width: 70,
-          minWidth: 70,
-          headerPopup: () =>
-            makeChecklistPopup({
-              titleText: "House",
-              allValues: houseValues,
-              selectedSet: state.house,
-              onApply: applyFilters,
-            }),
-          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
-        },
-        {
-          title: "Party",
-          field: "party",
-          sorter: "string",
-          width: 85,
-          minWidth: 85,
-          headerPopup: () =>
-            makeChecklistPopup({
-              titleText: "Party",
-              allValues: partyValues,
-              selectedSet: state.party,
-              onApply: applyFilters,
-            }),
-          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
-        },
-        {
-          title: "Action",
-          field: "action_type",
-          sorter: "string",
-          width: 90,
-          minWidth: 90,
-          headerPopup: () =>
-            makeChecklistPopup({
-              titleText: "Action",
-              allValues: actionValues,
-              selectedSet: state.action,
-              onApply: applyFilters,
-            }),
-          headerPopupIcon: () => "<i class='fas fa-filter'></i>",
-        },
-        {
-          title: "Date",
-          field: "date",
-          sorter: "string",
-          width: 75,
-          minWidth: 75,
-        },
-        {
-          title: "Quote",
-          field: "quote",
-          sorter: "string",
-          widthGrow: 5,
-          minWidth: 260,
-          widthShrink: 0,
-          formatter: (cell) => {
-            const row = cell.getRow().getData();
-            const text = cell.getValue() || "";
-            const url = row.link || "";
+  {
+    title: "Name",
+    field: "name",
+    sorter: "string",
+    minWidth: 160,
+    widthGrow: 0,
+    widthShrink: 0,
+    headerPopup: () => makeNamePopup(state, applyFilters),
+    headerPopupIcon: () => "<i class='fas fa-search'></i>",
+  },
+  {
+    title: "House",
+    field: "house",
+    sorter: "string",
+    minWidth: 100,
+    widthGrow: 0,
+    widthShrink: 0,
+    headerPopup: () =>
+      makeChecklistPopup({
+        titleText: "House",
+        allValues: houseValues,
+        selectedSet: state.house,
+        onApply: applyFilters,
+      }),
+    headerPopupIcon: () => "<i class='fas fa-filter'></i>",
+  },
+  {
+    title: "Party",
+    field: "party",
+    sorter: "string",
+    minWidth: 160,
+    widthGrow: 0,
+    widthShrink: 0,
+    headerPopup: () =>
+      makeChecklistPopup({
+        titleText: "Party",
+        allValues: partyValues,
+        selectedSet: state.party,
+        onApply: applyFilters,
+      }),
+    headerPopupIcon: () => "<i class='fas fa-filter'></i>",
+  },
+  {
+    title: "Action",
+    field: "action_type",
+    sorter: "string",
+    minWidth: 140,
+    widthGrow: 0,
+    widthShrink: 0,
+    headerPopup: () =>
+      makeChecklistPopup({
+        titleText: "Action",
+        allValues: actionValues,
+        selectedSet: state.action,
+        onApply: applyFilters,
+      }),
+    headerPopupIcon: () => "<i class='fas fa-filter'></i>",
+  },
+  {
+    title: "Date",
+    field: "date",
+    sorter: "string",
+    minWidth: 110,
+    widthGrow: 0,
+    widthShrink: 0,
+  },
+  {
+    title: "Quote",
+    field: "quote",
+    sorter: "string",
+    minWidth: 320,
+    widthGrow: 10,   // забирает всё “остаточное”
+    widthShrink: 1,
+    formatter: (cell) => {
+      const row = cell.getRow().getData();
+      const text = cell.getValue() || "";
+      const url = row.link || "";
 
-            const icon = url
-              ? `<a class="mentions-open" href="${url}" target="_blank" rel="noopener" aria-label="Open source">
-                   <i class="fas fa-up-right-from-square"></i>
-                 </a>`
-              : "";
+      const icon = url
+        ? `<a class="mentions-open" href="${url}" target="_blank" rel="noopener" aria-label="Open source">
+             <i class="fas fa-up-right-from-square"></i>
+           </a>`
+        : "";
 
-            return `<div class="mentions-quote">
-                      <span class="mentions-quote-text">${escapeHtml(text)}</span>
-                      ${icon}
-                    </div>`;
-          },
-        },
-      ],
+      return `<div class="mentions-quote">
+                <span class="mentions-quote-text">${escapeHtml(text)}</span>
+                ${icon}
+              </div>`;
+    },
+  },
+],
     });
 
     // Initial filter (hides Letter/EDM by default when present)
