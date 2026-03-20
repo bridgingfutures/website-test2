@@ -21,6 +21,15 @@ Currently, the organisation’s core activities are:
 
 ---
 
+**Community**
+
+- Facebook: [Bridging Futures](https://www.facebook.com/profile.php?id=61584683039699)  
+- WhatsApp group: [Join the WhatsApp group](https://chat.whatsapp.com/JavTnC8CwrC967IxrO9URn)  
+- Telegram channel: [Bridging Futures on Telegram](https://t.me/BridgingFutures)
+- Telegram chat: [Join the Telegram chat](https://t.me/+CV2yvZE4gTY0NzE6)
+
+---
+
 [Bridging Futures Ltd](https://find-and-update.company-information.service.gov.uk/company/16410689) (CRN 16410689) is the data controller.  
 ICO registration: ZB980468.  
 Privacy Notice: [tinyurl.com/4m4xxxpm](https://tinyurl.com/4m4xxxpm)
