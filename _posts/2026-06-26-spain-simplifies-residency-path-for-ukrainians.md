@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spain Simplifies Residency Path for Ukrainians"
-date: 2026-06-26
+date: 2026-06-25
 categories: [Research]
 tags: [Spain, Research, Ukraine Schemes, Integration, Settlement]
 description: >
