@@ -9,7 +9,7 @@ description: >
 toc: false
 published: true
 lang: en
-image: assets/img/posts/2026-06-26-spain-ukraine-residency.jpg
+image: assets/img/posts/2026-06-25-spain-ukraine-residency.jpg
 ---
 
 Spain has officially introduced new rules that make it easier for Ukrainian nationals under Temporary Protection (Protección Temporal) to switch to other residence permits without leaving the country.
