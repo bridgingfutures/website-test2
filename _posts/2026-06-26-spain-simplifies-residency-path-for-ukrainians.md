@@ -35,7 +35,7 @@ The period you have legally lived in Spain under Temporary Protection will now c
 - the five-year legal residence period required to obtain long-term residence (Residencia de Larga Duración).
 
 **3. No need to renounce Temporary Protection in advance**  
-Applicants do not need to give up their Temporary Protection status before applying. The renunciation is only required after the new residence permit has been approved and before receiving the new TIE card.
+Applicants don`t need to give up their Temporary Protection status before applying. The renunciation is only required after the new residence permit has been approved and before receiving the new TIE card.
 
 ---
 
