@@ -107,9 +107,8 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-# IMPORTANT: If your site is at https://bridgingfutures.github.io/ - use ""
-# If it's at https://bridgingfutures.github.io/website-test2/ - use "/website-test2"
-baseurl: ""
+# IMPORTANT: Your site is at https://bridgingfutures.github.io/website-test2/
+baseurl: "/website-test2"
 
 # ------------ The following options are not recommended to be modified ------------------
 kramdown:
