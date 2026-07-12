@@ -30,4 +30,5 @@ The research also found that **76.6%** of respondents would like to remain in th
 
 Providing a clear pathway to permanent residence, improving recognition of Ukrainian qualifications, and expanding access to education and skilled employment would allow thousands of talented professionals to contribute even more to the UK's economy, public services, and communities.
 
-**Source:** University of Birmingham, *Beyond Sanctuary: Building the Future of Ukrainians in the UK* (Policy Brief, June 2026).
+**Source:** University of Birmingham, *Beyond Sanctuary: Building the Future of Ukrainians in the UK* (Policy Brief, June 2026).  
+[Read the full policy brief](https://blog.bham.ac.uk/supportukrainians/beyond-sanctuary-building-the-future-of-ukrainians-in-the-uk/)
