@@ -5,30 +5,26 @@ date: 2026-07-11
 categories: [Research]
 tags: [UK, Research, Ukraine Schemes, Integration, Settlement]
 description: >
-  Research by the University of Birmingham shows that over 180,000 Ukrainians in the UK are highly motivated to work and study, with 90% having worked and 76.6% wishing to stay long-term.
+  A University of Birmingham policy brief shows that displaced Ukrainians in the UK are working, studying and contributing, but remain held back by short-term visa status and lack of a route to permanent residence.
 toc: false
 published: true
 lang: en
-image: assets/img/posts/2026-07-11-ukraine-uk-research.jpg
+image: assets/img/posts/2025-11-18-uob-survey-displaced-ukrainians-temporary-status.png
 ---
 
-More than 180,000 Ukrainians have rebuilt their lives in the UK under the Ukraine Schemes, becoming active members of local communities and making a meaningful contribution to the country's economy and society.
+A new University of Birmingham policy brief shows that displaced Ukrainians in the UK are not simply seeking temporary safety — they are working, studying, building businesses, raising children and contributing to local communities.
 
-Research conducted by the University of Birmingham in 2026, based on a survey of over 5,400 displaced Ukrainians, shows a community that is highly motivated to work, study, and build a long-term future in the UK.
+Based on a survey of 5,454 displaced Ukrainians, 18 expert interviews and discussions within the Ukraine Policy Network, the research highlights a community with a strong record of integration:
 
-The findings highlight a strong record of integration:
+* **90%** of Ukrainian adults surveyed have worked in the UK, and **89.2%** of those are currently employed.
+* **71%** work full-time, **63.9%** have permanent contracts, and **12.9%** own an active private business.
+* **41.5%** have gained a UK qualification.
 
-* **90%** of Ukrainian adults have worked in the UK.
-* **89.2%** of those who have worked are currently employed.
-* **71%** work full-time, while **63.9%** have permanent employment contracts.
-* **12.9%** have established their own businesses, creating jobs and supporting local economies.
-* **41.5%** have gained new UK qualifications, with many continuing higher education and professional development.
+Yet many Ukrainians remain held back by short-term visa status. Among those facing barriers to employment at their skill level, **63.6%** identify temporary visa status as a barrier. **75.2%** report barriers to working at their professional level, despite experience in sectors such as healthcare, education, finance, digital technology, law and business.
 
-Despite these achievements, many highly qualified Ukrainians remain employed below their professional skill level due to temporary visa status, qualification recognition processes, and language barriers. This represents an untapped opportunity for the UK in sectors including healthcare, education, engineering, finance, digital technology, and business.
+The brief also finds that **76.6%** of respondents want to remain in the UK even when it is safe to return to Ukraine, while **87.5%** see no available route to a visa status leading to permanent residence.
 
-The research also found that **76.6%** of respondents would like to remain in the UK even after it becomes safe to return to Ukraine, demonstrating a strong commitment to contributing to British society over the long term.
-
-Providing a clear pathway to permanent residence, improving recognition of Ukrainian qualifications, and expanding access to education and skilled employment would allow thousands of talented professionals to contribute even more to the UK's economy, public services, and communities.
+The policy recommendations are clear: create a timely and affordable pathway to permanent residence, and include time spent on Ukraine Scheme and UPE visas in qualifying time for existing settlement routes.
 
 **Source:** University of Birmingham, *Beyond Sanctuary: Building the Future of Ukrainians in the UK* (Policy Brief, June 2026).  
 [Read the full policy brief](https://blog.bham.ac.uk/supportukrainians/beyond-sanctuary-building-the-future-of-ukrainians-in-the-uk/)
