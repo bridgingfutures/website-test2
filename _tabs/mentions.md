@@ -7,13 +7,11 @@ layout: page
 ---
 
 <!-- Tabulator dependencies -->
-<link rel="stylesheet" href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/tabulator_simple.min.css">
 <link id="tabulator-css-light" rel="stylesheet" href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/tabulator.min.css">
 <link id="tabulator-css-dark" rel="stylesheet" href="https://unpkg.com/tabulator-tables@6.2.5/dist/css/tabulator_midnight.min.css" disabled>
 
-<script src="https://unpkg.com/luxon@3.5.0/build/global/luxon.min.js"></script>
 <script src="https://unpkg.com/tabulator-tables@6.2.5/dist/js/tabulator.min.js"></script>
-<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=15"></script>
+<script src="{{ '/assets/js/mentions-table.js' | relative_url }}?v=16"></script>
 
 <style>
   /* Hide auto title */

@@ -2,7 +2,24 @@
   "use strict";
 
   let table = null;
+  let tableElement = null;
   let themeObserver = null;
+
+  function destroyMentionsTable() {
+    if (themeObserver) {
+      themeObserver.disconnect();
+      themeObserver = null;
+    }
+
+    if (table) {
+      try {
+        table.destroy();
+      } catch (_) {}
+      table = null;
+    }
+
+    tableElement = null;
+  }
 
   // ==========================================================
   // Theme sync (Chirpy <-> Tabulator)
@@ -248,6 +265,10 @@
       return;
     }
 
+    // DOMContentLoaded and Turbo can both fire for the initial page. Avoid
+    // rebuilding the same table and registering duplicate event handlers.
+    if (table && tableElement === tableEl) return;
+
     // Theme BEFORE first render
     applyTabulatorTheme();
 
@@ -318,18 +339,7 @@
     }
 
     // Kill previous table / observer if any
-    if (table) {
-      try {
-        table.destroy();
-      } catch (_) {}
-      table = null;
-    }
-    if (themeObserver) {
-      try {
-        themeObserver.disconnect();
-      } catch (_) {}
-      themeObserver = null;
-    }
+    destroyMentionsTable();
 
     // Quote formatter (text + open icon)
     function quoteFormatter(cell) {
@@ -442,6 +452,7 @@
         },
       ],
     });
+    tableElement = tableEl;
 
     // Initial filter: hides Letter/EDM by default when present
     applyFilters();
@@ -481,4 +492,5 @@
 
   document.addEventListener("DOMContentLoaded", buildMentionsTable);
   document.addEventListener("turbo:load", buildMentionsTable);
+  document.addEventListener("turbo:before-cache", destroyMentionsTable);
 })();

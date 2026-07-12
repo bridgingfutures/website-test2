@@ -9,7 +9,7 @@ description: >
 toc: false
 published: true
 lang: en
-image: assets/img/posts/2026-06-25-spain-ukraine-residency.jpg
+image: /assets/img/posts/2026-06-25-spain-ukraine-residency.jpg
 ---
 
 Spain has introduced new rules making it easier for people displaced from Ukraine who hold Temporary Protection (*Protección Temporal*) to move to other residence permits without leaving the country.

@@ -9,7 +9,7 @@ description: >
 toc: false
 published: true
 lang: en
-image: assets/img/posts/2025-11-18-uob-survey-displaced-ukrainians-temporary-status.png
+image: /assets/img/posts/2025-11-18-uob-survey-displaced-ukrainians-temporary-status.png
 ---
 
 A new University of Birmingham policy brief shows that displaced Ukrainians in the UK are not simply seeking temporary safety — they are working, studying, building businesses, raising children and contributing to local communities.

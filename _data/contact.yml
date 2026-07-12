@@ -8,6 +8,10 @@
   icon: "fab fa-telegram"
   url: "https://t.me/BridgingFutures"
 
+- type: WhatsApp
+  icon: "fab fa-whatsapp"
+  url: "https://chat.whatsapp.com/JavTnC8CwrC967IxrO9URn"
+
 # - type: github
 #   icon: "fab fa-github"
 #

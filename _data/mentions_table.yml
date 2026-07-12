@@ -405,7 +405,7 @@
   house: Commons
   party: Liberal Democrat
   action_type: Debate
-  date: '2025-03-21'
+  date: '2025-03-31'
   quote: '...and will she commit to giving Ukrainian refugees the certainty about their visas that they deserve?'
   link: https://hansard.parliament.uk/Commons/2025-03-31/debates/6A56F8DD-928E-4111-BCCD-69D5934897E5/OralAnswersToQuestions#contribution-9B4EE100-A235-4169-A134-8575844BB6CF
 - name: Lisa Smart
@@ -538,8 +538,7 @@
   party: Labour
   action_type: Debate
   date: '2025-09-08'
-  quote: '...make individuals under the Ukraine Toggle showing location of scheme eligible for indefinite permission to stay
-    once their permission has expired...'
+  quote: 'The purpose of this proposed new clause is to make individuals under the Ukraine scheme eligible for indefinite permission to stay once their permission has expired...'
   link: https://hansard.parliament.uk/Lords/2025-09-08/debates/492E0D51-6FDB-456B-AC15-660676484CA9/BorderSecurityAsylumAndImmigrationBill?highlight=ukraine%20visa#contribution-1C04100E-BBDF-456C-9650-38AC36717BCA
 - name: Baroness Kennedy of The Shaws
   house: Lords
@@ -718,7 +717,7 @@
   party: Liberal Democrat
   action_type: Debate
   date: '2026-02-02'
-  quote: The Liberal Democrats urge the Government to take necessary steps to provide Ukrainian refugees in the UK with the stability and security they deserve by establishing a clear pathway to ILR.
+  quote: The Liberal Democrats urge the Government to take necessary steps to provide Ukrainian refugees in the UK with the stability and security they deserve by establishing a clear pathway to ILR....The Ukrainian scheme is the only humanitarian scheme that does not include a pathway for settlement.
   link: https://hansard.parliament.uk/commons/2026-02-02/debates/A0693D73-AD95-418E-86A6-FAB882454522/IndefiniteLeaveToRemain#contribution-E14F7D58-02C1-4A96-B050-B37F65C77EDC
 - name: James Naish
   house: Commons
@@ -1560,13 +1559,6 @@
   date: '2025-07-10'
   quote: ...calls on the Government to give Ukrainian refugees the certainty they deserve by automatically extending their visas and setting out a pathway for obtaining Indefinite Leave to Remain.
   link: https://edm.parliament.uk/early-day-motion/63371/ensuring-stability-for-ukrainian-refugees-in-the-uk
-- name: Zarah Sultana
-  house: Commons
-  party: Independent
-  action_type: EDM
-  date: '2025-07-14'
-  quote: ...calls on the Government to give Ukrainian refugees the certainty they deserve by automatically extending their visas and setting out a pathway for obtaining Indefinite Leave to Remain.
-  link: https://edm.parliament.uk/early-day-motion/63371/ensuring-stability-for-ukrainian-refugees-in-the-uk
 - name: Simon Opher
   house: Commons
   party: Labour
@@ -1898,8 +1890,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1909,8 +1901,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1920,8 +1912,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1931,8 +1923,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1942,8 +1934,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1953,8 +1945,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1964,8 +1956,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1975,8 +1967,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1986,8 +1978,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -1997,8 +1989,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -2008,8 +2000,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -2019,8 +2011,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -2030,8 +2022,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -2041,8 +2033,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -2052,8 +2044,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -2063,8 +2055,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
 
@@ -2074,8 +2066,8 @@
   action_type: Letter
   date: '2026-02-13'
   quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
   
@@ -2085,7 +2077,874 @@
   action_type: Letter (Primary)
   date: '2026-02-13'
   quote: ...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR).
-  link: https://www.instagram.com/p/DUshcOQDt0j/
-  # alt_sources:
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+  # alt_sources: https://drive.google.com/file/d/1rlpUieDzMqypayZdeIOJr6y1yl9ndy_p/view?usp=sharing ; https://www.instagram.com/p/DUshcOQDt0j/
   # - https://www.instagram.com/p/DUsk3tBCB_i/
   # - https://www.facebook.com/dannychambersvet/posts/after-nearly-four-years-of-war-ukrainian-families-in-the-uk-continue-to-endure-u/1358948709369393/
+- name: Al Pinkerton
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Manuel Perteghella
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Andrew George
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Martin Wrigley
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Steve Darling
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Helen Maguire
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Ian Sollom
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Edward Morello
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Alex Brewer
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Susan Murray
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-13'
+  quote: 'Signed joint letter: "...provide Ukrainian refugees in the UK... a clear pathway to Indefinite Leave to Remain (ILR)."'
+  link: https://www.alpinkerton.uk/letter-to-the-home-secretary-ilr-pathway-for-ukrainians-to-the-uk
+- name: Calvin Bailey
+  house: Commons
+  party: Labour
+  action_type: Public statement
+  date: '2026-02-19'
+  quote: ...And these are challenges that we need to take on and they include ILR status...
+  link: https://www.instagram.com/reel/DU6WlUcDfUG/?utm_source=ig_web_button_share_sheet
+# Signatories extracted from UK Parliament EDM pages
+# EDM 2833: Securing the Ukraine Permission Extension scheme
+# Source: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Martin Wrigley
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM (Primary)
+  date: '2026-02-13'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Alex Sobel
+  house: Commons
+  party: Labour
+  action_type: EDM
+  date: '2026-02-13'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Manuela Perteghella
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Victoria Collins
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Lee Dillon
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Layla Moran
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Nadia Whittome
+  house: Commons
+  party: Labour
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Alison Hume
+  house: Commons
+  party: Labour
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Christine Jardine
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Graham Leadbitter
+  house: Commons
+  party: Scottish National Party
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Andrew George
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Sarah Dyke
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Vikki Slade
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Ellie Chowns
+  house: Commons
+  party: Green Party
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Pippa Heylings
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: John Milne
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Wendy Chamberlain
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Wera Hobhouse
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Jim Shannon
+  house: Commons
+  party: Democratic Unionist Party
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Joshua Reynolds
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Helen Maguire
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Ian Roome
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Jess Brown-Fuller
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Peter Prinsley
+  house: Commons
+  party: Labour
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+- name: Adrian Ramsay
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...calls on the Government to give Ukrainian refugees the certainty they deserve by automatically extending their visas and setting out a pathway for obtaining Indefinite Leave to Remain.
+  link: https://edm.parliament.uk/early-day-motion/63371/ensuring-stability-for-ukrainian-refugees-in-the-uk
+- name: Adrian Ramsay
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-23'
+  quote: ...welcomes the policy adopted by the Liberal Democrats calling for the Government to automatically extend visas for Ukrainians residing in the UK and to establish a clear pathway to indefinite leave to remain for those who wish to settle long-term...
+  link: https://edm.parliament.uk/early-day-motion/64614/ukrainian-permission-extension-scheme
+  
+- name: Helen Morgan
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Liz Jarvis
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Daisy Cooper
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Clive Jones
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Mr Will Forster
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-24'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Sir Roger Gale
+  house: Commons
+  party: Conservative
+  action_type: Debate
+  date: '2026-02-25'
+  quote: ...we must sort out the longer-term future for these people, who are not even classed as refugees — they are stateless and have no actual status in this country...
+  link: https://hansard.parliament.uk/commons/2026-02-25/debates/C39DE10A-166C-4349-9EF2-E2173CB14339/Ukraine
+
+- name: Monica Harding
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2026-02-25'
+  quote: We Liberal Democrats are calling for an automatic visa extension, a clear route to long-term status...
+  link: https://hansard.parliament.uk/commons/2026-02-25/debates/C39DE10A-166C-4349-9EF2-E2173CB14339/Ukraine
+
+- name: Martin Wrigley
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2026-02-25'
+  quote: What does the Minister think about the future for people from Ukraine who are in the UK?
+  link: https://hansard.parliament.uk/commons/2026-02-25/debates/C39DE10A-166C-4349-9EF2-E2173CB14339/Ukraine
+
+- name: Stephen Doughty
+  house: Commons
+  party: Labour (Co-op)
+  action_type: Debate
+  date: '2026-02-25'
+  quote: We will continue to listen to Ukrainian communities and give families a greater sense of security about their future.
+  link: https://hansard.parliament.uk/commons/2026-02-25/debates/C39DE10A-166C-4349-9EF2-E2173CB14339/Ukraine
+
+- name: Charlotte Cane
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-02-27'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Freddie van Mierlo
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-03-02'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Seamus Logan
+  house: Commons
+  party: Scottish National Party
+  action_type: EDM
+  date: '2026-03-02'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Mr Angus MacDonald
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-03-02'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Sir Desmond Swayne
+  house: Commons
+  party: Conservative
+  action_type: EDM
+  date: '2026-03-02'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Robin Swann
+  house: Commons
+  party: Ulster Unionist Party
+  action_type: EDM
+  date: '2026-03-02'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Dr Al Pinkerton
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-03-02'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+
+# --- Joint letter: Ukrainian Permission Extension Scheme Certainty (24 Feb 2026) ---
+
+- name: Martin Wrigley
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter (Primary)
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Alex Sobel
+  house: Commons
+  party: Labour (Co-op)
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Wendy Chamberlain
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Helen Maguire
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Manuela Perteghella
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Steve Darling
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Victoria Collins
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Lee Dillon
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Layla Moran
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Tom Gordon
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Graeme Downie
+  house: Commons
+  party: Labour
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Danny Chambers
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Nadia Whittome
+  house: Commons
+  party: Labour
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Brian Mathew
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Christine Jardine
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Douglas McAllister
+  house: Commons
+  party: Labour
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Graham Leadbitter
+  house: Commons
+  party: Scottish National Party
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Andrew George
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Olly Glover
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: James Naish
+  house: Commons
+  party: Labour
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Sarah Dyke
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Adrian Ramsay
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Carla Denyer
+  house: Commons
+  party: Green Party
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Vikki Slade
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Ellie Chowns
+  house: Commons
+  party: Green
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Siân Berry
+  house: Commons
+  party: Green Party
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Pippa Heylings
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Sarah Green
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: John Milne
+  house: Commons
+  party: Liberal Democrat
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Peter Prinsley
+  house: Commons
+  party: Labour
+  action_type: Letter
+  date: '2026-02-24'
+  quote: We would like to ask the following... When will a long-term position on UPE be published, as per Home Office statement in November 2025
+  link: https://www.facebook.com/JamesNaishMP4Rushcliffe/posts/pfbid0cBfLeZHjVuX9BXDF6JafBBJjMYAs9JitmFAjpck9sRRzgyayK4C3YUdKHcqkCVtFl
+
+- name: Sarah Gibson
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-03-03'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Ian Sollom
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-03-03'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Pete Wishart
+  house: Commons
+  party: Scottish National Party
+  action_type: Written Question
+  date: '2026-02-25'
+  quote: To ask the Secretary of State for the Home Department, whether she plans to establish a pathway to (a) settled status and (b) Indefinite Leave to Remain for Ukrainians who wish to remain in the UK.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-25/115793
+
+- name: Olly Glover
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-03-04'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+  
+- name: Cat Eccles
+  house: Commons
+  party: Labour
+  action_type: EDM
+  date: '2026-03-09'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Sir Roger Gale
+  house: Commons
+  party: Conservative
+  action_type: Debate
+  date: '2026-03-09'
+  quote: They need to be able to determine accommodation, education and employment, so what will the Government do to create some sort of proper settled status for Ukrainian refugees?
+  link: https://hansard.parliament.uk/Commons/2026-03-09/debates/776A7ADF-4F6B-4373-8E31-8628E73750D6/ImmigrationPolicy#:~:text=They%20need%20to%20be%20able%20to%20determine%20accommodation%2C%20education%20and%20employment%2C%20so%20what%20will%20the%20Government%20do%20to%20create%20some%20sort%20of%20proper%20settled%20status%20for%20Ukrainian%20refugees%3F
+
+- name: Sammy Wilson
+  house: Commons
+  party: Democratic Unionist Party
+  action_type: EDM
+  date: '2026-03-11'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Chris Law
+  house: Commons
+  party: Scottish National Party
+  action_type: EDM
+  date: '2026-03-16'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Lord German
+  house: Lords
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2025-11-25'
+  quote: Will the Home Office and the Minister consider establishing a pathway to indefinite leave to remain for Ukrainians who have integrated into life in the UK and wish to remain long-term?
+  link: https://hansard.parliament.uk/lords/2025-11-25/debates/36C2352C-7A09-4CCB-B088-2F9C43AD43A4/MigrationSettlementPathway#:~:text=Will%20the%20Home%20Office%20and%20the%20Minister%20consider%20establishing%20a%20pathway%20to%20indefinite%20leave%20to%20remain%20for%20Ukrainians%20who%20have%20integrated%20into%20life%20in%20the%20UK%20and%20wish%20to%20remain%20long%2Dterm%3F
+
+- name: Steve Darling
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-03-17'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Mike Martin
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2026-03-23'
+  quote: ...will the Minister at least devise a pathway by which to give visa security to Ukrainians so that they can study and get mortgages and jobs?
+  link: https://hansard.parliament.uk/Commons/2026-03-23/debates/280B10FC-7F17-4A44-808B-D2CA2C0AD255/UkrainianRefugeesPermanentSettlement#:~:text=will%20the%20Minister%20at%20least%20devise%20a%20pathway%20by%20which%20to%20give%20visa%20security%20to%20Ukrainians%20so%20that%20they%20can%20study%20and%20get%20mortgages%20and%20jobs%3F%20They%20are%20restricted%20in%20their%20ability%20to%20do%20those%20things.
+
+- name: Dr Roz Savage
+  house: Commons
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-04-10'
+  quote: To ask the Secretary of State for the Home Department, what plans her Department has to introduce a route to indefinite leave to remain for Ukrainian nationals currently residing in the UK under the Homes for Ukraine scheme.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/126428
+
+- name: Dr Roz Savage
+  house: Commons
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-04-10'
+  quote: To ask the Secretary of State for the Home Department, what plans her Department has to introduce a minimum period of lawful residence after which Ukrainian nationals under the Homes for Ukraine scheme may apply for settled status.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/126430
+
+- name: Dr Roz Savage
+  house: Commons
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-04-10'
+  quote: To ask the Secretary of State for the Home Department, what assessment her Department has made of the humanitarian implications for Ukrainian families who have established long-term residence in the UK of being required to return to Ukraine following the expiry of current visa arrangements.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/126432
+
+- name: Helen Maguire
+  house: Commons
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-04-13'
+  quote: To ask the Secretary of State for the Home Department, if her Department will reinstate a route to settlement by allowing time spent under the Ukraine Schemes to count towards the 10‑year settlement pathway.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-04-13/126987
+
+- name: Lord German
+  house: Lords
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2026-04-14'
+  quote: Although the United Kingdom rightly provided a vital lifeline to those fleeing the war in Ukraine, evidence from the British Red Cross found that the temporary nature of their status meant that Ukrainians were turned down for jobs..Stability is not a luxury in this context; it is a prerequisite for successful integration.
+  link: https://hansard.parliament.uk/Lords/2026-04-14/debates/C29402F7-2444-4DA1-85EF-EE1173799E62/StatementOfChangesInImmigrationRules#:~:text=Although%20the%20United%20Kingdom%20rightly%20provided%20a%20vital%20lifeline%20to%20those%20fleeing%20the%20war%20in%20Ukraine%2C%20evidence%20from%20the%20British%20Red%20Cross%20found%20that%20the%20temporary%20nature%20of%20their%20status%20meant%20that%20Ukrainians%20were%20turned%20down%20for%20jobs
+
+- name: Neil Duncan-Jordan
+  house: Commons
+  party: Labour
+  action_type: Written Question
+  date: '2026-04-10'
+  quote: To ask the Secretary of State for the Home Department, what assessment she has made of the potential merits of clearer pathways to settlement for Ukrainians, in addition to working visas.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/126123
+
+- name: James Naish
+  house: Commons
+  party: Labour
+  action_type: Written Question
+  date: '2026-02-26'
+  quote: To ask the Secretary of State for the Home Department, when she plans to publish further information on long-term steps to help support people using the Ukraine Permission Extension scheme.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-02-26/116330
+
+- name: Josh Babarinde
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-04-30'
+  quote: ...and therefore calls on the Government to publish a clear long-term position on the UPE scheme as referenced in the Home Office statement of November 2025...
+  link: https://edm.parliament.uk/early-day-motion/65253/securing-the-ukraine-permission-extension-scheme
+
+- name: Victoria Collins
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-04-15'
+  quote: ...welcomes the policy adopted by the Liberal Democrats calling for the Government to automatically extend visas for Ukrainians residing in the UK and to establish a clear pathway to indefinite leave to remain for those who wish to settle long-term...
+  link: https://edm.parliament.uk/early-day-motion/64614/ukrainian-permission-extension-scheme
+
+- name: Monica Harding
+  house: Commons
+  party: Liberal Democrat
+  action_type: EDM
+  date: '2026-04-10'
+  quote: ...calls on the Government to give Ukrainian refugees the certainty they deserve by automatically extending their visas and setting out a pathway for obtaining Indefinite Leave to Remain.
+  link: https://edm.parliament.uk/early-day-motion/63371/ensuring-stability-for-ukrainian-refugees-in-the-uk
+
+- name: Mr Richard Holden
+  house: Commons
+  party: Conservative
+  action_type: Written Question
+  date: '2026-05-14'
+  quote: To ask the Secretary of State for the Home Department, whether she has made an assessment of the potential merits of allowing time spent in the UK under the Homes for Ukraine Scheme and Ukraine Extension Scheme to count towards eligibility for indefinite leave to remain.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-05-14/1234
+  
+- name: Martin Wrigley
+  house: Commons
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-05-21'
+  quote: To ask the Secretary of State for the Home Department, how (a) Homes for Ukraine and (b) UPE visas may be translated into UK citizenship.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-05-21/3869
+
+- name: Will Forster
+  house: Commons
+  party: Liberal Democrat
+  action_type: Debate
+  date: '2026-06-03'
+  quote: The Ukrainian scheme is the only humanitarian visa scheme that does not have the pathway to permanent settlement. I hope that the Minister will start to correct that injustice.
+  link: https://hansard.parliament.uk/commons/2026-06-03/debates/DC6802F8-AB12-41EC-9036-6A80768402BE/ImprovingTheUKVisaSystem#:~:text=The%20Ukrainian%20scheme%20is%20the%20only%20humanitarian%20visa%20scheme%20that%20does%20not%20have%20the%20pathway%20to%20permanent%20settlement.
+  
+  
+- name: Lord German
+  house: Lords
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-06-10'
+  quote: To ask His Majesty's Government what assessment they have made of the impact of granting longer-term protection to displaced Ukrainians in the United Kingdom on their integration into society.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-06-10/hl808
+
+- name: Lord German
+  house: Lords
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-06-10'
+  quote: To ask His Majesty's Government what steps they are taking to ensure that displaced Ukrainians in vulnerable circumstances, including elderly people, disabled people, and those undergoing medical treatment, are able to access future immigration pathways.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-06-10/hl807
+
+- name: Lord German
+  house: Lords
+  party: Liberal Democrat
+  action_type: Written Question
+  date: '2026-06-10'
+  quote: To ask His Majesty's Government whether, and if so when, they intend to publish a long-term policy regarding displaced Ukrainians in the United Kingdom, to apply beyond the extension of the Ukraine Permission Extension Scheme.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-06-10/hl806
+
+- name: Sir Julian Lewis
+  house: Commons
+  party: Conservative
+  action_type: Written Question
+  date: '2026-06-25'
+  quote: To ask the Secretary of State for the Home Department, if she will make it her policy to include the time spent by Ukrainian refugees in the UK since the invasion of Ukraine in the qualifying period necessary to be granted permanent residence.
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-06-25/13077
+  
+- name: Lord Alton of Liverpool
+  house: Lords
+  party: Crossbench
+  action_type: Written Question
+  date: '2026-07-07'
+  quote: "To ask His Majesty's Government what assessment they have made of the recommendations of the report by researchers at the University of Birmingham, Displaced Ukrainians in the UK: Experiences and Future Intentions, published in October 2025, particularly those related to (1) a timely and affordable pathway to permanent residence for displaced Ukrainians..."
+  link: https://questions-statements.parliament.uk/written-questions/detail/2026-07-07/hl1713

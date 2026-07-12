@@ -9,7 +9,7 @@ description: >-
 toc: false
 published: true
 lang: en
-image: assets/img/posts/2026-05-26-ireland-ukraine-stamp4.jpg
+image: /assets/img/posts/2026-05-26-ireland-ukraine-stamp4.jpg
 ---
 
 The Irish Government has taken a major step forward in supporting Ukrainians who have found refuge in Ireland. Ministers **Jim O’Callaghan** and **Colm Brophy** secured Government approval for a new **Temporary Protection Transition Scheme** — a positive move from emergency response to long‑term integration.

@@ -4,7 +4,7 @@ title: "UNHCR’s warning on the UK’s asylum plans: why ‘long temporary’ s
 date: 2026-01-09
 categories: [Research]
 tags: [UNHCR, UK, Asylum, Settlement, Integration]
-image: assets/img/posts/2026-01-09-unhcr-limbo.jpg
+image: /assets/img/posts/2026-01-09-unhcr-limbo.jpg
 ---
 
 UNHCR has published detailed observations on the UK Government’s *Restoring Order and Control* statement on asylum and returns. The document is unusually direct about the risks of redesigning protection around **short, renewable grants of stay** paired with **delayed or harder settlement**.
